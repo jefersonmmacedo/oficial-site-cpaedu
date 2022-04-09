@@ -1,0 +1,7 @@
+.blank {
+    width: 100%;
+    height: 60px;
+    background-color:#fff ;
+    position: absolute;
+    margin-top: -80px;
+}

@@ -1,0 +1,66 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #451A70;
+}
+
+.footer .components {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer .copy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row;
+    padding: 10px;
+    color: #fff;
+    background-color: #2d0952;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.footer .copy .companyName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.footer .copy .companyName p{
+    margin: 5px 0;
+}
+
+
+.footer .copy .devs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.footer .copy .devs p{
+    margin: 5px 0;
+}
+
+.footer .copy .devs a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer .copy .devs a:hover {
+    color: #5700ae;
+}
