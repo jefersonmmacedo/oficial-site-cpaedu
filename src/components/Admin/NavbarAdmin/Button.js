@@ -6,7 +6,7 @@ export function Button() {
     <>
     <a href="https:cpaedu.com.br"
     target="_blank" rel="noreferrer">
-      <button className='btn'>Site Oficial</button>
+      <button className='btn'>Site Oficial.</button>
       </a>
     </>
   );
