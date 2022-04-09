@@ -1,4 +1,5 @@
 import {Route, Routes, Navigate} from 'react-router-dom';
+import { About } from '../pages/About/About';
 import { Contact } from '../pages/Contact/Contact';
 import { Home } from '../pages/Home/Home';
 
@@ -8,6 +9,7 @@ function Router () {
             <Routes>
             <Route path="/" element={<Home />}/>      
             <Route path="/contato" element={<Contact />}/>      
+            <Route path="/sobre" element={<About />}/>      
             </Routes>
            
     )

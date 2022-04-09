@@ -1,0 +1,36 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    width: 100%;
+    padding:20px;
+}
+
+.about .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    width: 90%;
+    padding:20px;
+}
+
+.about .section h1{
+    color: rgb(89, 8, 166);
+}
+.about .section h3{
+    color: rgb(89, 8, 166);
+}
+
+.about .section .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.about .section .text p {
+    color: rgb(89, 8, 166);
+    font-size: 14px;
+}
