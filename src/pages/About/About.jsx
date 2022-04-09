@@ -22,19 +22,19 @@ Somos gratos também a todos amigos que nos dão sempre uma palavra de ânimo, n
                 </div>
                 <div className="section">
                 <h3>Missão</h3>
-                <div className="text">
+                <div className="text2">
                     <p>Educar para o trabalho promovendo todas as condições para o sucesso profissional, e a melhoria na qualidade de vida de toda a família através da educação, arte e cultura.</p>            
                 </div>
                 </div>
                 <div className="section">
                 <h3>Visão</h3>
-                <div className="text">
+                <div className="text2">
                     <p>Ser a instituição que oferece as melhores soluções em educação e financeiramente acessível a todo público, reconhecida pelas diversas esferas da sociedade, através de seus resultados alcançados.</p>             
                 </div>
                 </div>
                 <div className="section">
                 <h3>Valores</h3>
-                <div className="text">
+                <div className="text2">
                     <p>Nossa base é a Bíblia. A Palavra de Deus. Através da missão Salvadora e Social de Jesus, forjamos nossos valores. 
                         <br />“...amar ao teu próximo como a ti mesmo...” João. 13:34</p>             
                     <p>Nossos valores são orientados pela verdade, honestidade, transparência, ética, esperança, qualidade, respeito, evolução, família e responsabilidade social.</p>             

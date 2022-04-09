@@ -4,7 +4,7 @@
     justify-content: center;
     flex-direction:column;
     width: 100%;
-    padding:20px;
+    padding:40px;
 }
 
 .about .section {
@@ -33,4 +33,17 @@
 .about .section .text p {
     color: rgb(89, 8, 166);
     font-size: 14px;
+    text-align: center;
+}
+.about .section .text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.about .section .text2 p {
+    color: rgb(89, 8, 166);
+    font-size: 14px;
+    text-align: center;
 }
