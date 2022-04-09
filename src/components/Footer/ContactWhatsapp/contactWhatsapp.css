@@ -1,0 +1,54 @@
+.whatsapp {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.whatsapp h1 {
+margin-bottom: 10px;
+}
+
+.whatsapp form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.whatsapp form input {
+    width: 70%;
+    border: none;
+    border-radius: 8px;
+    color: blue;
+    padding: 10px 20px;
+    margin: 3px 0;
+    
+}
+.whatsapp form select {
+    width: 70%;
+    border: none;
+    border-radius: 8px;
+    color: blue;
+    padding: 10px 20px;
+    margin: 3px 0;
+}
+
+.whatsapp form button {
+    width: 70%;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: blueviolet;
+    padding: 10px 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.whatsapp form button:hover {
+
+    background-color: #b36cfa;;
+}

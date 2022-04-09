@@ -3,7 +3,7 @@ import {IoLocationOutline, IoMailOutline, IoCallOutline, IoLogoWhatsapp, IoLogoI
 function ContactForm() {
     return (
         <div className="contactForm">
-          
+         
             <div className="contactBlock">
                 
             <div className="formulary">

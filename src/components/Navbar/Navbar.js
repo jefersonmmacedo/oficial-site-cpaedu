@@ -61,7 +61,7 @@ function Navbar() {
             >
               Cursos <i className='fas fa-caret-down' />
             </Link>
-            {dropdown && <Dropdown />}
+            {/* {dropdown && <Dropdown />} */}
           </li>
           <li className='nav-item'>
             <a

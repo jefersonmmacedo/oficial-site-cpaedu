@@ -1,0 +1,50 @@
+.footerForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.footerForm img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.footerForm p{
+   margin-bottom: 5px;
+}
+
+.footerForm .icons{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    text-align: left;
+ }
+
+ .footerForm .icons p {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+     background-color: #fff;
+     color: #451A70;
+     width: 30px;
+     height: 30px;
+     border-radius: 4px;
+     margin: 5px;
+ }
+
+ .footerForm .icons p svg {
+     color: #451A70;
+ }
+
+ .footerForm .icons p:hover {
+    background-color: #b36cfa;
+    color: #fff;
+}
