@@ -45,7 +45,7 @@ function Navbar() {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/sobre' className='nav-links' onClick={closeMobileMenu}>
               Quem Somos
             </Link>
           </li>
@@ -55,7 +55,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/courses'
+              to='/curso'
               className='nav-links'
               onClick={closeMobileMenu}
             >
@@ -75,7 +75,7 @@ function Navbar() {
           </li>
           <li className='nav-item'>
             <Link
-              to='/contact'
+              to='/contato'
               className='nav-links'
               onClick={closeMobileMenu}
             >

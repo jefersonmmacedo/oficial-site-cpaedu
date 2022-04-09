@@ -1,5 +1,5 @@
 import {Route, Routes, Navigate} from 'react-router-dom';
-import { Contact } from '../pages/Contact/Contact,';
+import { Contact } from '../pages/Contact/Contact';
 import { Home } from '../pages/Home/Home';
 
 function Router () {
