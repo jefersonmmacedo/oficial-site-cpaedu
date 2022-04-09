@@ -1,4 +1,4 @@
-import { ContactForm } from "../../components/contactForm/ContactForm"
+import { ContactForm } from "../../components/ContactForm/ContactForm"
 import "./contact.css"
 
 function Contact() {
