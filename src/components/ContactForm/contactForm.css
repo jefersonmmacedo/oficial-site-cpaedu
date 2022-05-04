@@ -14,7 +14,7 @@
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    padding: 20px;
+    padding: 20px 0;
 }
 .contactForm .contactBlock {
     display: flex;
@@ -33,12 +33,12 @@
 }
 
 .contactForm .contactBlock .formulary h1{
-    color: #512A79;
+    color: #ffffff;
 }
 
 .contactForm .contactBlock .formulary p{
         text-align: left;
-        color: #6D6E75;
+        color: #e2e2e2;
         font-size:14px
 }
 
@@ -48,7 +48,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color: #fff;
     padding: 20px
 }
 
@@ -67,8 +66,13 @@
     width: 50%;
     height: 40px;
     margin: 5px;
-    background-color:#F3F4F8;
+        background-color: rgb(21, 0, 41);
 }
+
+.contactForm .contactBlock .formulary form .name input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
 .contactForm .contactBlock .formulary form input{
     padding: 5px 10px;
     border-radius: 6px;
@@ -76,7 +80,10 @@
     width: 100%;
     height: 40px;
     margin: 5px;
-    background-color:#F3F4F8;
+        background-color: rgb(21, 0, 41);
+}
+.contactForm .contactBlock .formulary form input::placeholder {
+    color: rgb(255, 255, 255);
 }
 .contactForm .contactBlock .formulary form textarea{
     padding: 5px 10px;
@@ -85,8 +92,12 @@
     width: 100%;
     height: 130px;
     margin: 5px;
-    background-color:#F3F4F8;
+          background-color: rgb(21, 0, 41);
     resize: none;
+}
+
+.contactForm .contactBlock .formulary form textarea::placeholder {
+    color: rgb(255, 255, 255);
 }
 
     .contactForm .contactBlock .information {
@@ -96,10 +107,9 @@
         flex-direction: column;
         width: 30%;
         border-radius: 6px;
-        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-        background-color: #FFFF;
         padding: 20px;
         margin: 0px 20px;
+        background-color: rgb(21, 0, 41);
     }
 
     .contactForm .contactBlock .information .item {
@@ -112,12 +122,12 @@
     }
 
    .contactForm .contactBlock .information .item h3{
-        color: #512A79;
+        color: #ffffff;
     }
     
     .contactForm .contactBlock .information .item p{
         text-align: left;
-        color: #6D6E75;
+        color: #e5e5e5;
         font-size:14px
     }
 
@@ -131,8 +141,9 @@
     }
 
     .contactForm .contactBlock .information .social h3{
-        color: #512A79;
+        color: #ffffff;
     }
+    
     .contactForm .contactBlock .information .social .icons{
         display: flex;
         align-items: flex-start;
@@ -145,9 +156,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #512A79;
+        background-color: #ffffff;
         padding: 3px;
-        color: #fff;
+        color: rgb(27, 0, 54);
         margin: 3px;
         border-radius: 3px;
     }

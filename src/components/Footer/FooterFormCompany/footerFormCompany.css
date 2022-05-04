@@ -1,0 +1,53 @@
+.footerFormCompany {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+.footerFormCompany img{
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footerFormCompany p{
+   margin-bottom: 5px;
+   font-size: 14px;
+}
+
+.footerFormCompany .icons{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 65%;
+    text-align: left;
+    
+ }
+
+ .footerFormCompany .icons p {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+     background-color: #fff;
+     color: #451A70;
+     width: 30px;
+     height: 30px;
+     border-radius: 4px;
+     margin: 5px;
+
+ }
+
+ .footerFormCompany .icons p svg {
+     color: #451A70;
+ }
+
+ .footerFormCompany .icons p:hover {
+    background-color: #b36cfa;
+    color: #fff;
+}

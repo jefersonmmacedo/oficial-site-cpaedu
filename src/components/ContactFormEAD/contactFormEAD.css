@@ -1,0 +1,166 @@
+.contactFormEAD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0;
+}
+
+
+.contactFormEAD .title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 0;
+}
+.contactFormEAD .contactBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    padding: 20px;
+}
+.contactFormEAD .contactBlock .formulary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.contactFormEAD .contactBlock .formulary h1{
+    color: #ffffff;
+}
+
+.contactFormEAD .contactBlock .formulary p{
+        text-align: left;
+        color: #e2e2e2;
+        font-size:14px
+}
+
+.contactFormEAD .contactBlock .formulary form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px
+}
+
+.contactFormEAD .contactBlock .formulary form .name{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contactFormEAD .contactBlock .formulary form .name input{
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    width: 50%;
+    height: 40px;
+    margin: 5px;
+        background-color: rgb(21, 0, 41);
+}
+
+.contactFormEAD .contactBlock .formulary form .name input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.contactFormEAD .contactBlock .formulary form input{
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+        background-color: rgb(21, 0, 41);
+}
+.contactFormEAD .contactBlock .formulary form input::placeholder {
+    color: rgb(255, 255, 255);
+}
+.contactFormEAD .contactBlock .formulary form textarea{
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    height: 130px;
+    margin: 5px;
+          background-color: rgb(21, 0, 41);
+    resize: none;
+}
+
+.contactFormEAD .contactBlock .formulary form textarea::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+    .contactFormEAD .contactBlock .information {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 30%;
+        border-radius: 6px;
+        padding: 20px;
+        margin: 0px 20px;
+        background-color: rgb(21, 0, 41);
+    }
+
+    .contactFormEAD .contactBlock .information .item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+   .contactFormEAD .contactBlock .information .item h3{
+        color: #ffffff;
+    }
+    
+    .contactFormEAD .contactBlock .information .item p{
+        text-align: left;
+        color: #e5e5e5;
+        font-size:14px
+    }
+
+    .contactFormEAD .contactBlock .information .social {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .contactFormEAD .contactBlock .information .social h3{
+        color: #ffffff;
+    }
+    
+    .contactFormEAD .contactBlock .information .social .icons{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contactFormEAD .contactBlock .information .social .icons p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 3px;
+        color: rgb(27, 0, 54);
+        margin: 3px;
+        border-radius: 3px;
+    }
+     
+    

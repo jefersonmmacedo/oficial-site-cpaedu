@@ -5,7 +5,7 @@ import {FiFacebook, FiInstagram} from 'react-icons/fi'
 function FooterForm() {
     return (
         <div className="footerForm">
-            <img src={logoImg} alt="" />
+            <h2>Encontre-nos</h2>
             <div className="infos">
                 <p><b>Endereço:</b> Avenida Saquarema, Nº 5070<br />
                 Bacaxá - Saquarema - RJ. CEP: 28994-597<br />

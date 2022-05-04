@@ -4,9 +4,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 60px 0 40px 0;
+    padding: 120px 0 40px 0;
     margin-top: -75px;
-    background-color: #fff;
+    color: #fff;
 }
 
 .categories .title{
@@ -37,7 +37,7 @@
 }
 
 
-.categories .itens .categorie1{
+.categories .itens .categorie{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -45,83 +45,51 @@
     width: 270px;
     height: 350px;
     margin: 10px 20px;
-    background-color: #00AFAB;
+    
+    background-color: rgb(21, 0, 41);
     border-radius: 10px;
-    padding: 20px;
-    color: #fff;
-}
-.categories .itens .categorie2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 270px;
-    height: 350px;
-    margin: 10px 20px;
-    background-color: #814ab9;
-    border-radius: 10px;
-    padding: 20px;
-    color: #fff;
-}
-.categories .itens .categorie3{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 270px;
-    height: 350px;
-    margin: 10px 20px;
-    background-color: #0193fc;
-    border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     color: #fff;
 }
 
-.categories .itens .categorie4{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 270px;
-    height: 350px;
-    margin: 10px 20px;
-    background-color: #F05B68;
-    border-radius: 10px;
-    padding: 20px;
-    color: #fff;
-}
 
-.categories .itens .categorie1 .text{
+.categories .itens .categorie .text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
 }
-.categories .itens .categorie1 .text .image {
+.categories .itens .categorie .text .image {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 125px;
-    height: 55px;
+    width: 100%;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 10px;
 }
-.categories .itens .categorie1 .text img {
-    width: 50px;
+.categories .itens .categorie .text img {
+    width: 100%;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
 }
 
-.categories .itens .categorie1 .text h3 {
+.categories .itens .categorie .text h3 {
     font-weight: 700;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: left;
 }
-.categories .itens .categorie1 .text p {
+.categories .itens .categorie .text p {
     text-align: left;
     font-size: 14px;
 }
 
-.categories .itens .categorie1 a {
+.categories .itens .categorie a {
     margin-top: 20px;
     text-decoration: none;
     border-radius: 10px;
@@ -134,181 +102,13 @@
     align-items: center;
     justify-content: center;
 }
-.categories .itens .categorie1 a:hover {
+.categories .itens .categorie a:hover {
     border: 1px solid #fff;
     color: #00AFAB;
     background-color: #fff;
 }
 
-.categories .itens .categorie1 a svg{
+.categories .itens .categorie a svg{
     margin-left: 5px;
 }
 
-
-.categories .itens .categorie2 .text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-}
-.categories .itens .categorie2 .text .image {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 125px;
-    height: 55px;
-}
-.categories .itens .categorie2 .text img {
-    width: 50px;
-}
-
-.categories .itens .categorie2 .text h3 {
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 10px;
-        text-align: left;
-}
-.categories .itens .categorie2 .text p {
-    text-align: left;
-    font-size: 14px;
-}
-
-.categories .itens .categorie2 a {
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.categories .itens .categorie2 a:hover {
-    border: 1px solid #fff;
-    color: #814ab9;
-    background-color: #fff;
-}
-
-
-
-.categories .itens .categorie2 a svg{
-    margin-left: 5px;
-}
-
-
-
-.categories .itens .categorie3 .text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-}
-.categories .itens .categorie3 .text .image {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 125px;
-    height: 55px;
-}
-.categories .itens .categorie3 .text img {
-    width: 50px;
-}
-
-.categories .itens .categorie3 .text h3 {
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 10px;
-        text-align: left;
-}
-.categories .itens .categorie3 .text p {
-    text-align: left;
-    font-size: 14px;
-}
-
-.categories .itens .categorie3 a {
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.categories .itens .categorie3 a:hover {
-    border: 1px solid #fff;
-    color: #0193fc;
-    background-color: #fff;
-}
-
-.categories .itens .categorie3 a svg{
-    margin-left: 5px;
-}
-
-
-.categories .itens .categorie4 .text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-}
-.categories .itens .categorie4 .text .image {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 125px;
-    height: 55px;
-}
-.categories .itens .categorie4 .text img {
-    width: 50px;
-}
-
-.categories .itens .categorie4 .text h3 {
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 10px;
-        text-align: left;
-}
-.categories .itens .categorie4 .text p {
-    text-align: left;
-    font-size: 14px;
-}
-
-.categories .itens .categorie4 a {
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.categories .itens .categorie4 a:hover {
-    border: 1px solid #fff;
-    color: #F05B68;
-    background-color: #fff;
-}
-
-
-.categories .itens .categorie4 a svg{
-    margin-left: 5px;
-}

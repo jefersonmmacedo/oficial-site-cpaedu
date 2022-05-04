@@ -3,9 +3,9 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
-import LogoImg from '../../assets/images/logo.png'
+import LogoImg from '../../../assets/images/logo.png'
 
-function Navbar() {
+function NavbarAdmin() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
@@ -40,38 +40,9 @@ function Navbar() {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              Dasboard
+            <Link to='/Slider' className='nav-links' onClick={closeMobileMenu}>
+              Slider
             </Link>
-          </li>
-          <li className='nav-item'>
-            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
-              Categorias
-            </Link>
-          </li>
-          <li
-            className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
-            <Link
-              to='/courses'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Cursos <i className='fas fa-caret-down' />
-            </Link>
-            {dropdown && <Dropdown />}
-          </li>
-          <li className='nav-item'>
-            <a
-               href='https://ead.cpaedu.com.br/loja_virtual/index.php'
-              className='nav-links'
-              target="_blank" rel="noreferrer"
-              onClick={closeMobileMenu}
-            >
-              Sliders
-            </a>
           </li>
           <li className='nav-item'>
             <Link
@@ -88,22 +59,33 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Informações
+              Categorias
             </Link>
           </li>
-          <li>
-          <a href="https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre os cursos"
-          className='nav-links-mobile'
-          onClick={closeMobileMenu}
-          target="_blank" rel="noreferrer">
-            Participar do sorteio
-            </a>
+          <li className='nav-item'>
+            <Link
+              to='/contact'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Cursos
+            </Link>
+          </li>
+
+          <li className='nav-item'>
+            <Link
+              to='/contact'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Infos
+            </Link>
           </li>
         </ul>
-        <Button />
+<Button />
       </nav>
     </>
   );
 }
 
-export default Navbar;
+export default NavbarAdmin;

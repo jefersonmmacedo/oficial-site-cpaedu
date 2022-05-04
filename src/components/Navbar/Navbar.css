@@ -1,5 +1,4 @@
 .navbar {
-  background: #512A79;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -7,6 +6,10 @@
   font-size: 1rem;
   z-index: 99;
   font-family: 'Poppins', sans-serif;
+}
+
+.navbar img {
+  width: 100px;
 }
 
 .navbar-logo {
@@ -19,6 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .fa-firstdraft {
@@ -53,7 +57,7 @@
 }
 
 .nav-links:hover {
-  background-color: #693c96;
+  background-color: #290053;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }

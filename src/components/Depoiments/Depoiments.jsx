@@ -1,92 +1,68 @@
-import { useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import db from '../../services/firebaseConnection';
+import { useEffect, useState } from "react";
+import Slider from "react-slick";
 import "./depoiments.css"
 
 function Depoiments() {
 
+    const [depoiments, setDepoiments] = useState([]);
 
-    const depoiments = [
-        {
-            id: "1",
-            image: "https://faculdadeanclivepa.edu.br/wp-content/uploads/2021/06/topo-aluno-2.jpg",
-            depiment: "Terminei minha pós, nessa instituição que só me deu alegrias, todas as dificuldades que tive, foram logo resolvidas, as disciplinas excelentes, um atendimento maravilhoso!! Só tenho a agradecer a vocês que me ajudaram a chegar até aqui!",
-            name: "Brígida Garcia",
-            course: "Pós graduanda em Neuropsicopedagogia em Desenvolvimento Humano",
-    },
-        {
-            id: "2",
-            image: "https://faculdadeanclivepa.edu.br/wp-content/uploads/2021/06/topo-aluno-2.jpg",
-            depiment: "Terminei minha pós, nessa instituição que só me deu alegrias, todas as dificuldades que tive, foram logo resolvidas, as disciplinas excelentes, um atendimento maravilhoso!! Só tenho a agradecer a vocês que me ajudaram a chegar até aqui!",
-            name: "Vanderlei Gomes",
-            course: "Curso Bateria",
-    },
-        {
-            id: "3",
-            image: "https://faculdadeanclivepa.edu.br/wp-content/uploads/2021/06/topo-aluno-2.jpg",
-            depiment: "Terminei minha pós, nessa instituição que só me deu alegrias, todas as dificuldades que tive, foram logo resolvidas, as disciplinas excelentes, um atendimento maravilhoso!! Só tenho a agradecer a vocês que me ajudaram a chegar até aqui!",
-            name: "Angela Motta",
-            course: "Graduanda Administração",
-    },
-        {
-            id: "4",
-            image: "https://faculdadeanclivepa.edu.br/wp-content/uploads/2021/06/topo-aluno-2.jpg",
-            depiment: "Terminei minha pós, nessa instituição que só me deu alegrias, todas as dificuldades que tive, foram logo resolvidas, as disciplinas excelentes, um atendimento maravilhoso!! Só tenho a agradecer a vocês que me ajudaram a chegar até aqui!",
-            name: "Ana Carolina",
-            course: "GRaduada em Advocacia",
-    },
-        {
-            id: "5",
-            image: "https://faculdadeanclivepa.edu.br/wp-content/uploads/2021/06/topo-aluno-2.jpg",
-            depiment: "Terminei minha pós, nessa instituição que só me deu alegrias, todas as dificuldades que tive, foram logo resolvidas, as disciplinas excelentes, um atendimento maravilhoso!! Só tenho a agradecer a vocês que me ajudaram a chegar até aqui!",
-            name: "Jeferson Santos",
-            course: "Pós graduando em Análise e desenvolvimento de sistemas",
-    },
-        {
-            id: "6",
-            image: "https://faculdadeanclivepa.edu.br/wp-content/uploads/2021/06/topo-aluno-2.jpg",
-            depiment: "Terminei minha pós, nessa instituição que só me deu alegrias, todas as dificuldades que tive, foram logo resolvidas, as disciplinas excelentes, um atendimento maravilhoso!! Só tenho a agradecer a vocês que me ajudaram a chegar até aqui!",
-            name: "Marcos Souza",
-            course: "Graduando em Psicologia",
-    },
-    ];
-
-
-    const [depoimentSelected, setDepoimentSelected] = useState(depoiments[0]);
-    console.log(depoimentSelected)
-
-
-
-    function handleCircle(id) {
-        const filter = depoiments.filter(depoiment => id === depoiment.id);
-        setDepoimentSelected(filter[0])
+    useEffect(() => {
+    async function loadCondadatos() {
+        const querySnapshot = await getDocs(collection(db, "depoiments"));  
+        const list = []
+        querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${doc.data()}`);
+          const data = {
+            id: doc.id,
+            name: doc.data().name,
+            image: doc.data().image,
+            course: doc.data().course,
+            depoiment: doc.data().depoiment,
+            }
+            
+            console.log(data)
+            list.push(data)
+          });
+          setDepoiments(list)
     }
 
+    loadCondadatos()
+}, [])
+
+var settings = {
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+ 
+
     return (
-        <div className="depoiments">
-                <div className="depoimentUnic">
-                <div className="image">
-                    <img src={depoimentSelected.image} alt={depoimentSelected.name} />
-                </div>
-                <div className="text">
-                <h3>{depoimentSelected.depiment}</h3>                </div>
-                <div className="name">
-                    <h4>{depoimentSelected.name}</h4>
-                </div>
-                <div className="course">
-                <p>{depoimentSelected.course}</p>
-                </div>
+        <Slider {...settings}>
+        {depoiments.map((depoiment) => {
+           return (
+            <div className="depoimentUnic" key={depoiment.id}>
+            <div className="image">
+                <img src={depoiment.image} alt={depoiment.name} />
             </div>
-
-
-            <div className="select">
-                    {depoiments.map((indice) => {
-                        return (
-                            <>
-                            <button key={indice.id} onClick={() =>{ handleCircle(indice.id)}}> {indice.id}</button>
-                        </>
-                        )
-                    }) }
+            <div className="text">
+            <h3>{depoiment.depoiment}</h3>                </div>
+            <div className="name">
+                <h4>{depoiment.name}</h4>
             </div>
-        </div>
+            <div className="course">
+            <p>{depoiment.course}</p>
+            </div>
+            </div>
+           )
+        })}
+    </Slider>
     )
 }
 

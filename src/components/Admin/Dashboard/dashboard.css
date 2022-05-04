@@ -1,0 +1,48 @@
+.dashboard {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%
+}
+
+.dashboard h1 {
+    color: #FFF;
+    margin: 40px 0;
+}
+
+.dashboard  .blocks {
+    display:flex;
+    align-items:flex-start;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.dashboard  .blocks .blockUnic {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content: center;
+    width: 200px;
+    background-color: #fff;
+    color: var(--Primary);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.dashboard  .blocks .blockUnic a {
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content: center;
+    background-color: var(--Primary);
+    color: #fff ;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size:14px;
+}

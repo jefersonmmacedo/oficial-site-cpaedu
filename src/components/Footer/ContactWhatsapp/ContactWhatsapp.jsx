@@ -35,7 +35,7 @@ function ContactWhatsapp() {
 
     return (
         <div className="whatsapp">
-        <h1>Entre em conato</h1>
+        <h2>Entre em conato</h2>
         <form action="" onSubmit={handleMessage}>
             <input type="text" placeholder="Nome" value={name} onChange={(e) => setName(e.target.value)} required/>
             <input type="email" placeholder="Email" value={email} onChange={(e) =>  setEmail(e.target.value)} required/>

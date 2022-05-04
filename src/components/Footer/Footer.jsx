@@ -1,5 +1,6 @@
 import './footer.css';
 import {FooterForm} from "./FooterForm/FooterForm"
+import {FooterFormCompany} from "./FooterFormCompany/FooterFormCompany"
 import {ContactWhatsapp} from "../Footer/ContactWhatsapp/ContactWhatsapp"
 
 function Footer() {
@@ -8,6 +9,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="components">
+                <FooterFormCompany />
                 <FooterForm />
                 <ContactWhatsapp />
                 </div>

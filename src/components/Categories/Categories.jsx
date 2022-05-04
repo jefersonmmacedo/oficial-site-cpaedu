@@ -1,15 +1,36 @@
 import "./categories.css"
-import noteImg from '../../assets/images/1.png'
-import note2Img from '../../assets/images/2.png'
-import musicImg from '../../assets/images/3.png'
-import smartPhoneImg from '../../assets/images/4.png'
-import note3Img from '../../assets/images/5.png'
-import noteMessage from '../../assets/images/6.png'
-import tabletImg from '../../assets/images/7.png'
-import lousaImg  from '../../assets/images/8.png'
+import { collection, getDocs } from "firebase/firestore";
+import db from '../../services/firebaseConnection';
+import { useEffect, useState } from "react";
 import {IoArrowForward} from 'react-icons/io5'
 
 function Categories() {
+
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+    async function loadCondadatos() {
+        const querySnapshot = await getDocs(collection(db, "categories"));  
+        const list = []
+        querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${doc.data()}`);
+          const data = {
+            id: doc.id,
+            title: doc.data().title,
+            image: doc.data().image,
+            description: doc.data().description,
+            }
+            
+            console.log(data)
+            list.push(data)
+          });
+          setCategories(list)
+    }
+
+    loadCondadatos()
+}, [])
+
+
     return (
         <div className="categories">
             <div className="title">
@@ -17,85 +38,30 @@ function Categories() {
 <h4>Conheça nossos cursos e formações e começa a estudar hoje mesmo</h4>
                 </div>
                 <div className="itens">
-                    <div className="categorie1">
+                   {categories.map((categorie) => {
+                    return (
+                        <div className="categorie">
                         <div className="text">
                             <div className="image">
-                    <img src={musicImg} alt="Música" />
+                            <img src={categorie.image} alt={categorie.image} />
                                 </div>
-                        <h3>Música</h3>
-                        <p>Realize seu sonho de aprender a tocar um instrumento musical, cantar com técnica vocal e até mesmo reger um coro.</p>
+                        <h3>{categorie.title}</h3>
+                        <p>{categorie.description}</p>
                             </div>
-                        <a href="https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre os cursos de Música" target="_blank">Entre em contato <IoArrowForward/></a>
-                      </div>
-                    <div className="categorie2">
-                        <div className="text">
-                            <div className="image">
-                        <img src={lousaImg} alt="Mercado de trabalho" />
-                                </div>
-                        <h3>Aperfeiçoamento profissional EAD</h3>
-                        <p>Cursos de aperfeiçoamento profissional. Formato tradicional com formação de turmas, teoria e prática com professor e estágio supervisionado. </p>
-                            </div>
-                        <a href="https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre os cursos de Mercado de trabalho" target="_blank">Entre em contato <IoArrowForward/></a>
+                          <a href={`/cursos`} >Ver cursos <IoArrowForward/></a>
                         </div>
-                    <div className="categorie3">
+                    )
+                   })}
+                   
+                    <div className="categorie">
                         <div className="text">
                             <div className="image">
-                    <img src={tabletImg} alt="" />
-                                </div>
-                        <h3>Ensino Médio - EJA EAD</h3>
-                        <p>A Educação de Jovens e Adultos (EJA) é destinada a quem tem 18 anos ou mais e não conseguiu concluir os estudos na idade própria, nos cursos de Ensino Fundamental e Médio.</p>
-                            </div>
-                        <a href="https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre Ensino Médio - EJA EAD" target="_blank">Entre em contato <IoArrowForward/></a>
-                        </div>
-                    <div className="categorie4">
-                        <div className="text">
-                            <div className="image">
-                    <img src={noteMessage} alt="" />
-                                </div>
-                        <h3>Cursos Técnicos EAD</h3>
-                        <p>Acelere sua entrada no mercado de trabalho, prepare-se para lidar com uma sociedade desenvolvida tecnologicamente</p>
-                            </div>
-                        <a href="https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre Técnicos EAD" target="_blank">Entre em contato <IoArrowForward/></a>
-                        </div>
-                    <div className="categorie1">
-                        <div className="text">
-                            <div className="image">
-                        <img src={note3Img} alt="" />
-                                </div>
-                        <h3>Graduação EAD</h3>
-                        <p>A nossa proposta pedagógica inclui foco na área de seu interesse, por meio de estudos indicados em videoaulas, material didático em PDF e impresso.</p>
-                            </div>
-                          <a href="https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre Graduação EAD" target="_blank">Entre em contato <IoArrowForward/></a>
-                        </div>
-                    <div className="categorie2">
-                        <div className="text">
-                            <div className="image">
-                    <img src={note2Img} alt="" />
-                                </div>
-                        <h3>Pós-graduação EAD</h3>
-                        <p>Aprofunde seus conhecimentos, mantenha-se atualizado, adquira novas competências. Conclusão a partir de 4 meses.</p>
-                            </div>
-                          <a href="https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre Pós Graduação EAD" target="_blank">Entre em contato <IoArrowForward/></a>
-                        </div>
-                    <div className="categorie3">
-                        <div className="text">
-                            <div className="image">
-                    <img src={noteImg} alt="" />
-                                </div>
-                        <h3>2º Curso Superior EAD</h3>
-                        <p>Invista em seu futuro profissional e tenha mais de uma graduação em seu currículo. Conclusão a partir de 6 meses.</p>
-                            </div>
-                          <a href="https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre 2º Curso Superior EAD" target="_blank">Entre em contato <IoArrowForward/></a>
-                        </div>
-                    <div className="categorie4">
-                        <div className="text">
-                            <div className="image">
-                    <img src={smartPhoneImg} alt="" />
+                            <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNob3BwaW5nJTIwb25saW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Curso profissionalizante" />
                                 </div>
                         <h3>Acesse Nossa Loja Virtual</h3>
                         <p>Torne seu currículo mais atraente para o mercado de trabalho, invista em sua qualificação profissional.</p>
                             </div>
-                          <a href="https://ead.cpaedu.com.br/loja_virtual/index.php" target="_blank">Entre em contato <IoArrowForward/></a>
+                          <a href="https://ead.cpaedu.com.br/loja_virtual/index.php" target="_blank">Ir para loja virtual <IoArrowForward/></a>
                         </div>
                     </div>
             </div>

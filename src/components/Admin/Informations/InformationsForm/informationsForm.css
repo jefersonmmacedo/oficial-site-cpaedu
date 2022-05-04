@@ -1,0 +1,124 @@
+.informationsForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    color: #fff;
+    margin: 40px 0;
+}
+.informationsForm h3{
+    text-align:center;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.informationsForm form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding:20px;
+    color: rgb(27, 0, 88)
+}
+.informationsForm form .contactInformations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.informationsForm form .contactInformations input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+
+.informationsForm form .contactInformations .double {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+}
+
+.informationsForm form .contactInformations .double input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 47%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+.informationsForm form .contactInformations .triple {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+}
+
+.informationsForm form .contactInformations .triple input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 30%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+
+.informationsForm form .historyInformations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.informationsForm form .historyInformations textarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px;
+    resize: none;
+}
+
+.informationsForm form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    background-color: rgb(27, 0, 88);
+    color: #fff;
+    padding: 10px
+}
+

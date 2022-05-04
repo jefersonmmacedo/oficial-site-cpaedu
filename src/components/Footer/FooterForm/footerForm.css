@@ -2,12 +2,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    width: 500px;
+    justify-content: flex-start;
+    width:400px;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: left;
 }
+
+.footerForm h2 {
+    margin-bottom: 10px;
+    }
 
 .footerForm img{
     width: 200px;
@@ -16,15 +20,17 @@
 
 .footerForm p{
    margin-bottom: 5px;
+   font-size: 14px;
 }
 
 .footerForm .icons{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
-    justify-content: center;
-    width: 50%;
+    justify-content: flex-start;
+    width: 65%;
     text-align: left;
+    
  }
 
  .footerForm .icons p {
@@ -38,6 +44,7 @@
      height: 30px;
      border-radius: 4px;
      margin: 5px;
+
  }
 
  .footerForm .icons p svg {

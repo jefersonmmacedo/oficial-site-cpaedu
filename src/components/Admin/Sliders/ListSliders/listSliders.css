@@ -1,0 +1,66 @@
+.ListSliders {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+}
+
+.ListSliders h1 {
+    margin: 40px;
+}
+
+.ListSliders .SlidersUnic {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--Primary);
+    background-color: #fff;
+    width: 80%;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ListSliders .SlidersUnic .text {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 50%;
+}
+.ListSliders .SlidersUnic .button {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.ListSliders .SlidersUnic .button button {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    color: #fff;
+    background-color: var(--Primary);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-size: 12px;
+}
+.ListSliders .link a {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    color: var(--Primary);
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+}

@@ -1,0 +1,66 @@
+.ListCategories {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+}
+
+.ListCategories h1 {
+    margin: 40px;
+}
+
+.ListCategories .CategoriesUnic {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--Primary);
+    background-color: #fff;
+    width: 80%;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ListCategories .CategoriesUnic .text {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 50%;
+}
+.ListCategories .CategoriesUnic .button {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.ListCategories .CategoriesUnic .button button {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    color: #fff;
+    background-color: var(--Primary);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-size: 12px;
+}
+.ListCategories .link a {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    color: var(--Primary);
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+}

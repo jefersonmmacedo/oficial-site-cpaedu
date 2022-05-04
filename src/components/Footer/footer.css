@@ -5,12 +5,12 @@
     text-align: center;
     flex-direction: column;
     width: 100%;
-    background-color: #451A70;
+    background-color: #240048;
 }
 
 .footer .components {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
     flex-direction: row;
@@ -27,7 +27,7 @@
     flex-direction: row;
     padding: 10px;
     color: #fff;
-    background-color: #2d0952;
+    background-color: rgb(23, 0, 48);
     font-size: 14px;
     flex-wrap: wrap;
 }

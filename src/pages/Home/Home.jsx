@@ -1,23 +1,24 @@
-import { Categories } from "../../components/Categories/Categories";
 import Navbar from "../../components/Navbar/Navbar";
-import { Slider } from "../../components/Slider/Slider";
+import { SliderCarroussel } from "../../components/Slider/SliderCarroussel";
 import { Courses } from "../../components/Courses/Courses";
 import { Depoiments } from "../../components/Depoiments/Depoiments";
 import "./home.css"
 import { Footer } from "../../components/Footer/Footer";
+import { Categories } from "../../components/Categories/Categories";
+import Navbar2 from "../../components/Nav/Navbar";
 
 function Home() {
     return (
-        <div>
-
-            <Slider />
-            <div className="blank">
-
-            </div>
+        <div className="home">
+            <Navbar2 />
+            <SliderCarroussel />
             <Categories />
             <Courses />
+            <h1>Depoimentos de nossos alunos</h1>
+            <div className="dep">
             <Depoiments />
-
+            </div>
+            <Footer />
         </div>
     )
 }

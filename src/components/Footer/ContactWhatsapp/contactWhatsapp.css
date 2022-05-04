@@ -1,14 +1,14 @@
 .whatsapp {
-    width: 500px;
+    width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
-.whatsapp h1 {
+.whatsapp h2 {
 margin-bottom: 10px;
 }
 
@@ -18,6 +18,7 @@ margin-bottom: 10px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .whatsapp form input {
@@ -25,7 +26,7 @@ margin-bottom: 10px;
     border: none;
     border-radius: 8px;
     color: blue;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin: 3px 0;
     
 }
@@ -34,7 +35,7 @@ margin-bottom: 10px;
     border: none;
     border-radius: 8px;
     color: blue;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin: 3px 0;
 }
 

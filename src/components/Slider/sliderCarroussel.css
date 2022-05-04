@@ -1,0 +1,13 @@
+.slider-carrousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: row;
+    width: 100%;
+    z-index: 50;
+}
+.slider-carrousel a img {
+    width: 100%;
+    z-index: 50;
+}

@@ -44,7 +44,7 @@ function CoursesPage() {
                         </div>
                         <div className="price">
                                 <h3>R$ 99,99</h3>
-                                <a>Saiba mais <IoArrowForward/></a>
+                                <a href="/curso-individual">Saiba mais <IoArrowForward/></a>
                         </div>
                     </div>
 
@@ -66,7 +66,7 @@ function CoursesPage() {
                         </div>
                         <div className="price">
                                 <h3>R$ 99,99</h3>
-                                <a>Saiba mais <IoArrowForward/></a>
+                                <a href="/curso-individual">Saiba mais <IoArrowForward/></a>
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@ function CoursesPage() {
                         </div>
                         <div className="price">
                                 <h3>R$ 99,99</h3>
-                                <a>Saiba mais <IoArrowForward/></a>
+                                <a href="/curso-individual">Saiba mais <IoArrowForward/></a>
                         </div>
                     </div>
 
@@ -109,7 +109,7 @@ function CoursesPage() {
                         </div>
                         <div className="price">
                                 <h3>R$ 99,99</h3>
-                                <a>Saiba mais <IoArrowForward/></a>
+                                <a href="/curso-individual">Saiba mais <IoArrowForward/></a>
                         </div>
                     </div>
 
@@ -131,7 +131,7 @@ function CoursesPage() {
                         </div>
                         <div className="price">
                                 <h3>R$ 99,99</h3>
-                                <a>Saiba mais <IoArrowForward/></a>
+                                <a href="/curso-individual">Saiba mais <IoArrowForward/></a>
                         </div>
                     </div>
 
@@ -153,7 +153,7 @@ function CoursesPage() {
                         </div>
                         <div className="price">
                                 <h3>R$ 99,99</h3>
-                                <a>Saiba mais <IoArrowForward/></a>
+                                <a href="/curso-individual">Saiba mais <IoArrowForward/></a>
                         </div>
                     </div>
                 </div>
