@@ -8,7 +8,7 @@
     margin: 0px auto;
 }
 
-.home a {
+.home .link a {
     text-decoration: none;
     font-size:14px;
     display: flex;

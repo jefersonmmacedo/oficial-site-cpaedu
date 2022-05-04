@@ -17,7 +17,9 @@ function Home() {
             <h1>Depoimentos de nossos alunos</h1>
             <div className="dep">
             <Depoiments />
-            <a href="/depoiments">Todos os depoimentos</a>
+            <div className="link">
+            <a href="#">Todos os depoimentos</a>
+            </div>
             </div>
             <Footer />
         </div>
