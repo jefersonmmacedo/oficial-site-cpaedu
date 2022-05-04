@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "./about.css"
 import { Footer } from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import Navbar2 from "../../components/Nav/Navbar";
 
 function About() {
     const [informations, setInformations] = useState([]);
@@ -37,7 +38,7 @@ console.log(informations[0]);
 
     return (
         <>
-            <Navbar />
+            <Navbar2 />
         <div className="about">
             <div className="section">
                 <h1>Nossa história</h1>

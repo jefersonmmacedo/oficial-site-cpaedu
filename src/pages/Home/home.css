@@ -7,3 +7,17 @@
     width: 90%;
     margin: 0px auto;
 }
+
+.home a {
+    text-decoration: none;
+    font-size:14px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:row;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+}
