@@ -13,7 +13,7 @@ function Depoiments() {
         const querySnapshot = await getDocs(collection(db, "depoiments"));  
         const list = []
         querySnapshot.forEach((doc) => {
-            console.log(`${doc.id} => ${doc.data()}`);
+      //      console.log(`${doc.id} => ${doc.data()}`);
           const data = {
             id: doc.id,
             name: doc.data().name,
@@ -22,7 +22,7 @@ function Depoiments() {
             depoiment: doc.data().depoiment,
             }
             
-            console.log(data)
+            // console.log(data)
             list.push(data)
           });
           setDepoiments(list)

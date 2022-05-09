@@ -140,6 +140,7 @@
 }
 .courses .listCourses .itemsCourses .itemUnic .details h3{
     color: #fff;
+    text-align: left;
 }
 
 .courses .listCourses .itemsCourses .itemUnic .details a{

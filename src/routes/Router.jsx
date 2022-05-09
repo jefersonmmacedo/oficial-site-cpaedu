@@ -35,7 +35,7 @@ function PrivateRoute({children} ) {
             <Route path="/contato" element={<Contact />}/>      
             <Route path="/prematricula/:curso" element={<ContactEAD />}/>      
             <Route path="/sobre" element={<About />}/>      
-            <Route path="/curso-individual" element={<CourseUnic />}/>      
+            <Route path="/curso-individual/:id" element={<CourseUnic />}/>      
             <Route path="/cursos" element={<Courses />}/>    
             <Route path="/depoimentos" element={<DepoimentsAll />}/>    
             <Route path="/eja" element={<EJA />}/>    
