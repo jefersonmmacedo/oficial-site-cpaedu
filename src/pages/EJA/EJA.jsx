@@ -72,7 +72,7 @@ function EJA() {
             </div>
 
             <div className="button">
-                <a href="">Faça sua pré-matrícula</a>
+                <a href="/prematricula/eja">Faça sua pré-matrícula</a>
             </div>
             <Footer />
         </div>

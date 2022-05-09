@@ -1,6 +1,6 @@
 import "./contactFormEAD.css"
 import {IoLocationOutline, IoMailOutline, IoCallOutline, IoLogoWhatsapp, IoLogoInstagram, IoLogoFacebook } from 'react-icons/io5'
-function ContactFormEAD() {
+function ContactFormEAD({curso}) {
     return (
         <div className="contactFormEAD">
          
@@ -24,7 +24,7 @@ function ContactFormEAD() {
                         <input type="text" name="" id="" placeholder="Bairro"/>
                         <input type="text" name="" id="" placeholder="Cidade"/>
                     </div>
-                        <input type="email" name="" id="" placeholder="Curso"/>
+                        <input type="email" name="" id="" placeholder="Curso" value={curso}/>
                        
                 </form>
             </div>
