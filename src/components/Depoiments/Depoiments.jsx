@@ -31,6 +31,9 @@ function Depoiments() {
     loadCondadatos()
 }, [])
 
+
+const newDepoiments = depoiments.slice(0,5)
+
 var settings = {
     arrows: false,
     autoplay: true,
@@ -45,7 +48,7 @@ var settings = {
 
     return (
         <Slider {...settings}>
-        {depoiments.map((depoiment) => {
+        {newDepoiments.map((depoiment) => {
            return (
             <div className="depoimentUnic" key={depoiment.id}>
             <div className="image">

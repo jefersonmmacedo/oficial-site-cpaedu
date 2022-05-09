@@ -144,21 +144,40 @@ function CoursesForm() {
                     </div>
                     <input type="text" placeholder="Cadastro no MEC" value={mec} onChange={(e) => setMec(e.target.value)} required/>
                     <input type="text" placeholder="Link Vídeo" value={linkVideo} onChange={(e) => setLinkVideo(e.target.value)} required/>
-                    <div className="double">
+
+                    {category !== "Segundo Curso Superior" ?                    
                     <select name="" id="" value={category} onChange={handleCategories} >
                         <option value="">Categoria</option>
                         <option value="Música">Música</option>
+                        <option value="Profissionalizantes">Profissionalizantes</option>
                         <option value="Graduação">Graduação</option>
                         <option value="Pós Graduação">Pós Graduação</option>
+                        <option value="Segundo Curso Superior">Segundo Curso Superior</option>
+                    </select>
+                    :
+                    <div className="double">
+                    <select name="" id="" value={category} onChange={handleCategories} >
+                         <option value="Segundo Curso Superior">Segundo Curso Superior</option>
+                         <option value="Música">Música</option>
                         <option value="Profissionalizantes">Profissionalizantes</option>
+                        <option value="Graduação">Graduação</option>
+                        <option value="Pós Graduação">Pós Graduação</option>
                         <option value="Segundo Curso Superior">Segundo Curso Superior</option>
                     </select>
                     <select name="" id="" value={subCategory} onChange={handleSub} >
                         <option value="">Sub-categoria</option>
+                        <option value="2º Graduação">2º Graduação</option>
                         <option value="2º Liceniatura">2º Liceniatura</option>
                         <option value="Formação Pedagógica">Formação Pedagógica</option>
                     </select>
                     </div>
+                    }
+
+                    <select name="" id="" value={subCategory} onChange={handleSub} >
+                        <option value="">Disponibilidade</option>
+                        <option value="Disponível">Disponível</option>
+                        <option value="Aguardar">Aguardar</option>
+                    </select>
 
                     <textarea name="" id="" cols="30" rows="20" placeholder="Matriz Curricular" value={curriculum} onChange={(e) => setCurriculum(e.target.value)} required></textarea>
 

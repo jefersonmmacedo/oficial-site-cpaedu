@@ -18,7 +18,7 @@ function Home() {
             <div className="dep">
             <Depoiments />
             <div className="link">
-            <a href="#">Todos os depoimentos</a>
+            <a href="/depoimentos">Todos os depoimentos</a>
             </div>
             </div>
             <Footer />

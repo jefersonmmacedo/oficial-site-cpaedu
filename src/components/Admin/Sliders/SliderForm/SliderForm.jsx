@@ -15,9 +15,8 @@ function SliderForm() {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [link, setLink] = useState('');
-
-
-
+    const [availability, setAvailability] = useState('');
+    const [position, setPosition] = useState('');
 
     async function handleFile(e) {
         console.log(e.target.files[0])
@@ -41,7 +40,13 @@ function SliderForm() {
         }
     }
     
+    function handleAvailability(e) {
+        setAvailability(e.target.value);
+    }
 
+    function handlePosition(e) {
+        setPosition(e.target.value);
+    }
 
     async function handleNewSlider(e) {
         e.preventDefault();
@@ -78,9 +83,6 @@ function SliderForm() {
           }
     }
 
-
-
-
     return (
         <div className="SliderForm">
             <h3>Novo Slider (Carroussel)</h3>
@@ -93,6 +95,27 @@ function SliderForm() {
                 <input type="text" placeholder="Titulo" value={title} onChange={(e) => setTitle(e.target.value)}/>
                 <input type="text" placeholder="Descrição" value={description} onChange={(e) => setDescription(e.target.value)}/>
                 <input type="text" placeholder="link" value={link} onChange={(e) => setLink(e.target.value)}/>
+
+                <div className="double">
+                    <select name="" id="" value={availability} onChange={handleAvailability}>
+                    <option value="">Disponobilidade</option>
+                    <option value="Disponível">Disponível</option>
+                    <option value="Aguardar">Aguardar</option>
+                    </select>
+                    <select name="" id="" value={position} onChange={handlePosition}>
+                    <option value="">Posição</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+               </div>
 
                 <button type="submit">Cadastrar</button>
             </form>

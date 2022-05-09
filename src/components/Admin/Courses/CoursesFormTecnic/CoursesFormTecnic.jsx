@@ -43,12 +43,6 @@ function CoursesFormTecnic() {
     }
     
 
-    function handleCategories(e) {
-        setCategory(e.target.value);
-    }
-    function handleSub(e) {
-        setSubCategory(e.target.value);
-    }
 
     async function handleCoursesForm(e) {
         e.preventDefault();
@@ -71,8 +65,7 @@ function CoursesFormTecnic() {
                 image: photoUrlAvatar,
                 description: description,
                 link: link,
-                category: category,
-                subCategory: subCategory,
+                category: "Técnico"
             })
             console.log("Document written with ID: ", docRef.id);
                 toast.info(`Cadastro realizado com sucesso!`);
@@ -81,8 +74,6 @@ function CoursesFormTecnic() {
                 setTitle('')
                 setDescription('')
                 setLink('')
-                setCategory('')
-                setSubCategory('')
           } catch (e) {
             console.error("Error adding document: ", e);
           }
@@ -90,7 +81,7 @@ function CoursesFormTecnic() {
 
     return (
         <div className="CoursesFormTecnic">
-            <h3>Novo Curso</h3>
+            <h3>Novo Curso Técnico</h3>
             <form onSubmit={handleCoursesForm}>
                 <label className="label-avatar">
                     <span><FiUpload color="#f65" size={25} /></span>
@@ -100,22 +91,6 @@ function CoursesFormTecnic() {
                 <input type="text" placeholder="Titulo"  value={title} onChange={(e) => setTitle(e.target.value)} required/>
                 <input type="text" placeholder="Descrição"  value={description} onChange={(e) => setDescription(e.target.value)} required/>
                 <input type="text" placeholder="link"  value={link} onChange={(e) => setLink(e.target.value)} required/>
-                <div className="double">
-                    <select name="" id="" value={category} onChange={handleCategories} required>
-                        <option value="">Categoria</option>
-                        <option value="Música">Música</option>
-                        <option value="Graduação">Graduação</option>
-                        <option value="Pós Graduação">Pós Graduação</option>
-                        <option value="Profissionalizantes">Profissionalizantes</option>
-                        <option value="Segundo Curso Superior">Segundo Curso Superior</option>
-                    </select>
-                    <select name="" id="" value={subCategory} onChange={handleSub} required>
-                        <option value="">Sub-categoria</option>
-                        <option value="2º Liceniatura">2º Liceniatura</option>
-                        <option value="Formação Pedagógica">Formação Pedagógica</option>
-                    </select>
-                    </div>
-
                 <button type="submit">Cadastrar</button>
             </form>
         </div>

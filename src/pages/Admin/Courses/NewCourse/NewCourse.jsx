@@ -8,28 +8,32 @@ function NewCourse() {
     const [type, setType] = useState("Complete");
 
 
-    function handleSelectType(e) {
+    function handleSelectTecnic(e) {
         e.preventDefault()
-
-        if(type === "Complete") {
-            setType("Basic")
-        } else {
-            setType("Complete")
-        }
+        setType("Tecnic")
+    }
+    function handleSelectComplete(e) {
+        e.preventDefault()
+        setType("Complete")
     }
     return (
         <div className="newCourse">
                                  <Navbar2 />
 
             <div className="buttons">
-                <button onClick={handleSelectType}> Graduação - Pós Graduação - Música - Profissionalizantes + ( 2º Licenciatura / Formação pedagógica )</button>
-                <button onClick={handleSelectType}> Curso Técnico / 2º Graduação </button>
+            {type === "Complete" ?
+           <button onClick={handleSelectTecnic}> Curso Técnico </button>
+            : type === "Tecnic" ?
+            <button onClick={handleSelectComplete}> Cursos Completos</button>
+            : ""
+            }    
             </div>
 
             {type === "Complete" ?
             <CoursesForm />
-            :
+            : type === "Tecnic" ?
             <CoursesFormTecnic />
+            : ""
             }
         </div>
     )
