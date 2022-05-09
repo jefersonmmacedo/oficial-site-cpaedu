@@ -19,7 +19,6 @@ function CoursesPage() {
                         <button>Graduação EAD</button>
                         <button>Pós-graduação EAD</button>
                         <button>2º Curso Superior EAD</button>
-                        <button>Loja Virtual</button>
                     </di>
                 </div>
             </div>
