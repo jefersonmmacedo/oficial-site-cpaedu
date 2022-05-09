@@ -70,6 +70,8 @@ function SliderForm() {
                 image: photoUrlAvatar,
                 description: description,
                 link: link,
+                availability: availability,
+                position: position
             })
             console.log("Document written with ID: ", docRef.id);
                 toast.info(`Cadastro realizado com sucesso!`);
@@ -78,6 +80,8 @@ function SliderForm() {
                 setTitle('')
                 setDescription('')
                 setLink('')
+                setPosition('')
+                setAvailability('')
           } catch (e) {
             console.error("Error adding document: ", e);
           }

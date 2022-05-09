@@ -30,6 +30,7 @@ function CoursesForm() {
     const [date, setDate] = useState('');
     const [duration, setDuration] = useState('');
     const [typeDuration, setTypeDuratin] = useState('');
+    const [availability, setAvailability] = useState('');
 
 
 
@@ -60,6 +61,9 @@ function CoursesForm() {
     
     function handleCategories(e) {
         setCategory(e.target.value);
+    }
+    function handleAvailability(e) {
+        setAvailability(e.target.value);
     }
     function handleSub(e) {
         setSubCategory(e.target.value);
@@ -109,6 +113,7 @@ function CoursesForm() {
                 date: date,
                 duration: duration,
                 typeDuration: typeDuration,
+                availability: availability
             })
             console.log("Document written with ID: ", docRef.id);
                 toast.info(`Cadastro realizado com sucesso!`);
@@ -119,6 +124,20 @@ function CoursesForm() {
                 setLink('')
                 setCategory('')
                 setSubCategory('')
+                setDuration('')
+                setTypeDuratin('')
+                setDate('');
+                setValue('')
+                setPortion('');
+                setFormat('');
+                setHours('');
+                setMec('');
+                setLinkVideo('');
+                setAvailability('');
+                setValueCourse('')
+                setValuepromotional('');
+                setCurriculum('')
+                
           } catch (e) {
             console.error("Error adding document: ", e);
           }
@@ -136,22 +155,22 @@ function CoursesForm() {
                 </label>
 
 
-                    <input type="text" placeholder="Nome do curso" value={title} onChange={(e) => setTitle(e.target.value)} required/>
-                    <input type="text" placeholder="Descrição" value={description} onChange={(e) => setDescription(e.target.value)} required/>
+                    <input type="text" placeholder="Nome do curso" value={title} onChange={(e) => setTitle(e.target.value)}/>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Descrição" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
                     <div className="double">
-                    <input type="text" placeholder="Valor" value={valueCourse} onChange={(e) => setValueCourse(e.target.value)} required/>
-                    <input type="text" placeholder="Valor promocional" value={valuePromotional} onChange={(e) => setValuepromotional(e.target.value)} required/>
+                    <input type="text" placeholder="Valor" value={valueCourse} onChange={(e) => setValueCourse(e.target.value)}/>
+                    <input type="text" placeholder="Valor promocional" value={valuePromotional} onChange={(e) => setValuepromotional(e.target.value)}/>
                     </div>
-                    <input type="text" placeholder="Cadastro no MEC" value={mec} onChange={(e) => setMec(e.target.value)} required/>
-                    <input type="text" placeholder="Link Vídeo" value={linkVideo} onChange={(e) => setLinkVideo(e.target.value)} required/>
+                    <input type="text" placeholder="Cadastro no MEC" value={mec} onChange={(e) => setMec(e.target.value)}/>
+                    <input type="text" placeholder="Link Vídeo" value={linkVideo} onChange={(e) => setLinkVideo(e.target.value)}/>
 
                     {category !== "Segundo Curso Superior" ?                    
-                    <select name="" id="" value={category} onChange={handleCategories} >
+                    <select name="" id="" value={category} onChange={handleCategories} required>
                         <option value="">Categoria</option>
                         <option value="Música">Música</option>
-                        <option value="Profissionalizantes">Profissionalizantes</option>
-                        <option value="Graduação">Graduação</option>
-                        <option value="Pós Graduação">Pós Graduação</option>
+                        <option value="Aperfeiçoamento profissional EAD">Aperfeiçoamento profissional EAD</option>
+                        <option value="Graduação EAD">Graduação EAD</option>
+                        <option value="Pós-graduação EAD">Pós-graduação EAD</option>
                         <option value="Segundo Curso Superior">Segundo Curso Superior</option>
                     </select>
                     :
@@ -159,9 +178,9 @@ function CoursesForm() {
                     <select name="" id="" value={category} onChange={handleCategories} >
                          <option value="Segundo Curso Superior">Segundo Curso Superior</option>
                          <option value="Música">Música</option>
-                        <option value="Profissionalizantes">Profissionalizantes</option>
-                        <option value="Graduação">Graduação</option>
-                        <option value="Pós Graduação">Pós Graduação</option>
+                        <option value="Aperfeiçoamento profissional EAD">Aperfeiçoamento profissional EAD</option>
+                        <option value="Graduação EAD">Graduação EAD</option>
+                        <option value="Pós-graduação EAD">Pós-graduação EAD</option>
                         <option value="Segundo Curso Superior">Segundo Curso Superior</option>
                     </select>
                     <select name="" id="" value={subCategory} onChange={handleSub} >
@@ -173,16 +192,16 @@ function CoursesForm() {
                     </div>
                     }
 
-                    <select name="" id="" value={subCategory} onChange={handleSub} >
+                    <select name="" id="" value={availability} onChange={handleAvailability} >
                         <option value="">Disponibilidade</option>
                         <option value="Disponível">Disponível</option>
                         <option value="Aguardar">Aguardar</option>
                     </select>
 
-                    <textarea name="" id="" cols="30" rows="20" placeholder="Matriz Curricular" value={curriculum} onChange={(e) => setCurriculum(e.target.value)} required></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Matriz Curricular" value={curriculum} onChange={(e) => setCurriculum(e.target.value)}></textarea>
 
                     <div className="double">
-                    <input type="text" placeholder="Duração" value={duration} onChange={(e) => setDuration(e.target.value)} required/>
+                    <input type="text" placeholder="Duração" value={duration} onChange={(e) => setDuration(e.target.value)}/>
                     <select name="" id="" value={typeDuration} onChange={handleDuration}>
                         <option value="Horas">Horas</option>
                         <option value="Dias">Dias</option>
@@ -193,7 +212,7 @@ function CoursesForm() {
                     </div>
 
                     <div className="double">
-                    <input type="text" placeholder="QTD de Horas" value={hours} onChange={(e) => setHours(e.target.value)} required/>             
+                    <input type="text" placeholder="QTD de Horas" value={hours} onChange={(e) => setHours(e.target.value)}/>             
                     <select name="" id="" value={format} onChange={handleFormat}>
                         <option value="">Formato</option>
                         <option value="Online">Online</option>
@@ -202,12 +221,12 @@ function CoursesForm() {
                     </div>
 
                     <div className="double">
-                    <input type="text" placeholder="Valor Parcela" value={value} onChange={(e) => setValue(e.target.value)} required/>
-                    <input type="text" placeholder="QTD de Vezes" value={portion} onChange={(e) => setPortion(e.target.value)} required/>
+                    <input type="text" placeholder="Valor Parcela" value={value} onChange={(e) => setValue(e.target.value)}/>
+                    <input type="text" placeholder="QTD de Vezes" value={portion} onChange={(e) => setPortion(e.target.value)}/>
                     </div>
 
                     <div className="double">
-                    <input type="text" placeholder="Encontros QTD" value={date} onChange={(e) => setDate(e.target.value)} required/>
+                    <input type="text" placeholder="Encontros QTD" value={date} onChange={(e) => setDate(e.target.value)}/>
                     <select name="" id="" value={qtdDate} onChange={handleDate}>
                         <option value="Dia">Dia</option>
                         <option value="Semana">Semana</option>

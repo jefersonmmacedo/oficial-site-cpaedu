@@ -65,7 +65,7 @@ function CoursesFormTecnic() {
                 image: photoUrlAvatar,
                 description: description,
                 link: link,
-                category: "Técnico"
+                category: "Cursos Técnicos EAD"
             })
             console.log("Document written with ID: ", docRef.id);
                 toast.info(`Cadastro realizado com sucesso!`);
@@ -89,7 +89,7 @@ function CoursesFormTecnic() {
                     <img src={avatarUrl === null ? profile : avatarUrl} alt="Avatar" height={160} width={400}/>
                 </label>
                 <input type="text" placeholder="Titulo"  value={title} onChange={(e) => setTitle(e.target.value)} required/>
-                <input type="text" placeholder="Descrição"  value={description} onChange={(e) => setDescription(e.target.value)} required/>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descrição" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
                 <input type="text" placeholder="link"  value={link} onChange={(e) => setLink(e.target.value)} required/>
                 <button type="submit">Cadastrar</button>
             </form>
