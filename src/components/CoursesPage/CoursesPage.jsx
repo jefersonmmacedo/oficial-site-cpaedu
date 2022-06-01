@@ -1,7 +1,7 @@
 import "./coursesPage.css";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import db from '../../services/firebaseConnection';
-import {IoSearchOutline} from 'react-icons/io5'
+import {IoSearchOutline, IoLogoWhatsapp} from 'react-icons/io5'
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
  
@@ -845,6 +845,23 @@ const searchLower = search.toLowerCase()
 </div>}
 
                 </div>
+            </div>
+
+            <div className="blockFinal">
+                 <div className="block1">
+                         <h1>Não encontro seu curso?</h1>
+                         <h3>Não se preocupe temos muitas opções para você</h3>
+
+                         <p>Nosso site foi reformulado para trazer uma experiência úcica para você, <br /> e os nossos cursos estão sendo registrados gradualmente.</p>
+                 </div>
+                 <div className="block2">
+                 <h2>Entre em contato e solicite o curso que deseja</h2>
+                 <form action="">
+                      <input type="text" placeholder="Nome" />
+                      <input type="text" placeholder="Curso" />
+                      <button><IoLogoWhatsapp />Entrar em contato</button>
+                 </form>
+                 </div>
             </div>
         </div>
     )

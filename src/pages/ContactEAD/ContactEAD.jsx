@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { ContactFormEAD } from "../../components/ContactFormEAD/ContactFormEAD"
+import { ContactFormEAD } from "../../components/ContactFormEAD/ContactFormEAD";
 import { Footer } from "../../components/Footer/Footer"
 import Navbar2 from "../../components/Nav/Navbar"
 import "./contactEAD.css"

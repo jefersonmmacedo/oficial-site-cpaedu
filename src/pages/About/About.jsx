@@ -59,7 +59,7 @@ console.log(informations[0]);
                         <img src={logoSimbol2} alt="" />
                         </div>
                         <div className="title">
-                            <h1>SOMOS A CPAEDUCAÇÃO </h1>
+                            <h1>SOMOS A CPA EDUCAÇÃO </h1>
                             <h3>Conheça nossa história</h3>
                         </div>
                         </div>

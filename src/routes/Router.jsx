@@ -17,6 +17,7 @@ import { CourseUnic } from '../pages/CourseUnic/CourseUnic';
 import { DepoimentsAll } from '../pages/DepoimentsAll/DepoimentsAll';
 import { EJA } from '../pages/EJA/EJA';
 import { Home } from '../pages/Home/Home';
+import { Partners } from '../pages/Partners/Partners';
 import { SignIn } from '../pages/SignIn/SignIn';
 
 
@@ -39,6 +40,7 @@ function PrivateRoute({children} ) {
             <Route path="/cursos/:curso" element={<Courses />}/>    
             <Route path="/depoimentos" element={<DepoimentsAll />}/>    
             <Route path="/eja" element={<EJA />}/>    
+            <Route path="/parceiros" element={<Partners />}/>    
             <Route path="/adm" element={<SignIn />}/>     
 
             {/* Administração  */}

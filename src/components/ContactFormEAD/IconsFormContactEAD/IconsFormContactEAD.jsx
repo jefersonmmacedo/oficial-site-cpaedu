@@ -1,9 +1,9 @@
-import './iconsFormContact.css';
+import './iconsFormContactEAD.css';
 import { IoLogoWhatsapp, IoLogoFacebook, IoLogoInstagram } from 'react-icons/io5'
 
-function IconsFormContact() {
+function IconsFormContactEAD() {
     return (
-        <div className="IconsFormContact">
+        <div className="IconsFormContactEAD">
             <div className="follow">
                 <div className="title">
                     <h1>Siga a CPA EDUCAÇÂO</h1>
@@ -36,6 +36,6 @@ function IconsFormContact() {
     )
 }
 
-export { IconsFormContact };
+export { IconsFormContactEAD };
 
 

@@ -141,6 +141,81 @@
 .coursesPage .listcoursesPage .itemscoursesPage .itemUnic .text .bloc2 hr{
  width: 100%;
 }
+.coursesPage .blockFinal{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    margin-top:20px;
+    background-color: rgb(21, 4, 56);
+}
+.coursesPage .blockFinal .block1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--White);
+}
+
+.coursesPage .blockFinal .block1 h1{
+    color: var(--Blue);
+}
+.coursesPage .blockFinal .block1 h3{
+    margin-top: 10px;
+}
+.coursesPage .blockFinal .block1 p{
+    margin-top: 30px;
+    text-align: center;
+}
+.coursesPage .blockFinal .block2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--White);
+    background-color: rgb(28, 6, 72);
+}
+.coursesPage .blockFinal .block2 form{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--White);
+
+}
+.coursesPage .blockFinal .block2 form input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px 10px;
+    color: var(--Primary);
+    background-color: var(--White);
+    border-radius: 6px;
+    border: none;
+    margin: 5px 0;
+}
+.coursesPage .blockFinal .block2 form button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px 10px;
+    color: var(--White);
+    background-color: var(--Blue);
+    border-radius: 6px;
+    border: none;
+    margin: 5px 0;
+}
 
 
 @media(max-width:750px){
