@@ -6,10 +6,10 @@
     width: 100%;
     padding: 10px;
     color: #512A79;
-    background-color: rgb(241, 241, 241);
+    background-color: var(--background);
     border-radius: 15px;
     margin: 15px 0;
-    border: 3px solid var(--Primary);
+    border: 3px solid var(--background);
 }
 
 .depoimentUnic .image {
@@ -28,13 +28,13 @@
 
 }
 
-.depoimentUnic h3 {
+.depoimentUnic h4 {
     text-align: center;
-    margin: 10px 10px 15px 10px;
+    margin: 10px 20px 15px 20px;
 
 }
 
-.depoimentUnic h4 {
+.depoimentUnic h5 {
     text-align: center;
     font-weight: 400;
 }
@@ -43,6 +43,7 @@
     text-align: center;
     margin-bottom: 5px;
     font-weight: 600;
+    font-size: 12px;
 }
 
 .select{

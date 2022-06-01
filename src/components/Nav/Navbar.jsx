@@ -6,12 +6,18 @@ import LogoImg from '../../assets/images/logo.png'
 const Nav = styled.nav`
   width: 100%;
   height: 65px;
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
   padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--Primary);
+  position: fixed;
+  top: 0;
+  z-index: 98;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  font-size: 14px;
+  color: var(--Primary)
 
 
   .logo {

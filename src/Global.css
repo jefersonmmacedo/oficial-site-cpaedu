@@ -4,16 +4,22 @@
   box-sizing: border-box;
 }
 :root{
-  --Primary: rgb(27, 0, 54);
-  --Black: #181818;
+  --Background: #f8f8f8;
+  --Background2: #111111;
+  --Primary: #512a79;
+  --Yellow: #fcc301;
+  --Magenta: #f05b68;
+  --Blue: #00afab;
+  --Black: #000000;
+  --White: #ffffff;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: var(--Primary);
+  background-color: var(--Background);
 }
 
 button {

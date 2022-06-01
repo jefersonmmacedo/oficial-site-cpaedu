@@ -3,6 +3,8 @@ import {IoLocationOutline, IoMailOutline, IoCallOutline, IoLogoWhatsapp, IoLogoI
 import { collection, getDocs } from "firebase/firestore";
 import db from '../../services/firebaseConnection';
 import { useEffect, useState } from "react";
+import studentContact from "../../assets/images/studentContact.jpg";
+import {IconsFormContact} from './IconsFormContact/IconsFormContact'
 
 
 function ContactForm() {
@@ -46,46 +48,26 @@ console.log(informations[0])
         <div className="contactForm">
          
             <div className="contactBlock">
+                <div className="image">
+                    <img src={studentContact} alt="" />
+                </div>
                 
             <div className="formulary">
             <div className="title">
-                <h1>Entrar em conato</h1>
-                <p>Tem uma pergunta ou apenas quer dizer oi? Adoraríamos ouvir de você.</p>
+                <h1>Evolua Sempre!<br />Invista na sua Vida Pessoal e Profissional</h1>
+                <br />
+                <p>A CPAEDU mudou o ensino profissionalizante do Brasil.<br /> E vai fazer o mesmo com a sua vida</p>
             </div>
                 <form action="">
-                    <div className="name">
                         <input type="text" name="" id="" placeholder="Nome"/>
                         <input type="email" name="" id="" placeholder="E-mail"/>
-                    </div>
-                        <input type="text" name="" id="" placeholder="Assunto"/>
+                        <input type="text" name="" id="" placeholder="Telefone"/>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        <button>Enviar</button>
                 </form>
             </div>
-            <div className="information">
-                <div className="item">
-                    <h3>Endereço</h3>
-                    <p><IoLocationOutline/>{informations.street}, Nº {informations.number} </p>
-                    <p>{informations.district} - {informations.city} - {informations.uf}. CEP: {informations.cep}</p>
-                    <p>({informations.reference})</p>
-                </div>
-                <div className="item">
-                    <h3>Telefones</h3>
-                    <p><IoCallOutline/> {informations.phone}</p>
-                    <p><IoLogoWhatsapp/> {informations.whatsapp} </p>
-                </div>
-                <div className="item">
-                    <h3>Email</h3>
-                    <p><IoMailOutline/> {informations.email}</p>
-                </div>
-                <div className="social">
-                <h3>Redes sociais</h3>
-                <div className="icons">
-                    <p><IoLogoFacebook/> </p>
-                    <p><IoLogoInstagram/></p>
-                </div>
-                </div>
             </div>
-            </div>
+            <IconsFormContact />
         </div>
     )
 }

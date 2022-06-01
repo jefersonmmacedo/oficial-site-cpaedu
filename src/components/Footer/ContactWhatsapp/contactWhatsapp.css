@@ -1,55 +1,41 @@
 .whatsapp {
     width: 400px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     color: #fff;
     padding: 20px;
 }
-
-.whatsapp h2 {
-margin-bottom: 10px;
+.whatsapp .image {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid var(--Background);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
-.whatsapp form {
-    width: 100%;
+.whatsapp .icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+.whatsapp .icons p {
+    background-color: var(--Primary);
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: row;
+    border-radius: 50%;
+    margin-right: 10px;
 }
-
-.whatsapp form input {
-    width: 70%;
-    border: none;
-    border-radius: 8px;
-    color: blue;
-    padding: 5px 10px;
-    margin: 3px 0;
-    
-}
-.whatsapp form select {
-    width: 70%;
-    border: none;
-    border-radius: 8px;
-    color: blue;
-    padding: 5px 10px;
-    margin: 3px 0;
-}
-
-.whatsapp form button {
-    width: 70%;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    background-color: blueviolet;
-    padding: 10px 20px;
-    margin: 20px 0;
-    cursor: pointer;
-}
-.whatsapp form button:hover {
-
-    background-color: #b36cfa;;
+.whatsapp .icons svg {
+    font-size: 20px;
+   color: var(--White);
 }

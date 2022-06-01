@@ -13,11 +13,12 @@ function EJA() {
     return (
         <div className="EJA">
                         <Navbar2 />
-            <h1>ENSINO MÉDIO A DISTÂNCIA - EJA INTEGRADO AO CURSO TÉCNICO EM ADMINISTRAÇÃO</h1>
+            <h1>ENSINO MÉDIO - EJA</h1>
+            <p>Integrado ao curso de qualificação profissional em assistente administrativo</p>
 
             <div className="Block1">
                 <div className="image">
-                <h3>MÉTODOS DE ESTUDO</h3>
+                <h2>MÉTODOS DE ESTUDO</h2>
                 <img src={método} alt="método" />
                 </div>
                 <div className="text">
@@ -32,13 +33,13 @@ function EJA() {
                     <p>Para a conclusão do curso o aluno realizará 34 avaliações, presenciais,  referente 1ª, 2ª e 3ª fases/anos + Curso Técnico em Administração, cada avaliação possui 10 questões objetivas. O aluno será considerado aprovado obtendo a média mínima de 50% de acertos em cada área de conhecimento.</p>
                 </div>
                 <div className="image">
-                <h3>AVALIAÇÕES</h3>
+                <h2>AVALIAÇÕES</h2>
                 <img src={avaliação} alt="Avaliação" />
                 </div>
             </div>
             <div className="Block1">
                 <div className="image">
-                <h3>DOCUMENTAÇÃO E VALIDAÇÃO DO CERTIFICADO</h3>
+                <h2>DOCUMENTAÇÃO E VALIDAÇÃO DO CERTIFICADO</h2>
                 <img src={documentação} alt="documentação" />
                 </div>
                 <div className="text">
@@ -51,7 +52,7 @@ function EJA() {
                     <p>Nosso método para oferta da EJA possui credenciamento e autorização para matricularmos o aluno direto no Ensino Médio, independentemente de ter concluído ou não o Ensino Fundamental, assim como ocorre no programa Encceja. De acordo com a Alínea "c" do Inciso II do Artigo 24 da Lei nº 9.394 de 20 de dezembro de 1996.</p>
                 </div>
                 <div className="image">
-                <h3>CLASSIFICAÇÃO EM SÉRIE/ETAPA DO ENSINO FUNDAMENTAL PARA ACESSO AO ENSINO MÉDIO</h3>
+                <h2>CLASSIFICAÇÃO EM SÉRIE/ETAPA DO ENSINO FUNDAMENTAL PARA ACESSO AO ENSINO MÉDIO</h2>
                 <img src={classificação} alt="classificação" />
                 </div>
             </div>

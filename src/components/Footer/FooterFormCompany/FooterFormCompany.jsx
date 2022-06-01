@@ -1,13 +1,19 @@
 import './footerFormCompany.css'
-import logoImg from '../../../assets/images/logo.png'
+import logoImg from '../../../assets/images/logo2.png'
 import {FiFacebook, FiInstagram} from 'react-icons/fi'
 
 function FooterFormCompany() {
     return (
         <div className="footerFormCompany">
+            <div className="image">
             <img src={logoImg} alt="" />
+            </div>
             <div className="infos">
-                <p>O CPA Educação (Centro de Educação Profissional Amaivos) é uma organização privada, que desde 2012 oferece na cidade de Saquarema - RJ, cursos de formação musical prática e teórica e cursos qualificação profissional em diversas áreas de atuação. </p>
+                   <p>O CPA Educação (Centro de Educação Profissional Amaivos).</p>
+                   <p>Avenida Saquarema, Nº 5070
+Bacaxá - Saquarema - RJ.</p>
+<p>CEP: 28994-597</p>
+<p>(Em frente ao Banco do Brasil).</p>
             </div>
         </div>
     )

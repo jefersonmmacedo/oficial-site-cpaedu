@@ -12,9 +12,9 @@ function SignIn() {
 
     useEffect(() => {
         function redirectToPage() {
-            if(userLocal !== "" || userLocal !== undefined) {
-                window.open("/adm/dashboard", "_self")
-            }
+            // if(userLocal !== "" || userLocal !== undefined) {
+            //     window.open("/adm/dashboard", "_self")
+            // }
         }
 
         redirectToPage()

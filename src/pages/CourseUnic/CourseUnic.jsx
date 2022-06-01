@@ -5,9 +5,13 @@ import db from '../../services/firebaseConnection';
 import "./courseUnic.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import student from '../../assets/images/student1.png';
+import { IoAlarmOutline, IoSchoolOutline, IoLibraryOutline } from 'react-icons/io5'
+
 
 function CourseUnic() {
-    const id = useParams()
+    const {curso} = useParams();
+    console.log(curso)
 
     const [courses, setCourses] = useState([]);
 
@@ -33,10 +37,11 @@ function CourseUnic() {
             valueCourse: doc.data().valueCourse,
             valuePromotional: doc.data().valuePromotional,
             format: doc.data().format,
-            hours: doc.data().hours
+            hours: doc.data().hours,
+            curriculum: doc.data().curriculum,
             }
             
-           // console.log(data)
+            console.log(data)
             list.push(data)
           });
           setCourses(list)
@@ -45,8 +50,11 @@ function CourseUnic() {
     loadCondadatos()
 }, [])
 
-const selectCourse = courses.filter((courseUnic) => courseUnic.id === id.id);
-console.log(selectCourse[0])
+console.log(courses)
+const selected = courses?.filter((course) => (course.title === curso));
+
+console.log(courses.title)
+console.log(selected)
 
 
 
@@ -54,66 +62,82 @@ console.log(selectCourse[0])
         <>
              <Navbar2 />
         <div className="courseUnic">
-            <div className="details">
                 <div className="title">
-                    <h1>{selectCourse[0].title}</h1>
+                    <div className="text">
+                    <h3>{selected[0].category}</h3>
+                    <h1>{selected[0].title}</h1>
+                    </div>
+                 <div className="image">
+                    <img src={student} alt={selected[0].title} />
                 </div>
-                <div className="category">
-                    <p>{selectCourse[0].category}</p>
                 </div>
-                <div className="image">
-                    <img src={selectCourse[0].image} alt={selectCourse[0].title} />
+                <div className="menu">
+                    <div className="text">
+                    <p>Sobre o curso</p>
+                    <p>Entenda o curso</p>
+                    <p>O profissional</p>
+                    <p>Áreas de atuação</p>
+                    <p>Grade Curricular</p>
+                    </div>
+                    <button>Quero me inscrever</button>
                 </div>
-                <div className="description">
-                    <p>{selectCourse[0].description}</p>
+                <div className="aboutCourse">
+                    <div className="text">
+                        <h1>Cobre o Curso</h1>
+                        <p>{selected[0].description}</p>
+                    </div>
+                    <div className="itens">
+                        <div className="item">
+                            <div className="icon">
+                                <IoAlarmOutline />
+                            </div>
+                            <div className="text">
+                                <p>Duração</p>
+                                <p> <b>{selected[0].duration} {selected[0].typeDuration}</b> </p>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="icon">
+                            <IoSchoolOutline />
+                            </div>
+                            <div className="text">
+                                <p>Certificação Conferida</p>
+                                <p><b>{selected[0].category}</b> </p>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <div className="icon">
+                            <IoLibraryOutline />
+                            </div>
+                            <div className="text">
+                                <p>Modalidade</p>
+                                <p><b>{selected[0].format}</b> </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="mec">
-                    <p><b>Cadastro MEC:</b> {selectCourse[0].mec === undefined ? "" : selectCourse[0].mec}</p>
-                </div>
-            </div>
-            <div className="caracteristcs">
-                {selectCourse[0].linkVideo === undefined || selectCourse[0].linkVideo === "" ? <></>
-                :
-                <div className="video">   
-                <iframe width="100%" src="https://www.youtube.com/embed/ovxp_MJIp_o" frameBorder="0" ></iframe>
-                </div>
-                }
-                <div className="price">
-                    {selectCourse[0].valueCourse === undefined || selectCourse[0].valueCourse === "" ?
-                    <><h2>Entre em contato</h2></>
-                    : <>
-                    <h5><b>De:</b> R$ 100,00</h5>
-                    <h2><b>Por:</b> R$ 89,00</h2>
-                    </>
-                    }
-                </div>
-                <div className="item">
-                    <h4><b>Categoria:</b></h4>
-                    <h4>{selectCourse[0].category}</h4>
-                </div>
-                <div className="item">
-                <h4><b>Total de horas</b></h4>
-                    <h4>{selectCourse[0].hours} Horas</h4>
-                </div>
-                <div className="item">
-                <h4><b>Duração</b></h4>
-                    <h4>{selectCourse[0].duration} {selectCourse[0].typeDuration}</h4>
-                </div>
-                <div className="item">
-                <h4><b>Encontros</b></h4>
-                    <h4>{selectCourse[0].date} por {selectCourse[0].qtdDate}</h4>
-                </div>
-                {selectCourse[0].portion === undefined || selectCourse[0].portion === "" ?
-                <></>
-            : 
-                <div className="item">
-                <h4><b>Parcelamento</b></h4>
-                    <h4>9x R$ 8,99</h4>
-                </div> 
-            }
+                <div className="subscript">
+                    <div className="image">
+                        <img src={selected[0].image} alt={selected[0].title} />
+                    </div>
+                    <div className="text">
+                        <h1>Seja um profissional em</h1>
+                        <h1><b>{selected[0].title}</b></h1>
 
-                <a href={`/prematricula/${selectCourse[0].title}`}>Comprar</a>
-            </div>
+                        <button>Inscreva-se agora!</button>
+                    </div>
+                </div>
+
+                <div className="grade">
+                    <div className="text">
+                        <h1>Grade Curricular</h1>
+                        <p>Conheça a grade curricular do curso</p>
+                    </div>
+                    <div className="list">
+                    <p>{selected[0].curriculum}</p>
+                    </div>
+                </div>
+
         </div>
             <Footer />
         </>
@@ -121,3 +145,5 @@ console.log(selectCourse[0])
 }
 
 export { CourseUnic }
+
+

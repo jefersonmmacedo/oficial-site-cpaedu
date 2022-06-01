@@ -51,13 +51,13 @@ var settings = {
         {newDepoiments.map((depoiment) => {
            return (
             <div className="depoimentUnic" key={depoiment.id}>
-            <div className="image">
+            {/* <div className="image">
                 <img src={depoiment.image} alt={depoiment.name} />
-            </div>
+            </div> */}
             <div className="text">
-            <h3>{depoiment.depoiment}</h3>                </div>
+            <h4>{depoiment.depoiment}</h4>                </div>
             <div className="name">
-                <h4>{depoiment.name}</h4>
+                <h5>{depoiment.name}</h5>
             </div>
             <div className="course">
             <p>{depoiment.course}</p>

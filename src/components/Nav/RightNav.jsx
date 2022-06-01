@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import {IoLogoWhatsapp} from 'react-icons/io5'
 
 const Ul = styled.ul`
   list-style: none;
@@ -12,15 +13,19 @@ const Ul = styled.ul`
   }
   li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--Primary);
+    font-weight: 500;
+  }
+  li a:hover{
+    color: var(--White);
   }
   button {
     display: flex;
-    padding: 10px 10px;
-    background-color: #fff;
+    padding: 5px 10px;
+    background-color: var(--Primary);
     border-radius: 6px;
     margin : 20px 0;
-    color: var(--Primary);
+    color: var(--White);
     border: none;
     align-items: center;
     justify-content: center;
@@ -28,12 +33,40 @@ const Ul = styled.ul`
     font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+
+  }
+
+  button:hover{
+    background-color: var(--Blue);
+  }
+  .btn {
+    display: flex;
+    padding: 5px 10px;
+    background-color: var(--Yellow);
+    border-radius: 6px;
+    margin : 20px 0;
+    color: var(--White);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+
+  }
+
+  btn:hover{
+    background-color: var(--Blue);
   }
 
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #0D2538;
+    background: rgba(81, 42, 121, 0.95);
+    backdrop-filter: blur(4px);
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -44,7 +77,32 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
 
     li {
-      color: #fff;
+      padding: 5px;
+      margin: -10px 10px;
+    }
+    li a {
+      color: var(--White);
+    }
+    li a:hover {
+      color: var(--Magenta);
+    }
+
+    button{
+      background-color: var(--Blue);
+      margin-left: 10px;
+    }
+
+    button:hover{
+      background-color: var(--Yellow);
+    }
+  }
+    .btn{
+      background-color:  var(--Yellow);
+      margin-left: 10px;
+    }
+
+    .btn:hover{
+      background-color: var(--Blue);
     }
   }
 `;
@@ -53,6 +111,11 @@ function HandleOpen(e) {
   e.preventDefault();
 
   window.open("https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre cursos")
+}
+function HandleOpenStudent(e) {
+  e.preventDefault();
+
+  window.open("/areadoaluno")
 }
 
 
@@ -70,8 +133,13 @@ const RightNav = ({ open }) => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/cursos' >
+            <Link to='/cursos/selecione' >
               Cursos
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/parceiros' >
+              Parceiros
             </Link>
           </li>
           <li className='nav-item'>
@@ -80,12 +148,15 @@ const RightNav = ({ open }) => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to="https://ead.cpaedu.com.br/loja_virtual/index.php" target="_blank" >
+            <a href="https://ead.cpaedu.com.br/loja_virtual/index.php" target="_blank" >
               Loja Virtual
-            </Link>
+            </a>
           </li>
           <button onClick={HandleOpen}>
-            Atendimento
+            <IoLogoWhatsapp /> Atendimento
+          </button>
+          <button className="btn" onClick={HandleOpenStudent}>
+            Àrea do aluno
           </button>
 
          

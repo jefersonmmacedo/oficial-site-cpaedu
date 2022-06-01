@@ -1,5 +1,6 @@
 import './contactWhatsapp.css'
 import {useState} from 'react'
+import {FiFacebook, FiInstagram} from 'react-icons/fi'
 
 function ContactWhatsapp() {
     const [name, setName] = useState("");
@@ -35,24 +36,11 @@ function ContactWhatsapp() {
 
     return (
         <div className="whatsapp">
-        <h2>Entre em conato</h2>
-        <form action="" onSubmit={handleMessage}>
-            <input type="text" placeholder="Nome" value={name} onChange={(e) => setName(e.target.value)} required/>
-            <input type="email" placeholder="Email" value={email} onChange={(e) =>  setEmail(e.target.value)} required/>
-            <input type="text" placeholder="Telefone" value={phone} onChange={(e) =>  setPhone(e.target.value)} required/>
-            <select value={courses} onChange={handleCourses} required>
-                <option value="">Qual curso deseja?</option>
-                <option value="Música">Música</option>
-                <option value="Cursos Profissionalizantes">Cursos Profissionalizantes</option>
-                <option value="Ensino Médio - EJA EAD">Ensino Médio - EJA EAD</option>
-                <option value="Cursos Técnicos EAD">Cursos Técnicos EAD</option>
-                <option value="Graduação EAD">Graduação EAD</option>
-                <option value="Pós-graduação EAD">Pós-graduação EAD</option>
-                <option value="2º Curso Superior EAD">2º Curso Superior EAD</option>
-                <option value="Outros">Outros</option>
-            </select>
-            <button>Enviar mensagem</button>
-        </form>
+       <div className="image"></div>
+        <div className="icons">
+                <p> <a href="https://www.facebook.com/cpaeducacao" target="_blank" rel="noreferrer"><FiFacebook /></a></p>
+                <p><a href="https://www.instagram.com/cpaeducacao/" target="_blank" rel="noreferrer"><FiInstagram /></a></p>
+            </div>
         </div>
     )
 }

@@ -1,121 +1,191 @@
 .courseUnic {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    padding: 50px;
 }
 
-.courseUnic .details {
+.courseUnic .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 50px 50px 0 50px;
+    background-color:var(--Blue)
+}
+.courseUnic .title .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+}
+.courseUnic .title .text h1 {
+    color: var(--Background2);
+    font-size:80px;
+}
+
+.courseUnic .title .image {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 20px;
+}
+.courseUnic .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color:#ccc
+}
+.courseUnic .menu .text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 70%;
+}
+.courseUnic .menu .text p {
+    color: var(--Background2);
+    margin-right: 30px;
+}
+.courseUnic .menu button {
+    background-color: var(--Magenta);
+    padding: 20px 40px;
+    border-radius: 6px;
+    color: var(--White);
+    border:none;
+    margin: 0 40px ;
+}
+.courseUnic .aboutCourse {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color:var(--Background)
+}
+.courseUnic .aboutCourse .text {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     width: 70%;
     padding: 20px;
-    background-color: rgb(21, 0, 41);
-    color: aliceblue;
-    border-radius: 6px;
-    margin-right: 20px
+}
+.courseUnic .aboutCourse .text h1 {
+    margin-bottom: 20px
 }
 
-.courseUnic .details .category {
-    padding: 5px 10px;
-    border-radius: 6px;
-    background-color: #F05B68;
+.courseUnic .aboutCourse .itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
 }
-.courseUnic .details .category p {
-    font-size: 14px;
-}
-.courseUnic .details .description {
-    margin: 10px 0;
-}
-.courseUnic .details .description p {
-    font-size: 14px;
-}
-.courseUnic .details .mec {
-    margin: 10px 0;
-}
-.courseUnic .details .mec p {
-    font-size: 14px;
-}
-.courseUnic .details .image {
+.courseUnic .aboutCourse .itens .item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin: 10px 0;
+    border: 1px solid #ccc;
+    margin-bottom:5px
 }
-.courseUnic .details .image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 6px;
+.courseUnic .aboutCourse .itens .icon {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    margin: 0 20px;
+
+}
+.courseUnic .aboutCourse .itens .icon {
+    font-size: 40px;
+    color: var(--Blue);
 }
 
-.courseUnic .caracteristcs {
+.courseUnic .subscript {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color:var(--Background)
+}
+.courseUnic .subscript .image {
+    width: 50%;
+    height: 400px;
+    object-fit: cover; 
+}
+.courseUnic .subscript .image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.courseUnic .subscript .text {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: 30%;
-    padding: 20px;
-    background-color: rgb(21, 0, 41);
-    color: aliceblue;
-    border-radius: 6px;
+    width: 50%;
+    background-color:var(--Magenta);
+    padding: 60px;
 }
-.courseUnic .caracteristcs .price {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 100%;
-    margin: 3px 0;
-    padding: 3px 6px;
-    background-color: rgb(15, 0, 29);
-    border-radius: 6px;
+.courseUnic .subscript .text h1 {
     font-weight: 400;
+    color: var(--White);
+    margin-bottom: 40px;
 }
-
-.courseUnic .caracteristcs .price h5 {
-    text-decoration: line-through;
-}
-
-.courseUnic .caracteristcs .item {
+.courseUnic .subscript .text button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: var(--Background2);
+    font-weight: 700;
+}   
+.courseUnic .grade {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     width: 100%;
-    margin: 3px 0;
-    padding: 3px 6px;
-    background-color: rgb(15, 0, 29);
-    border-radius: 6px;
-}
-.courseUnic .caracteristcs .item h4 {
-    font-weight: 400;
-}
-.courseUnic .caracteristcs .video {
-    width: 100%;
-    border-radius: 6px;
-}
-.courseUnic .caracteristcs .video iframe {
-    width: 100%;
-    border-radius: 6px;
-}
-.courseUnic .caracteristcs a {
-    text-decoration: none;
-    font-size:14px;
+    background-color: rgb(7, 6, 38);
+}   
+.courseUnic .grade .text {
     display: flex;
     align-items: center;
-    justify-content:center;
-    flex-direction:row;
-    background-color: rgb(52, 52, 255);
-    color: #fff;
-    font-weight: 700;
-    padding: 10px;
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 6px;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+}   
+.courseUnic .grade .text h1 {
+    color: var(--White);
+}   
+.courseUnic .grade .text p{
+    color: var(--White);
+}   
+
+.courseUnic .grade .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
+    padding: 20px;
+}
+.courseUnic .grade .list p {
+    white-space: pre-line;
+    color: var(--White);
+    overflow:auto;  
 }

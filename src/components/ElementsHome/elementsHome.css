@@ -1,0 +1,65 @@
+.ElementsHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 35px;
+}
+.ElementsHome h1 {
+    font-weight: 400;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.ElementsHome .bar {
+    width: 15%;
+    padding: 3px;
+    background-color: var(--Primary);
+    margin: 40px 0;
+}
+
+.ElementsHome .elements {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.ElementsHome .elements .itensElements {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;;
+    margin: 10px;
+    padding: 10px;
+}
+
+.ElementsHome .elements .itensElements svg {
+    color: var(--Magenta);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.ElementsHome .elements .itensElements h4 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ElementsHome button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color:var(--Yellow);
+    color: var(--White);
+    margin-bottom: 35px;
+}

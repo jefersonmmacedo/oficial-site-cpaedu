@@ -31,8 +31,11 @@ function SliderCarroussel() {
   var settings = {
     arrows: false,
     autoplay: true,
+    vertical: true,
+    rtl: true,
+    slickPrev: true,
     autoplaySpeed: 5000,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

@@ -1,0 +1,79 @@
+.AboutPrev {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0;
+    background-color: #161616;
+}
+.AboutPrev .text {
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: center;
+    width: 40%;
+    padding: 20px 40px;
+}
+.AboutPrev .text h2 {
+    text-align: left;
+    font-weight: 400;
+    color: var(--Blue);
+    margin: 10px 0;
+}
+
+.AboutPrev .text h3 {
+    text-align: left;
+    font-weight: 400;
+    color: var(--Background);
+    margin: 10px 0;
+}
+.AboutPrev .text button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 20px;
+    background-color: var(--Primary);
+    color: var(--Background);
+    border-radius: 20px;
+    font-weight: 700;
+    border: none;
+    margin: 10px 0;
+}
+.AboutPrev .text .line {
+    width: 10%;
+    padding: 3px;
+    background-color: rgb(128, 128, 128);
+    margin: 5px 0;
+}
+.AboutPrev .images {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+.AboutPrev .images .image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color:var(--Primary)
+}
+.AboutPrev .images .image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.AboutPrev .images .image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color:var(--Blue)
+}
+.AboutPrev .images .image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
