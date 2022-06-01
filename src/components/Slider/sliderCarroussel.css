@@ -6,8 +6,11 @@
     flex-direction: row;
     width: 100%;
     z-index: 50;
+    height: 550px;
+    background-color: aqua;
 }
 .slider-carrousel a img {
     width: 100%;
     z-index: 50;
+    height: 550px;
 }

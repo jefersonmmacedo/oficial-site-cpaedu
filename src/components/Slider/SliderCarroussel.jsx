@@ -1,32 +1,40 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import db from '../../services/firebaseConnection';
 import Slider from "react-slick";
-import slider1 from '../../assets/images/carroussel/slider1.png';
-import slider2 from '../../assets/images/carroussel/slider2.png';
-import slider3 from '../../assets/images/carroussel/slider3.png';
 import "./sliderCarroussel.css"
 
 
 
 
 function SliderCarroussel() {
+  const [carroussel, setCarroucel] = useState([]); 
 
-  const [carroussel, setCarroucel] = useState([
-    {
-      link: "https://google.com.br",
-      image:slider1,
-      alt: "Imagem do slider carroussel"
-    },
-    {
-      link: "https://google.com.br",
-      image:slider2,
-      alt: "Imagem do slider carroussel"
-    },
-    {
-      link: "https://google.com.br",
-      image:slider3,
-      alt: "Imagem do slider carroussel"
+  useEffect(() => {
+    async function loadCondadatos() {
+        const querySnapshot = await getDocs(collection(db, "sliders"));  
+        const list = []
+        querySnapshot.forEach((doc) => {
+           // console.log(`${doc.id} => ${doc.data()}`);
+          const data = {
+            id: doc.id,
+            title: doc.data().title,
+            availability: doc.data().title,
+            image: doc.data().image,
+            link: doc.data().link,
+            position: doc.data().position,
+            }
+            
+          console.log(data)
+            list.push(data)
+          });
+          setCarroucel(list)
     }
-  ]); 
+
+    loadCondadatos()
+}, [])
+
+console.log(carroussel)
 
   var settings = {
     arrows: false,
@@ -48,7 +56,7 @@ function SliderCarroussel() {
         return (
       <div className="slider-carrousel">
       <a href={list.link}>
-        <img src={list.image} alt={list.âlt} />
+        <img src={list.image} alt={list.title} />
       </a>
       </div>
         )
