@@ -37,7 +37,7 @@ const newDepoiments = depoiments.slice(0,5)
 var settings = {
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     dots: false,
     infinite: true,
     speed: 500,

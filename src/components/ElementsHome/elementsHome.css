@@ -51,7 +51,8 @@
     margin-bottom: 10px;
 }
 
-.ElementsHome button {
+.ElementsHome a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;

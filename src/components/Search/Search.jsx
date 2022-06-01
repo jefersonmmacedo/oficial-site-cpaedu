@@ -1,7 +1,6 @@
 import './search.css';
 import {IoSearchOutline} from 'react-icons/io5'
 import { useState } from 'react';
-import { toast } from "react-toastify";
 
 function Search() {
     const [course, setCourse] = useState("")
@@ -9,10 +8,11 @@ function Search() {
 
     function handleSearchCourses(e) {
         e.preventDefault();
-        if(course === "") {
+        if(course !== "") {
+            window.open(`cursos/${course}`, "_self")
+        } else {
             setAlert(true)
         }
-        window.open(`cursos/${course}`)
     }
     return (
         <div className="Search">

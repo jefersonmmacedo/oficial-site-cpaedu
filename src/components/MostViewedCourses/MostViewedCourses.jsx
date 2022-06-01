@@ -38,7 +38,7 @@ console.log(limit)
         <div className="MostViewedCourses">
             <div className="top">
             <h3>CURSOS <b>MAIS VISTOS</b></h3>
-            <button> <b>VER TODOS</b> </button>
+            <a href="/cursos/selecione" ><b>VER TODOS</b></a>
             </div>
 
             <div className="courses">

@@ -63,7 +63,7 @@ const Ul = styled.ul`
   }
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     flex-flow: column nowrap;
     background: rgba(81, 42, 121, 0.95);
     backdrop-filter: blur(4px);
@@ -78,7 +78,7 @@ const Ul = styled.ul`
 
     li {
       padding: 5px;
-      margin: -10px 10px;
+      margin: -20px 10px;
     }
     li a {
       color: var(--White);
@@ -90,6 +90,7 @@ const Ul = styled.ul`
     button{
       background-color: var(--Blue);
       margin-left: 10px;
+      margin-right: 10px;
     }
 
     button:hover{
@@ -99,6 +100,7 @@ const Ul = styled.ul`
     .btn{
       background-color:  var(--Yellow);
       margin-left: 10px;
+      margin-right: 10px;
     }
 
     .btn:hover{
@@ -138,6 +140,11 @@ const RightNav = ({ open }) => {
             </Link>
           </li>
           <li className='nav-item'>
+            <Link to='/depoimentos' >
+              Depoimentos
+            </Link>
+          </li>
+          <li className='nav-item'>
             <Link to='/parceiros' >
               Parceiros
             </Link>
@@ -148,7 +155,7 @@ const RightNav = ({ open }) => {
             </Link>
           </li>
           <li className='nav-item'>
-            <a href="https://ead.cpaedu.com.br/loja_virtual/index.php" target="_blank" >
+            <a href="https://ead.cpaedu.com.br/loja_virtual/index.php" target="_blank"  rel="noreferrer">
               Loja Virtual
             </a>
           </li>

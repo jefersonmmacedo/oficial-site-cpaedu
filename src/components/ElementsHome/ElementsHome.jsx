@@ -28,7 +28,7 @@ function ElementsHome() {
                     <h4>A nossa proposta pedagógica inclui foco na área de seu interesse, por meio de estudos indicados em videoaulas, material didático em PDF e impresso. </h4>
                 </div>
             </div>
-            <button>INSCREVA-SE AGORA</button>
+            <a href="/contato" >INSCREVA-SE AGORA</a>
         </div>
     )
 }

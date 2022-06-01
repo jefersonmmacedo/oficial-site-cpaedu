@@ -1,5 +1,5 @@
 import "./coursesPage.css";
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import db from '../../services/firebaseConnection';
 import {IoSearchOutline, IoLogoWhatsapp} from 'react-icons/io5'
 import { useEffect, useState } from "react";
@@ -10,7 +10,15 @@ function CoursesPage() {
     const [courses, setCourses] = useState([]);
     const [categories, setCategories] = useState([]);
     const [type, setType] = useState("");
-    const [search, setSearch] = useState(curso === undefined || curso === "" ||  curso === "selecione"? "" : curso);;
+    const [name, setName] = useState("");
+    const [option, setOption] = useState("");
+    const [search, setSearch] = useState(curso === undefined || curso === "" ||  curso === "selecione"? "" : curso);
+
+    function HandleOpen(e) {
+     e.preventDefault();
+   
+     window.open(`https://wa.me/5522999942800?text=Olá. Me chamo ${name} e gostaria de saber se vocês possuem o curso de ${option} para ofertar.`)
+   }
 
     useEffect(() => {
     async function loadCondadatos() {
@@ -852,14 +860,14 @@ const searchLower = search.toLowerCase()
                          <h1>Não encontro seu curso?</h1>
                          <h3>Não se preocupe temos muitas opções para você</h3>
 
-                         <p>Nosso site foi reformulado para trazer uma experiência úcica para você, <br /> e os nossos cursos estão sendo registrados gradualmente.</p>
+                         <p>Nosso site foi reformulado para trazer uma experiência única para você, <br /> e os nossos cursos estão sendo registrados gradualmente.</p>
                  </div>
                  <div className="block2">
                  <h2>Entre em contato e solicite o curso que deseja</h2>
                  <form action="">
-                      <input type="text" placeholder="Nome" />
-                      <input type="text" placeholder="Curso" />
-                      <button><IoLogoWhatsapp />Entrar em contato</button>
+                      <input type="text" placeholder="Nome" value={name} onChange={(e) => {setName(e.target.value)}}/>
+                      <input type="text" placeholder="Curso" value={option} onChange={(e) => {setOption(e.target.value)}}/>
+                      <button onClick={HandleOpen}><IoLogoWhatsapp />Entrar em contato</button>
                  </form>
                  </div>
             </div>

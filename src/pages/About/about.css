@@ -26,6 +26,7 @@
     flex-direction:column;
     width: 430px;
     background-color:var(--Primary);
+    filter: opacity(0.95);
     padding: 50px;
     margin-left: 100px;
     margin-top: 100px;

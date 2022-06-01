@@ -18,43 +18,43 @@ function StudentArea() {
             <div className="image">
                 <img src={UniBTA} alt="Logo parceiro" />
             </div>
-            <button>Acessar</button>
+            <a href="https://ava.webacademico.com.br/login/index.php"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
             <div className="item">
             <div className="image">
                 <img src={unifacvet} alt="Logo parceiro" />
             </div>
-            <button>Acessar</button>
+            <a href="https://unifacvestead.portalava.com.br/login"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
             <div className="item">
             <div className="image">
                 <img src={UniFVC} alt="Logo parceiro" />
             </div>
-            <button>Acessar</button>
+            <a href="https://sistema.unifcv.edu.br/academico/aluno-v2/login"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
             <div className="item">
             <div className="image">
                 <img src={saoLuiz} alt="Logo parceiro" />
             </div>
-            <button>Acessar</button>
+            <a href="https://ava.saoluisead.com.br/login"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
             <div className="item">
             <div className="image">
                 <img src={uniBF} alt="Logo parceiro" />
             </div>
-            <button>Acessar</button>
+            <a href="https://ava.unibf.com.br/projetos/nucleo/uteis/login.php?&tid=0&lid=0&pid=24&arq_ret=R5QT1WSRQBMCVQVPFFQSF99MCT5RT44Q9WRW0RBM0FMM5QQ4"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
             <div className="item">
             <div className="image">
                 <img src={CPET} alt="Logo parceiro" />
             </div>
-            <button>Acessar</button>
+            <a href="https://www.certificacaotecnica.com.br/login/index.php"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
             <div className="item">
             <div className="image">
                 <img src={educanexus} alt="Logo parceiro" />
             </div>
-            <button>Acessar</button>
+            <a href="https://grupoeducamais.sistemasiga.net/login"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
            
         </div>
