@@ -53,9 +53,6 @@ console.log(informations[0]);
                     <IoArrowDownCircleOutline />
                 </div>
             </div>
-                <div className="image">
-                    <img src={saquarema} alt="" />
-                </div>
                 <div className="text">
                     <div className="topText">
                         <div className="logo">
