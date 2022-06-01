@@ -19,6 +19,7 @@ import { EJA } from '../pages/EJA/EJA';
 import { Home } from '../pages/Home/Home';
 import { Partners } from '../pages/Partners/Partners';
 import { SignIn } from '../pages/SignIn/SignIn';
+import { StudentArea } from '../pages/StudentArea/StudentArea';
 
 
 
@@ -41,6 +42,7 @@ function PrivateRoute({children} ) {
             <Route path="/depoimentos" element={<DepoimentsAll />}/>    
             <Route path="/eja" element={<EJA />}/>    
             <Route path="/parceiros" element={<Partners />}/>    
+            <Route path="/areadoaluno" element={<StudentArea />}/>    
             <Route path="/adm" element={<SignIn />}/>     
 
             {/* Administração  */}

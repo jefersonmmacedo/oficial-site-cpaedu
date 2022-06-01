@@ -156,7 +156,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 20px;
     color: var(--White);
 }
 
@@ -176,7 +176,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 20px;
     color: var(--White);
     background-color: rgb(28, 6, 72);
 }

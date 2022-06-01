@@ -115,7 +115,7 @@ function HandleOpen(e) {
 function HandleOpenStudent(e) {
   e.preventDefault();
 
-  window.open("/areadoaluno")
+  window.open("/areadoaluno", "_self")
 }
 
 
