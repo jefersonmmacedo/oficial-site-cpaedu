@@ -13,7 +13,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 98;
+  z-index: 97;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   font-size: 14px;

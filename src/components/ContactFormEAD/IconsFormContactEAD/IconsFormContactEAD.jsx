@@ -9,9 +9,15 @@ function IconsFormContactEAD() {
                     <h1>Siga a CPA EDUCAÇÂO</h1>
                 </div>
                 <div className="icons">
+                <a href="https://www.facebook.com/cpaeducacao" rel="noreferrer" target="_blank">
                     <p><IoLogoFacebook /></p>
+                    </a>
+                    <a href="https://www.instagram.com/cpaeducacao/" rel="noreferrer" target="_blank">
                     <p><IoLogoInstagram /></p>
+                    </a>
+                    <a href="https://wa.me/5522999942800?text=Olá. Gostaria de saber mais detalhes sobre os cursos" rel="noreferrer" target="_blank">
                     <p><IoLogoWhatsapp /></p>
+                    </a>
                 </div>
             </div>
             <div className="map">

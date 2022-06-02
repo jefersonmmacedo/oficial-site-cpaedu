@@ -31,3 +31,57 @@ textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.react-modal-overlay {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.react-modal-overlay:focus{
+  outline: none;
+  }
+
+.react-modal-content {
+  width: 100%;
+  max-width: 576px;
+  height: 400px;
+  background-color: rgb(5, 8, 49);
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  border: none;
+  z-index: 99;
+  color: var(--White);
+}
+
+.react-modal-content:focus{
+  outline: none;
+  }
+.react-modal-content button{
+  border: none;
+  background-color: rgb(5, 8, 49);
+  color: var(--White);
+  }
+
+.react-modal-button {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:var(--White);
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 15px;
+  border: none;
+}

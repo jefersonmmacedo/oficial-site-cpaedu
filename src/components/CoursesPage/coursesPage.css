@@ -129,8 +129,13 @@
 .coursesPage .listcoursesPage .itemscoursesPage .itemUnic .text .bloc2 h6{
  color: var(--Primary);
 }
+.coursesPage .listcoursesPage .itemscoursesPage .itemUnic .text .bloc1 a {
+text-decoration: none;
+color: var(--Background2);
+}
 .coursesPage .listcoursesPage .itemscoursesPage .itemUnic .text .bloc1 p{
  font-size: 13px;
+ text-decoration: none;
 }
 .coursesPage .listcoursesPage .itemscoursesPage .itemUnic .text .bloc2 p{
  font-size: 13px;
