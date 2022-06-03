@@ -49,3 +49,9 @@ margin-bottom: 10px;
 .Search form input::placeholder {
     color: rgb(165, 165, 165);
 }
+
+@media(max-width:550px){
+    .Search form {
+        width: 90%;
+    }
+}

@@ -3,6 +3,7 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import db from '../../services/firebaseConnection';
 import {IoSchool, IoBook} from "react-icons/io5"
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom"
 
 function MostViewedCourses() {
     const [courses, setCourses] = useState([]);
@@ -45,11 +46,13 @@ console.log(limit)
                 {limit.map((course) => {
                     return (
                         <div className="CourseUnicDestaque" key={course.id}>
+                            <Link to={`/curso-individual/${course.title}`}>
                         <div className="image">
                             <img src={course.image} alt={course.image} />
                         </div>
+                        </Link>
                         <div className="title">
-                        <h5>{course.title} - {course.category}</h5>
+                        <h5><Link to={`/curso-individual/${course.title}`}>{course.title}</Link> - <Link to={`/curso-individual/${course.title}`}>{course.category}</Link></h5>
                         </div>
             
                         <div className="info">

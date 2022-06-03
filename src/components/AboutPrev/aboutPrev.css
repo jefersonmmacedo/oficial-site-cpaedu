@@ -77,3 +77,26 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+@media(max-width:850px){
+    .AboutPrev {
+        flex-direction:column;
+    }
+
+    .AboutPrev .text {
+        width: 100%;
+        height: 400px;
+    }
+
+    .AboutPrev .images {
+        width: 100%;
+    }
+
+    @media(max-width:550px){
+        .AboutPrev .images {
+            width: 100%;
+            flex-direction:column;
+        }
+    }
+}

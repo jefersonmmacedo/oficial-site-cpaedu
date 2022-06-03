@@ -63,7 +63,7 @@ console.log(informations[0])
                         <input type="email" name="" id="" placeholder="E-mail"/>
                         <input type="text" name="" id="" placeholder="Telefone"/>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                        <button>Enviar</button>
+                        <a>Enviar</a>
                 </form>
             </div>
             </div>

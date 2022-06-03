@@ -111,7 +111,11 @@
     background-color: var(--Background);
     color: va(--Background2);
 }
-.contactForm .contactBlock .formulary form button{
+.contactForm .contactBlock .formulary form a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
@@ -120,6 +124,7 @@
     background-color: var(--Blue);
     font-weight: 700;
     color: var(--White);
+    text-decoration: none;
 }
 
 .contactForm .contactBlock .formulary form textarea::placeholder {
@@ -190,8 +195,6 @@
     }
      
 
-
-
     @media(max-width:650px) {
 
         .contactForm .contactBlock .image {
@@ -206,5 +209,15 @@
             width: 100%;
             margin: 80px 0;
         }
+
+        .contactForm .contactBlock .formulary form .name{
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .contactForm .contactBlock .formulary form .name input{
+            width: 98%;
+        }
     }
+    
     

@@ -73,7 +73,7 @@ console.log(informations[0])
                         <input type="text" name="" id="" placeholder="cidade"/>
                     </div>
                     <input type="text" name="" id="" placeholder={curso}/>
-                        <button>Enviar</button>
+                        <a>Enviar</a>
                 </form>
             </div>
             </div>
