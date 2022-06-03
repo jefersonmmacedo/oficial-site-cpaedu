@@ -92,3 +92,37 @@
     font-weight: 400;
     text-align: center;
 }
+
+
+@media(max-width:650px) {
+
+    .IconsFormContact .follow .icons p{
+        background-color: #633294;
+        width:60px;
+        height:60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        border-radius: 50%;
+        margin: 10px;
+    }
+    
+    .IconsFormContact .follow .icons p svg{
+        font-size: 30px;
+        color: var(--Blue);
+    }
+
+    .IconsFormContact .map .map2{
+        width:99%;
+    }
+
+    .IconsFormContact .map .text{
+        width:80%;
+        padding: 20px;
+    }
+
+    .IconsFormContact .map .text h4{
+        font-size: 14px;
+    }
+}
