@@ -70,6 +70,8 @@ function CategoriesForm() {
                 setImageAvatar('')
                 setTitle('')
                 setDescription('')
+
+                window.open("/adm/category", "_self")
           } catch (e) {
             console.error("Error adding document: ", e);
           }

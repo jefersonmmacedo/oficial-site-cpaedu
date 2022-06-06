@@ -31,7 +31,8 @@ function CoursesForm() {
     const [duration, setDuration] = useState('');
     const [typeDuration, setTypeDuratin] = useState('');
     const [availability, setAvailability] = useState('');
-
+    const [professional, setProfessional] = useState('');
+    const [occupationArea, setOccupationArea] = useState('');
 
 
     async function handleFile(e) {
@@ -102,6 +103,7 @@ function CoursesForm() {
                 subCategory: subCategory,
                 valueCourse: valueCourse,
                 valuePromotional: valuePromotional,
+                link: link,
                 linkVideo: linkVideo,
                 curriculum: curriculum,
                 mec: mec,
@@ -113,7 +115,9 @@ function CoursesForm() {
                 date: date,
                 duration: duration,
                 typeDuration: typeDuration,
-                availability: availability
+                availability: availability,
+                professional: professional,
+                occupationArea: occupationArea,
             })
             console.log("Document written with ID: ", docRef.id);
                 toast.info(`Cadastro realizado com sucesso!`);
@@ -136,7 +140,11 @@ function CoursesForm() {
                 setAvailability('');
                 setValueCourse('')
                 setValuepromotional('');
-                setCurriculum('')
+                setCurriculum('');
+                setProfessional('');
+                setOccupationArea('');
+
+                window.open("/adm/course", "_self")
                 
           } catch (e) {
             console.error("Error adding document: ", e);
@@ -198,7 +206,9 @@ function CoursesForm() {
                         <option value="Aguardar">Aguardar</option>
                     </select>
 
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Matriz Curricular" value={curriculum} onChange={(e) => setCurriculum(e.target.value)}></textarea>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Matriz Curricular" value={curriculum} onChange={(e) => setCurriculum(e.target.value)}></textarea>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="O Profissional" value={curriculum} onChange={(e) => setCurriculum(e.target.value)}></textarea>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Área de atuação" value={curriculum} onChange={(e) => setCurriculum(e.target.value)}></textarea>
 
                     <div className="double">
                     <input type="text" placeholder="Duração" value={duration} onChange={(e) => setDuration(e.target.value)}/>

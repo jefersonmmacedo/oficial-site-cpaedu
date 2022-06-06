@@ -70,6 +70,8 @@ function DepoimentsForm() {
                 setName('')
                 setCourse('')
                 setDepoiment('')
+
+                window.open("/adm/depoiment", "_self")
           } catch (e) {
             console.error("Error adding document: ", e);
           }

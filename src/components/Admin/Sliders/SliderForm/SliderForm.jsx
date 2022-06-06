@@ -82,6 +82,9 @@ function SliderForm() {
                 setLink('')
                 setPosition('')
                 setAvailability('')
+
+                window.open("/adm/slider", "_self")
+
           } catch (e) {
             console.error("Error adding document: ", e);
           }

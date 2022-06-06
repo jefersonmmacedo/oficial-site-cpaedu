@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
+    color: var(--Primary);
     width: 100%;
 }
 
@@ -16,8 +16,8 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    color: var(--Primary);
-    background-color: #fff;
+    color: var(--White);
+    background-color: var(--Primary);
     width: 80%;
     border-radius: 6px;
     padding: 10px;
@@ -29,7 +29,7 @@
     align-items: center;
     flex-direction: row;
     justify-content:space-between;
-    width: 50%;
+    width: 80%;
 }
 .ListDepoiments .DepoimentUnic .button {
     display:flex;
@@ -42,8 +42,8 @@
     align-items: center;
     flex-direction: row;
     justify-content:center;
-    color: #fff;
-    background-color: var(--Primary);
+    color: var(--Primary);
+    background-color: var(--White);
     border-radius: 6px;
     padding: 10px;
     margin: 5px;
@@ -55,8 +55,8 @@
     align-items: center;
     flex-direction: row;
     justify-content:center;
-    color: var(--Primary);
-    background-color: #fff;
+    color: var(--White);
+    background-color: var(--Primary);
     border-radius: 6px;
     padding: 10px;
     margin: 5px;

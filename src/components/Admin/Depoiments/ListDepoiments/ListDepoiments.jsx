@@ -1,49 +1,40 @@
-import { collection, getDocs } from "firebase/firestore";
-import db from '../../../../services/firebaseConnection';
-import { useEffect, useState } from "react";
 import './listDepoiments.css';
 import Navbar2 from "../../Nav/Navbar";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import db from '../../../../services/firebaseConnection';
+import { useState, useEffect } from 'react';
+import {IoTrashOutline, IoRefreshOutline, IoCreateOutline} from 'react-icons/io5';
 
 function ListDepoiments() {
 
-//     const [depoiments, setDepoiments] = useState([]);
+    const [depoiments, setDepoiments] = useState([]); 
 
-//     useEffect(() => {
-//     async function loadCondadatos() {
-//         const querySnapshot = await getDocs(collection(db, "depoiments"));  
-//         const list = []
-//         querySnapshot.forEach((doc) => {
-//             console.log(`${doc.id} => ${doc.data()}`);
-//           const data = {
-//             id: doc.id,
-//             name: doc.data().name,
-//             image: doc.data().image,
-//             course: doc.data().course,
-//             depoiment: doc.data().depoiment,
-//             }
-//             setDepoiments(data)
-//             console.log(data)
-//             list.push(data)
-//           });
-
-//     }
-
-//     loadCondadatos()
-// }, [])
-
-// console.log(depoiments);
-// console.log(depoiments[0]);
+    useEffect(() => {
+      async function loadCondadatos() {
+          const querySnapshot = await getDocs(collection(db, "depoiments"));  
+          const list = []
+          querySnapshot.forEach((doc) => {
+             // console.log(`${doc.id} => ${doc.data()}`);
+            const data = {
+              id: doc.id,
+              name: doc.data().name,
+              image: doc.data().image,
+              course: doc.data().course,
+              depoiment: doc.data().depoiment,
+              }
+              
+            console.log(data)
+              list.push(data)
+            });
+            setDepoiments(list)
+      }
+  
+      loadCondadatos()
+  }, [])
 
 
 
-const depoiments = [
-    {"nome" : "Tatiana Sodré",
-    "curso": "Ensino Médio EJA"},
-    {"nome" : "Bruno Souza",
-    "curso": "Graduação"},
-    {"nome" : "Carla Brito",
-    "curso": "2 Graduação"},
-]
+
     return (
         <div className="ListDepoiments">
                      <Navbar2 />
@@ -56,13 +47,13 @@ const depoiments = [
                return (
                    <div className="DepoimentUnic" key={depoiment.id}>
                        <div className="text">
-                            <h5>{depoiment.nome}</h5>
+                            <h5>{depoiment.name}</h5>
                             <h5>-</h5>
-                            <h5>{depoiment.curso}</h5>
+                            <h5>{depoiment.course}</h5>
                        </div>
                        <div className="button">
-                           <button>Editar</button>
-                           <button>Deletar</button>
+                       <button><IoCreateOutline/></button>
+              <button><IoTrashOutline/></button>
                        </div>
                    </div>
                )
@@ -71,5 +62,6 @@ const depoiments = [
         </div>
     )
 }
+
 
 export {ListDepoiments}

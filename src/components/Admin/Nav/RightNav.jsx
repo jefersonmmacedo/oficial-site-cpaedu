@@ -49,11 +49,17 @@ const Ul = styled.ul`
   }
 `;
 
+function handleOficialSite(e) {
+  e.preventDefault();
+
+  window.open("https://www.cpaedu.com.br/")
+}
+
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
        <li className='nav-item'>
-            <Link to='/'>
+            <Link to='/adm/dashboard'>
               Dashboard
             </Link>
           </li>
@@ -83,11 +89,11 @@ const RightNav = ({ open }) => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/contato' >
+            <Link to='/adm/dashboard' >
               LandingPage
             </Link>
           </li>
-          <button>
+          <button onClick={handleOficialSite}>
             Site Oficial
           </button>
 

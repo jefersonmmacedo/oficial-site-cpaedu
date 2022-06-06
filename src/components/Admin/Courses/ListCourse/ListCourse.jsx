@@ -1,27 +1,56 @@
 import Navbar2 from '../../Nav/Navbar';
+import { collection, getDocs, query, where } from "firebase/firestore";
+import db from '../../../../services/firebaseConnection';
+import { useState, useEffect } from 'react';
+import {IoTrashOutline, IoRefreshOutline, IoCreateOutline} from 'react-icons/io5';
 import './listCourse.css';
+
 
 function ListCourse() {
 
-    const Courses = [
-        {"nome" : "Violão",
-        "valor": "R$ 99,99",
-        "promocao": "R$ 69,99",
-        "Availability":"Disponível"
-        },
 
-        {"nome" : "Bateria",
-        "valor": "R$ 99,99",
-        "promocao": "R$ 79,99",
-        "Availability":"Aguardar"
-    },
+    const [courses, setCourses] = useState([]); 
 
-        {"nome" : "C. Baixo",
-        "valor": "R$ 109,99",
-        "promocao": "R$ 89,99",
-        "Availability":"Disponível"
-    },
-    ]
+    useEffect(() => {
+      async function loadCondadatos() {
+          const querySnapshot = await getDocs(collection(db, "courses"));  
+          const list = []
+          querySnapshot.forEach((doc) => {
+             // console.log(`${doc.id} => ${doc.data()}`);
+            const data = {
+              id: doc.id, 
+              title:doc.data().title,
+                image:doc.data().photoUrlAvatar,
+                description:doc.data().description,
+                category:doc.data().category,
+                subCategory:doc.data().subCategory,
+                valueCourse:doc.data().valueCourse,
+                valuePromotional:doc.data().valuePromotional,
+                link:doc.data().link,
+                linkVideo:doc.data().linkVideo,
+                curriculum:doc.data().curriculum,
+                mec:doc.data().mec,
+                hours:doc.data().hours,
+                format:doc.data().format,
+                portion:doc.data().portion,
+                value:doc.data().value,
+                qtdDate:doc.data().qtdDate,
+                date:doc.data().date,
+                duration:doc.data().duration,
+                typeDuration:doc.data().typeDuration,
+                availability:doc.data().availability,
+                professional:doc.data().professional,
+                occupationArea:doc.data().occupationArea,
+              }
+              
+            console.log(data)
+              list.push(data)
+            });
+            setCourses(list)
+      }
+  
+      loadCondadatos()
+  }, [])
     
     return (
         <div className="ListCourses">
@@ -31,25 +60,26 @@ function ListCourse() {
 <a href="/adm/coursenew">Novo curso</a>
 </div>
 
-{Courses.map((depoiment) => {
+{courses.map((course) => {
   return (
-      <div className="CoursesUnic" key={depoiment.id}>
+      <div className="CoursesUnic" key={course.id}>
           <div className="text">
-               <h5>{depoiment.nome}</h5>
+               <h5>{course.title}</h5>
                <h5>-</h5>
-               <h5>Valor: {depoiment.valor}</h5>
+               <h5>Valor: {course.valueCourse}</h5>
                <h5>-</h5>
-               <h5>Promocional: {depoiment.promocao}</h5>
+               <h5>Promocional: {course.valuePromotional}</h5>
                <h5>-</h5>
                <select>
-                   <option value={depoiment.Availability}>{depoiment.Availability}</option>
-                   <option value={depoiment.Availability === "Disponível"? "Aguardar": "Disponível"}>{depoiment.Availability === "Disponível"? "Aguardar": "Disponível"}</option>
+                   <option value={course.Availability}>{course.Availability === "" || course.Availability === undefined || course.Availability === null ? "Selecione" : course.Availability}</option>
+                   <option value={course.Availability === "Disponível"? "Aguardar": "Disponível"}>{course.Availability === "Disponível"? "Aguardar": "Disponível"}</option>
                </select>
           </div>
           <div className="button">
-              <button>Atualizar</button>
-              <button>Editar</button>
-              <button>Deletar</button>
+          
+              <button><IoRefreshOutline/></button>
+              <button><IoCreateOutline/></button>
+              <button><IoTrashOutline/></button>
           </div>
       </div>
   )
@@ -60,3 +90,4 @@ function ListCourse() {
 }
 
 export {ListCourse}
+

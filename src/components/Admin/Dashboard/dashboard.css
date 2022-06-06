@@ -7,7 +7,7 @@
 }
 
 .dashboard h1 {
-    color: #FFF;
+    color: var(--Primary);
     margin: 40px 0;
 }
 
@@ -23,8 +23,9 @@
     display:flex;
     align-items:center;
     flex-direction:column;
-    justify-content: center;
+    justify-content: space-between;
     width: 200px;
+    height: 150px;
     background-color: #fff;
     color: var(--Primary);
     border-radius: 6px;
