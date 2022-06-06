@@ -63,9 +63,7 @@ function ListSliders() {
           <div className="text">
                <img src={Slider.image} alt={Slider.title}  height="80px"/>
                <h5>Título: {Slider.title}</h5>
-               <h5>-</h5>
                <h5>Posição: {Slider.position}</h5>
-               <h5>-</h5>
                <h5>Disponibilidade: {Slider.availability}</h5>
           </div>
           <div className="button">

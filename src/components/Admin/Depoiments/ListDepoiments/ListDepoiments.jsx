@@ -63,7 +63,6 @@ function ListDepoiments() {
                    <div className="DepoimentUnic" key={depoiment.id}>
                        <div className="text">
                             <h5>{depoiment.name}</h5>
-                            <h5>-</h5>
                             <h5>{depoiment.course}</h5>
                        </div>
                        <div className="button">

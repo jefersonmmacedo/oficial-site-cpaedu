@@ -31,6 +31,9 @@
     justify-content:space-between;
     width: 50%;
 }
+.ListCategories .CategoriesUnic .text h5 {
+    margin:5px;
+}
 .ListCategories .CategoriesUnic .button {
     display:flex;
     align-items: center;
@@ -45,11 +48,21 @@
     color: var(--Primary);
     background-color: var(--White);
     border-radius: 6px;
-    padding: 10px;
+    padding: 8px;
     margin: 5px;
     border: none;
     font-size: 12px;
 }
+
+.ListCategories .CategoriesUnic .button button:hover {
+    background-color: var(--Blue);
+    color: var(--White);
+}
+.ListCategories .CategoriesUnic .button button svg {
+    font-size:16px;
+}
+
+
 .ListCategories .link a {
     display:flex;
     align-items: center;
@@ -75,7 +88,7 @@
     .ListCategories .CategoriesUnic .text {
         display:flex;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         justify-content:center;
         width: 100%;
     }

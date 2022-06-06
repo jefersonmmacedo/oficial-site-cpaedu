@@ -80,9 +80,7 @@ function ListCourse() {
       <div className="CoursesUnic" key={course.id}>
           <div className="text">
                <h5>{course.title}</h5>
-               <h5>-</h5>
                <h5>{course.category}</h5>
-               <h5>-</h5>
                <h5>{course.Availability}</h5>
                {/* <select>
                    <option value={course.Availability}>{course.Availability === "" || course.Availability === undefined || course.Availability === null ? "Selecione" : course.Availability}</option>

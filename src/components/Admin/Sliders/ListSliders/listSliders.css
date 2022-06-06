@@ -32,10 +32,10 @@
     width: 80%;
 }
 .ListSliders .SlidersUnic .text img {
-    margin: 0 5px;
+    margin:5px;
 }
 .ListSliders .SlidersUnic .text h5 {
-    margin: 0 5px;
+    margin:5px;
 }
 .ListSliders .SlidersUnic .button {
     display:flex;
@@ -51,11 +51,21 @@
     color: var(--Primary);
     background-color: var(--White);
     border-radius: 6px;
-    padding: 10px;
+    padding: 8px;
     margin: 5px;
     border: none;
     font-size: 12px;
 }
+
+.ListSliders .SlidersUnic .button button:hover {
+    background-color: var(--Blue);
+    color: var(--White);
+}
+.ListSliders .SlidersUnic .button button svg {
+    font-size:16px;
+}
+
+
 .ListSliders .link a {
     display:flex;
     align-items: center;
@@ -81,7 +91,7 @@
     .ListSliders .SlidersUnic .text {
         display:flex;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         justify-content:center;
         width: 100%;
     }
