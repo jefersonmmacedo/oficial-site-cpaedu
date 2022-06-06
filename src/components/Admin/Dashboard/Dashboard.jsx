@@ -130,28 +130,28 @@ useEffect(() => {
                 <div className="blockUnic">
                     <h3>Categorias</h3>
                     <p>{categories.length} Categorias Criadas</p>
-                    <a href="#">Nova Categoria</a>
+                    <a href="adm/category">Nova Categoria</a>
                 </div>
                 
                 <div className="blockUnic">
                     <h3>Cursos</h3>
                     <p>{courses.length} Cursos Criados</p>
-                    <a href="#">Novo curso</a>
+                    <a href="adm/course">Novo curso</a>
                 </div>
                 <div className="blockUnic">
                     <h3>Depoimentos</h3>
                     <p>{depoiments2.length} Depoimentos Criados</p>
-                    <a href="#">Novo depoimento</a>
+                    <a href="adm/depoiment">Novo depoimento</a>
                 </div>
                 <div className="blockUnic">
                     <h3>Sliders</h3>
                     <p>{carroussel.length} Sliders Criados</p>
-                    <a href="#">Novo slider</a>
+                    <a href="adm/slider">Novo slider</a>
                 </div>
                 <div className="blockUnic">
                     <h3>Informações</h3>
                     <p>Deseja editar as informações do site?</p>
-                    <a href="#">Editar Informações</a>
+                    <a href="/adm/informations">Editar Informações</a>
                 </div>
             </div>
         </div>
