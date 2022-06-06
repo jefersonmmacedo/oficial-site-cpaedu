@@ -64,3 +64,18 @@
     text-decoration: none;
     font-weight: 700;
 }
+
+@media(max-width: 650px) {
+    .ListDepoiments .DepoimentUnic {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ListDepoiments .DepoimentUnic .text {
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content:center;
+        width: 100%;
+    }
+}

@@ -66,14 +66,13 @@ function ListCourse() {
           <div className="text">
                <h5>{course.title}</h5>
                <h5>-</h5>
-               <h5>Valor: {course.valueCourse}</h5>
+               <h5>{course.category}</h5>
                <h5>-</h5>
-               <h5>Promocional: {course.valuePromotional}</h5>
-               <h5>-</h5>
-               <select>
+               <h5>{course.Availability}</h5>
+               {/* <select>
                    <option value={course.Availability}>{course.Availability === "" || course.Availability === undefined || course.Availability === null ? "Selecione" : course.Availability}</option>
                    <option value={course.Availability === "Disponível"? "Aguardar": "Disponível"}>{course.Availability === "Disponível"? "Aguardar": "Disponível"}</option>
-               </select>
+               </select> */}
           </div>
           <div className="button">
           

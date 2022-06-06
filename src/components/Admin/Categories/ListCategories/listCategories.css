@@ -64,3 +64,19 @@
     text-decoration: none;
     font-weight: 700;
 }
+
+@media(max-width: 650px) {
+    .ListCategories .CategoriesUnic {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ListCategories .CategoriesUnic .text {
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content:center;
+        width: 100%;
+    }
+}
