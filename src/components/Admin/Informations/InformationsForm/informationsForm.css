@@ -4,12 +4,12 @@
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    color: #fff;
+    color: rgb(27, 0, 88);
     margin: 40px 0;
 }
 .informationsForm h3{
     text-align:center;
-    color: #fff;
+    color: rgb(27, 0, 88);
     margin: 10px 0;
 }
 
@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     background-color: #fff;
     border-radius: 6px;
     padding:20px;
@@ -93,8 +93,20 @@
     flex-direction: column;
     width: 100%;
 }
+.informationsForm form .historyInformations input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
 
-.informationsForm form .historyInformations textarea{
+.informationsForm form textarea{
     display: flex;
     align-items: center;
     justify-content: center;

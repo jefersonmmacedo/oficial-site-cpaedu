@@ -38,8 +38,8 @@ function ContactWhatsapp() {
         <div className="whatsapp">
        <div className="image"></div>
         <div className="icons">
-                <p> <a href="https://www.facebook.com/cpaeducacao" target="_blank" rel="noreferrer"><FiFacebook /></a></p>
-                <p><a href="https://www.instagram.com/cpaeducacao/" target="_blank" rel="noreferrer"><FiInstagram /></a></p>
+        <a href="https://www.facebook.com/cpaeducacao" target="_blank" rel="noreferrer"><p> <FiFacebook /></p></a>
+        <a href="https://www.instagram.com/cpaeducacao/" target="_blank" rel="noreferrer"><p><FiInstagram /></p></a>
             </div>
         </div>
     )
