@@ -1,5 +1,6 @@
 import Navbar2 from '../../Nav/Navbar';
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs, query, where, doc, deleteDoc } from "firebase/firestore";
+import { toast } from "react-toastify";
 import db from '../../../../services/firebaseConnection';
 import { useState, useEffect } from 'react';
 import {IoTrashOutline, IoRefreshOutline, IoCreateOutline} from 'react-icons/io5';
@@ -50,7 +51,21 @@ function ListCourse() {
       }
   
       loadCondadatos()
-  }, [])
+  }, []);
+
+  async function handleDeleteCurso(id) {
+
+    const deletar = window.confirm("Deseja deletar o curso?");
+    if(deletar === true) {
+      await deleteDoc(doc(db, "courses", id));
+      toast.info("Curso Deletado.");
+      
+      window.location.reload(false)
+    } 
+
+
+  }
+    
     
     return (
         <div className="ListCourses">
@@ -76,9 +91,8 @@ function ListCourse() {
           </div>
           <div className="button">
           
-              <button><IoRefreshOutline/></button>
-              <button><IoCreateOutline/></button>
-              <button><IoTrashOutline/></button>
+               <button><IoCreateOutline/></button>
+              <button onClick={() => {handleDeleteCurso(course.id)}}><IoTrashOutline/></button>
           </div>
       </div>
   )

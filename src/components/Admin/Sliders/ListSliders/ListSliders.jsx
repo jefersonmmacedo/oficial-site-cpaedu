@@ -1,8 +1,9 @@
 import Navbar2 from '../../Nav/Navbar';
 import './listSliders.css';
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs, query, where, doc, deleteDoc  } from "firebase/firestore";
 import db from '../../../../services/firebaseConnection';
 import { useState, useEffect } from 'react';
+import { toast } from "react-toastify";
 
 function ListSliders() {
 
@@ -34,6 +35,19 @@ function ListSliders() {
   
   console.log(carroussel);
 
+  async function handleDeleteSlider(id) {
+
+    const deletar = window.confirm("Deseja deletar o slider?");
+    if(deletar === true) {
+      await deleteDoc(doc(db, "sliders", id));
+      toast.info("Slide Deletado.");
+      
+      window.location.reload(false)
+    } 
+
+
+  }
+
 
     return (
         <div className="ListSliders">
@@ -56,7 +70,7 @@ function ListSliders() {
           </div>
           <div className="button">
               <button>Editar</button>
-              <button>Deletar</button>
+              <button onClick={() => {handleDeleteSlider(Slider.id)}}>Deletar</button>
           </div>
       </div>
   )

@@ -1,5 +1,6 @@
 import Navbar2 from '../../Nav/Navbar';
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs, query, where, doc, deleteDoc } from "firebase/firestore";
+import { toast } from "react-toastify";
 import db from '../../../../services/firebaseConnection';
 import { useState, useEffect } from 'react';
 import {IoTrashOutline, IoRefreshOutline, IoCreateOutline} from 'react-icons/io5';
@@ -29,7 +30,20 @@ function ListCategories() {
       }
   
       loadCondadatos()
-  }, [])
+  }, []);
+
+  async function handleDeleteCategory(id) {
+
+    const deletar = window.confirm("Deseja deletar a categoria?");
+    if(deletar === true) {
+      await deleteDoc(doc(db, "categories", id));
+      toast.info("Categoria Deletada.");
+      
+      window.location.reload(false)
+    } 
+
+
+  }
     
     return (
         <div className="ListCategories">
@@ -39,15 +53,15 @@ function ListCategories() {
 <a href="/adm/categorynew">Nova categoria</a>
 </div>
 
-{categories.map((depoiment) => {
+{categories.map((category) => {
   return (
-      <div className="CategoriesUnic" key={depoiment.id}>
+      <div className="CategoriesUnic" key={category.id}>
           <div className="text">
-               <h5>{depoiment.title}</h5>
+               <h5>{category.title}</h5>
           </div>
           <div className="button">
           <button><IoCreateOutline/></button>
-              <button><IoTrashOutline/></button>
+              <button onClick={() => {handleDeleteCategory(category.id)}}><IoTrashOutline/></button>
           </div>
       </div>
   )
