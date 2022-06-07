@@ -1,4 +1,5 @@
 import {Route, Routes, Navigate} from 'react-router-dom';
+import { CategoriesForm } from '../components/Admin/Categories/EditCategoriesForm/EditCategoriesForm';
 import { ListCategories } from '../components/Admin/Categories/ListCategories/ListCategories';
 import { ListCourse } from '../components/Admin/Courses/ListCourse/ListCourse';
 import { Dashboard } from '../components/Admin/Dashboard/Dashboard';
@@ -70,8 +71,8 @@ function PrivateRoute({children} ) {
                     element={ <PrivateRoute> <ListCategories /></PrivateRoute>} />
             <Route path="/adm/categorynew"
                     element={ <PrivateRoute> <NewCategories /></PrivateRoute>} />
-            <Route path="/adm/category/:id"
-                    element={ <PrivateRoute> <Dashboard /></PrivateRoute>} />
+            <Route path="/adm/category/:categoria"
+                    element={ <PrivateRoute> <CategoriesForm /></PrivateRoute>} />
 
 
             <Route path="/adm/depoiment"

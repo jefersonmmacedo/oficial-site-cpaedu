@@ -44,6 +44,11 @@ function ListCategories() {
 
 
   }
+  async function handleEditCategory(id) {
+     
+      window.open(`/adm/category/${id}`, "_self")
+
+  }
     
     return (
         <div className="ListCategories">
@@ -60,7 +65,7 @@ function ListCategories() {
                <h5>{category.title}</h5>
           </div>
           <div className="button">
-          <button><IoCreateOutline/></button>
+          <button onClick={() => {handleEditCategory(category.title)}}><IoCreateOutline/></button>
               <button onClick={() => {handleDeleteCategory(category.id)}}><IoTrashOutline/></button>
           </div>
       </div>
