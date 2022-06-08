@@ -44,9 +44,9 @@ function ListCategories() {
 
 
   }
-  async function handleEditCategory(id) {
+  async function handleEditCategory(title) {
      
-      window.open(`/adm/category/${id}`, "_self")
+      window.open(`/adm/category/${title}`, "_self")
 
   }
     

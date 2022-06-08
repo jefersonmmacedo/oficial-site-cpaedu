@@ -4,6 +4,7 @@ import { ListCategories } from '../components/Admin/Categories/ListCategories/Li
 import { ListCourse } from '../components/Admin/Courses/ListCourse/ListCourse';
 import { Dashboard } from '../components/Admin/Dashboard/Dashboard';
 import { ListDepoiments } from '../components/Admin/Depoiments/ListDepoiments/ListDepoiments';
+import { SliderForm } from '../components/Admin/Sliders/EditSliderForm/EditSliderForm';
 import { ListSliders } from '../components/Admin/Sliders/ListSliders/ListSliders';
 import { About } from '../pages/About/About';
 import { NewCategories } from '../pages/Admin/Categories/NewCategories/NewCategories';
@@ -55,8 +56,8 @@ function PrivateRoute({children} ) {
                     element={ <PrivateRoute> <ListSliders /></PrivateRoute>} />
             <Route path="/adm/slidernew"
                     element={ <PrivateRoute> <NewSliders /></PrivateRoute>} />
-            <Route path="/adm/slider/id"
-                    element={ <PrivateRoute> <Dashboard /></PrivateRoute>} />
+            <Route path="/adm/slider/:slider"
+                    element={ <PrivateRoute> <SliderForm /></PrivateRoute>} />
 
 
             <Route path="/adm/course"

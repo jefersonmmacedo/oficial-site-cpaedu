@@ -36,7 +36,6 @@ function ListSliders() {
   console.log(carroussel);
 
   async function handleDeleteSlider(id) {
-
     const deletar = window.confirm("Deseja deletar o slider?");
     if(deletar === true) {
       await deleteDoc(doc(db, "sliders", id));
@@ -45,7 +44,10 @@ function ListSliders() {
       window.location.reload(false)
     } 
 
+  }
 
+  function handleUpdateSlider(slider) {
+    window.open(`/adm/slider/${slider}`, "_self")
   }
 
 
@@ -53,29 +55,29 @@ function ListSliders() {
         <div className="ListSliders">
                      <Navbar2 />
                      <h1>Sliders</h1>
-<div className="link">
-<a href="/adm/slidernew">Novo slider</a>
-</div>
+            <div className="link">
+            <a href="/adm/slidernew">Novo slider</a>
+            </div>
 
-{carroussel.map((Slider) => {
-  return (
-      <div className="SlidersUnic" key={Slider.id}>
-          <div className="text">
-               <img src={Slider.image} alt={Slider.title}  height="80px"/>
-               <h5>Título: {Slider.title}</h5>
-               <h5>Posição: {Slider.position}</h5>
-               <h5>Disponibilidade: {Slider.availability}</h5>
-          </div>
-          <div className="button">
-              <button>Editar</button>
-              <button onClick={() => {handleDeleteSlider(Slider.id)}}>Deletar</button>
-          </div>
-      </div>
-  )
-})}
-          
+            {carroussel.map((Slider) => {
+              return (
+                  <div className="SlidersUnic" key={Slider.id}>
+                      <div className="text">
+                          <img src={Slider.image} alt={Slider.title}  height="80px"/>
+                          <h5>Título: {Slider.title}</h5>
+                          <h5>Posição: {Slider.position}</h5>
+                          <h5>Disponibilidade: {Slider.availability}</h5>
+                      </div>
+                      <div className="button">
+                          <button onClick={() => {handleUpdateSlider(Slider.title)}}>Editar</button>
+                          <button onClick={() => {handleDeleteSlider(Slider.id)}}>Deletar</button>
+                      </div>
+                  </div>
+              )
+            })}
+                  
         </div>
-    )
-}
+      )
+   }
 
 export {ListSliders}
