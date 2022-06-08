@@ -3,11 +3,11 @@ import { collection, query, where, getDocs, updateDoc, doc  } from "firebase/fir
 import { ref, getDownloadURL, uploadBytes } from 'firebase/storage';
 import db from '../../../../services/firebaseConnection';
 import { storage } from "../../../../services/firebaseImageConnection";
-import {FiUpload} from 'react-icons/fi'
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
 import { v4 as uuidv4} from 'uuid';
+import {FiUpload} from 'react-icons/fi'
 
 function SliderForm() {
     const {slider} = useParams();

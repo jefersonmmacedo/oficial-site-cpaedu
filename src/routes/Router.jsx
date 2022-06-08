@@ -3,6 +3,7 @@ import { CategoriesForm } from '../components/Admin/Categories/EditCategoriesFor
 import { ListCategories } from '../components/Admin/Categories/ListCategories/ListCategories';
 import { ListCourse } from '../components/Admin/Courses/ListCourse/ListCourse';
 import { Dashboard } from '../components/Admin/Dashboard/Dashboard';
+import { DepoimentsForm } from '../components/Admin/Depoiments/EditDepoimentsForm/EditDepoimentsForm';
 import { ListDepoiments } from '../components/Admin/Depoiments/ListDepoiments/ListDepoiments';
 import { SliderForm } from '../components/Admin/Sliders/EditSliderForm/EditSliderForm';
 import { ListSliders } from '../components/Admin/Sliders/ListSliders/ListSliders';
@@ -80,8 +81,8 @@ function PrivateRoute({children} ) {
                     element={ <PrivateRoute> <ListDepoiments /></PrivateRoute>} />
             <Route path="/adm/depoimentnew"
                     element={ <PrivateRoute> <NewDepoiments /></PrivateRoute>} />
-            <Route path="/adm/depoiment/:id"
-                    element={ <PrivateRoute> <Dashboard /></PrivateRoute>} />
+            <Route path="/adm/depoiment/:names"
+                    element={ <PrivateRoute> <DepoimentsForm /></PrivateRoute>} />
  
 
             <Route path="/adm/informations"

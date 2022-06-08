@@ -47,6 +47,10 @@ function ListDepoiments() {
 
   }
 
+  function handleUpdateDepoiment(name) {
+    window.open(`/adm/depoiment/${name}`, "_self")
+  }
+
 
 
 
@@ -66,8 +70,8 @@ function ListDepoiments() {
                             <h5>{depoiment.course}</h5>
                        </div>
                        <div className="button">
-                       <button><IoCreateOutline/></button>
-              <button onClick={() => {handleDeleteDepoiment(depoiment.id)}}><IoTrashOutline/></button>
+                       <button onClick={() => {handleUpdateDepoiment(depoiment.name)}}><IoCreateOutline/></button>
+                       <button onClick={() => {handleDeleteDepoiment(depoiment.id)}}><IoTrashOutline/></button>
                        </div>
                    </div>
                )
