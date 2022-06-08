@@ -2,27 +2,28 @@ import { useState } from "react";
 import { CoursesForm } from "../../../../components/Admin/Courses/CoursesForm/CoursesForm";
 import { CoursesFormTecnic } from "../../../../components/Admin/Courses/CoursesFormTecnic/CoursesFormTecnic";
 import Navbar2 from "../../../../components/Admin/Nav/Navbar";
-import "./newCourse.css"
+import "./newCourseTecnic.css"
 
-function NewCourse() {
-    function handleSelectTecnic(e) {
+function NewCourseTecnic() {
+
+    function handleSelectComplete(e) {
         e.preventDefault();
 
-        window.open("/adm/coursetecnicnew", "_self")
+        window.open("/adm/coursenew", "_self")
     }
 
     return (
-        <div className="newCourse">
-                                 <Navbar2 />
+        <div className="newCourseTecnic">
+            <Navbar2 />
 
             <div className="buttons">
-           <button onClick={handleSelectTecnic}> Curso Técnico </button>  
+            <button onClick={handleSelectComplete}> Cursos Completos</button>
             </div>
 
-            <CoursesForm />
+            <CoursesFormTecnic />
 
         </div>
     )
 }
 
-export {NewCourse}
+export {NewCourseTecnic}

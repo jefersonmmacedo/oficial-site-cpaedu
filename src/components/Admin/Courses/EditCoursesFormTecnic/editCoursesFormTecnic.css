@@ -1,19 +1,20 @@
-.CoursesFormTecnic {
+.CoursesFormTecnicEdit {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    color: #fff;
+    color: rgb(27, 0, 88);
     margin: 40px 0;
+    color: rgb(27, 0, 88);
 }
-.CoursesFormTecnic h3{
+.CoursesFormTecnicEdit h3{
     text-align:center;
-    color: #fff;
+    color: rgb(27, 0, 88);
     margin: 10px 0;
 }
 
-.CoursesFormTecnic form {
+.CoursesFormTecnicEdit form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +26,7 @@
 }
 
 
-.CoursesFormTecnic form .label-avatar{
+.CoursesFormTecnicEdit form .label-avatar{
     width: 400px;
     height: 160px;
     display: flex;
@@ -36,29 +37,29 @@
     margin: 5px 0;
 }
 
-.CoursesFormTecnic form .label-avatar input {
+.CoursesFormTecnicEdit form .label-avatar input {
     display: none;
 }
 
-.CoursesFormTecnic form .label-avatar span {
+.CoursesFormTecnicEdit form .label-avatar span {
     z-index: 99;
     position: absolute;
     opacity: 0.7;
     transition: all .5s;
 }
 
-.CoursesFormTecnic form .label-avatar span:hover{
+.CoursesFormTecnicEdit form .label-avatar span:hover{
     opacity: 1;
     transform: scale(1.4);
 }
 
-.CoursesFormTecnic form .label-avatar img{
+.CoursesFormTecnicEdit form .label-avatar img{
     margin-bottom: 1em;
     border-radius: 6px;
     object-fit: cover;
 }
 
-.CoursesFormTecnic form input{
+.CoursesFormTecnicEdit form input{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +71,20 @@
     color: rgb(27, 0, 88);
     padding: 10px
 }
-.CoursesFormTecnic form .double {
+.CoursesFormTecnicEdit form textarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px;
+    resize: none;
+}
+.CoursesFormTecnicEdit form .double {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +92,7 @@
     width: 70%;
 }
 
-.CoursesFormTecnic form .double select{
+.CoursesFormTecnicEdit form .double select{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +105,7 @@
     padding: 10px
 }
 
-.CoursesFormTecnic form button{
+.CoursesFormTecnicEdit form button{
     display: flex;
     align-items: center;
     justify-content: center;

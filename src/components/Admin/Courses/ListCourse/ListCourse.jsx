@@ -66,6 +66,16 @@ function ListCourse() {
 
   }
     
+  
+
+
+function handleUpdateCourse(course, category) {
+  if(category === "Cursos Técnicos EAD") {
+    window.open(`/adm/coursetecnic/${course}`, "_self")
+  } else {
+    window.open(`/adm/course/${course}`, "_self")
+  }
+}
     
     return (
         <div className="ListCourses">
@@ -89,7 +99,7 @@ function ListCourse() {
           </div>
           <div className="button">
           
-               <button><IoCreateOutline/></button>
+               <button onClick={() => {handleUpdateCourse(course.title, course.category )}}><IoCreateOutline/></button>
               <button onClick={() => {handleDeleteCurso(course.id)}}><IoTrashOutline/></button>
           </div>
       </div>

@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 import { CoursesForm } from "../../../../components/Admin/Courses/CoursesForm/CoursesForm";
 import { CoursesFormTecnic } from "../../../../components/Admin/Courses/CoursesFormTecnic/CoursesFormTecnic";
+import { CoursesFormEdit } from "../../../../components/Admin/Courses/EditCoursesForm/EditCoursesForm";
 import Navbar2 from "../../../../components/Admin/Nav/Navbar";
-import "./newCourse.css"
+import "./editCourse.css"
 
-function NewCourse() {
+function EditCourse() {
+    const {curso} = useParams() 
     function handleSelectTecnic(e) {
         e.preventDefault();
 
@@ -12,17 +15,14 @@ function NewCourse() {
     }
 
     return (
-        <div className="newCourse">
+        <div className="EditCourse">
                                  <Navbar2 />
 
-            <div className="buttons">
-           <button onClick={handleSelectTecnic}> Curso Técnico </button>  
-            </div>
 
-            <CoursesForm />
+            <CoursesFormEdit curso={curso} />
 
         </div>
     )
 }
 
-export {NewCourse}
+export {EditCourse}

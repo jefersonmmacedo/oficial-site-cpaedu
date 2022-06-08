@@ -1,19 +1,20 @@
-.coursesForm {
+.coursesFormEdit {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    color: #fff;
+    color: rgb(27, 0, 88);
     margin: 40px 0;
+    color: rgb(27, 0, 88);
 }
-.coursesForm h3{
+.coursesFormEdit h3{
     text-align:center;
-    color: #fff;
+    color: rgb(27, 0, 88);
     margin: 10px 0;
 }
 
-.coursesForm form {
+.coursesFormEdit form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +26,7 @@
 }
 
 
-.coursesForm form .label-avatar{
+.coursesFormEdit form .label-avatar{
     width: 400px;
     height: 160px;
     display: flex;
@@ -36,29 +37,29 @@
     margin: 5px 0;
 }
 
-.coursesForm form .label-avatar input {
+.coursesFormEdit form .label-avatar input {
     display: none;
 }
 
-.coursesForm form .label-avatar span {
+.coursesFormEdit form .label-avatar span {
     z-index: 99;
     position: absolute;
     opacity: 0.7;
     transition: all .5s;
 }
 
-.coursesForm form .label-avatar span:hover{
+.coursesFormEdit form .label-avatar span:hover{
     opacity: 1;
     transform: scale(1.4);
 }
 
-.coursesForm form .label-avatar img{
+.coursesFormEdit form .label-avatar img{
     margin-bottom: 1em;
     border-radius: 6px;
     object-fit: cover;
 }
 
-.coursesForm form input{
+.coursesFormEdit form input{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +71,7 @@
     color: rgb(27, 0, 88);
     padding: 10px
 }
-.coursesForm form select{
+.coursesFormEdit form select{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +84,7 @@
     padding: 10px
 }
 
-.coursesForm form textarea{
+.coursesFormEdit form textarea{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +98,7 @@
     resize: none;
 }
 
-.coursesForm form button{
+.coursesFormEdit form button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +112,7 @@
     padding: 10px
 }
 
-.coursesForm form .double {
+.coursesFormEdit form .double {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -119,7 +120,7 @@
     width: 70%;
 }
 
-.coursesForm form .double input{
+.coursesFormEdit form .double input{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +132,7 @@
     color: rgb(27, 0, 88);
     padding: 10px
 }
-.coursesForm form .double select{
+.coursesFormEdit form .double select{
     display: flex;
     align-items: center;
     justify-content: center;

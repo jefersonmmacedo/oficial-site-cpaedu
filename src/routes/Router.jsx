@@ -9,7 +9,10 @@ import { SliderForm } from '../components/Admin/Sliders/EditSliderForm/EditSlide
 import { ListSliders } from '../components/Admin/Sliders/ListSliders/ListSliders';
 import { About } from '../pages/About/About';
 import { NewCategories } from '../pages/Admin/Categories/NewCategories/NewCategories';
+import { EditCourse } from '../pages/Admin/Courses/EditCourse/EditCourse';
+import { EditCourseTecnic } from '../pages/Admin/Courses/EditCourseTecnic/EditCourseTecnic';
 import { NewCourse } from '../pages/Admin/Courses/NewCourse/NewCourse';
+import { NewCourseTecnic } from '../pages/Admin/Courses/NewCourseTecnic/NewCourseTecnic';
 import { NewDepoiments } from '../pages/Admin/Depoiments/NewDepoiments/NewDepoiments';
 import { Informations } from '../pages/Admin/Informations/Informations';
 import { NewSliders } from '../pages/Admin/Sliders/NewSliders/NewSliders';
@@ -63,10 +66,14 @@ function PrivateRoute({children} ) {
 
             <Route path="/adm/course"
                     element={ <PrivateRoute> <ListCourse /></PrivateRoute>} />
+            <Route path="/adm/coursetecnicnew"
+                    element={ <PrivateRoute> <NewCourseTecnic /></PrivateRoute>} />
             <Route path="/adm/coursenew"
                     element={ <PrivateRoute> <NewCourse /></PrivateRoute>} />
-            <Route path="/adm/course/:id"
-                    element={ <PrivateRoute> <Dashboard /></PrivateRoute>} />
+            <Route path="/adm/coursetecnic/:curso"
+                    element={ <PrivateRoute> <EditCourseTecnic /></PrivateRoute>} />
+            <Route path="/adm/course/:curso"
+                    element={ <PrivateRoute> <EditCourse /></PrivateRoute>} />
 
 
             <Route path="/adm/category"
