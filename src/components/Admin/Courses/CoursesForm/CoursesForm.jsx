@@ -207,8 +207,8 @@ function CoursesForm() {
                     </select>
 
                     <textarea name="" id="" cols="30" rows="5" placeholder="Matriz Curricular" value={curriculum} onChange={(e) => setCurriculum(e.target.value)}></textarea>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="O Profissional" value={curriculum} onChange={(e) => setCurriculum(e.target.value)}></textarea>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Área de atuação" value={curriculum} onChange={(e) => setCurriculum(e.target.value)}></textarea>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="O Profissional" value={professional} onChange={(e) => setProfessional(e.target.value)}></textarea>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Área de atuação" value={occupationArea} onChange={(e) => setOccupationArea(e.target.value)}></textarea>
 
                     <div className="double">
                     <input type="text" placeholder="Duração" value={duration} onChange={(e) => setDuration(e.target.value)}/>

@@ -24,12 +24,91 @@
     padding:20px;
     color: rgb(27, 0, 88)
 }
+
+
+
+.informationsForm form .contactInformations .label-avatar-image1{
+    width: 400px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.informationsForm form .contactInformations .label-avatar-image1 input {
+    display: none;
+}
+
+.informationsForm form .contactInformations .label-avatar-image1 span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.informationsForm form .contactInformations .label-avatar-image1 span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.informationsForm form .contactInformations .label-avatar-image1 img{
+    margin-bottom: 1em;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
+
+
 .informationsForm form .contactInformations {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+}
+.informationsForm form .contactInformations .images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+}
+
+.informationsForm form .contactInformations .images .label-avatar-image1{
+    width: 400px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.informationsForm form .contactInformations .images .label-avatar-image1 input {
+    display: none;
+}
+
+.informationsForm form .contactInformations .images .label-avatar-image1 span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.informationsForm form .contactInformations .images .label-avatar-image1 span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.informationsForm form .contactInformations .images .label-avatar-image1 img{
+    margin-bottom: 1em;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
 .informationsForm form .contactInformations input{

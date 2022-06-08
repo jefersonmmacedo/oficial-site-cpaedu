@@ -6,7 +6,6 @@ import db from '../../../../services/firebaseConnection';
 import { storage } from "../../../../services/firebaseImageConnection";
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
-import { useParams } from "react-router-dom";
 import { v4 as uuidv4} from 'uuid';
 
 function CoursesFormTecnicEdit({curso}) {
