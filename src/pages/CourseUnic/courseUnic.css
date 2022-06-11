@@ -539,14 +539,16 @@
 
 
 .content-modal .itensModal::-webkit-scrollbar {
-    width: 12px;              
+    width: 12px;  
+    border-radius: 20px;            
   }
   
  .content-modal .itensModal::-webkit-scrollbar-track {
-    background: var(--Background);      
+    background: var(--Background); 
+    border-radius: 20px;       
   }
   
- .content-modal .itensModalNotifications::-webkit-scrollbar-thumb {
+ .content-modal .itensModal::-webkit-scrollbar-thumb {
     background-color: var(--Primary);   
     border-radius: 20px;      
     border: 3px solid var(--Background); 
