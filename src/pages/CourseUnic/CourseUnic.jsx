@@ -139,6 +139,10 @@ Modal.setAppElement('#root');
                     <div className="text">
                         <h1>Sobre o Curso</h1>
                         <p>{description}</p>
+                        <br />
+                        {mec === "" ? "" :
+                        <p><b>CADASTRO NO MEC:</b> <a href={mec} alt="cadastro no MEC" target="_blank">Visualizar</a> </p>
+                        }
                     </div>
                     <div className="itens">
                         <div className="item">

@@ -372,10 +372,14 @@
     flex-direction: column;
     width: 100%;
     padding: 20px;
+    white-space: pre-line;
 
 }
 .courseUnic .aboutCourse .text h1 {
     margin-bottom: 20px
+}
+.courseUnic .aboutCourse .text p {
+    white-space: pre-line;
 }
 
 .courseUnic .aboutCourse .itens {
@@ -447,6 +451,17 @@
     font-size: 25px;
 }
    
+
+.courseUnic .subscript .text a {
+    background-color: var(--Magenta);
+    padding: 20px 40px;
+    border-radius: 6px;
+    color: var(--White);
+    border:none;
+    margin: 0 40px ;
+    text-decoration: none;
+}
+
 
 
 
