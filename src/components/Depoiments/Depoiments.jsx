@@ -35,7 +35,7 @@ function Depoiments() {
 const newDepoiments = depoiments.slice(0,5)
 
 var settings = {
-    arrows: false,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 10000,
     dots: false,

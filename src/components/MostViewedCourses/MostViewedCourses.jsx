@@ -19,7 +19,8 @@ function MostViewedCourses() {
             title: doc.data().title,
             image: doc.data().image,
             format: doc.data().format,
-            category: doc.data().category
+            category: doc.data().category,
+            link: doc.data().link
             }
             
            // console.log(data)
@@ -52,7 +53,10 @@ console.log(limit)
                         </div>
                         </Link>
                         <div className="title">
-                        <h5><Link to={`/curso-individual/${course.title}`}>{course.title}</Link> - <Link to={`/curso-individual/${course.title}`}>{course.category}</Link></h5>
+                            {course.category === "Cursos Técnicos EAD" ? 
+                            <a href={course.link} alt={course.title} target="_blank"><h5>{course.title} </h5></a> :
+                            <h5><Link to={`/curso-individual/${course.title}`}>{course.title}</Link> - <Link to={`/curso-individual/${course.title}`}>{course.category}</Link></h5>
+                            }
                         </div>
             
                         <div className="info">

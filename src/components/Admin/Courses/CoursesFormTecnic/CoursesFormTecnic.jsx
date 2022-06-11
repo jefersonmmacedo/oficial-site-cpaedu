@@ -17,6 +17,7 @@ function CoursesFormTecnic() {
     const [link, setLink] = useState('');
     const [category, setCategory] = useState('');
     const [subCategory, setSubCategory] = useState('');
+    const [format, setFormat] = useState('');
 
 
 
@@ -79,6 +80,10 @@ function CoursesFormTecnic() {
           }
     }
 
+    function handleFormat(e) {
+        setFormat(e.target.value);
+    }
+
     return (
         <div className="CoursesFormTecnic">
             <h3>Novo Curso Técnico</h3>
@@ -88,9 +93,14 @@ function CoursesFormTecnic() {
                     <input type="file" accept="image/*" onChange={handleFile}/><br />
                     <img src={avatarUrl === null ? profile : avatarUrl} alt="Avatar" height={160} width={400}/>
                 </label>
-                <input type="text" placeholder="Titulo"  value={title} onChange={(e) => setTitle(e.target.value)} required/>
+                <input type="text" placeholder="Titulo"  value={title} onChange={(e) => setTitle(e.target.value)} />
                 <textarea name="" id="" cols="30" rows="10" placeholder="Descrição" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
-                <input type="text" placeholder="link"  value={link} onChange={(e) => setLink(e.target.value)} required/>
+                <input type="text" placeholder="link"  value={link} onChange={(e) => setLink(e.target.value)} />
+                <select name="" id="" value={format} onChange={handleFormat}>
+                        <option value="">Formato</option>
+                        <option value="Online">Online</option>
+                        <option value="Presencial">Presencial</option>
+                    </select>
                 <button type="submit">Cadastrar</button>
             </form>
         </div>

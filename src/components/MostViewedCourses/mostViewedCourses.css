@@ -84,6 +84,11 @@
    text-decoration: none;
    color: #373737;
 }
+.MostViewedCourses .courses .CourseUnicDestaque .title a {
+   text-decoration: none;
+   color: #373737;
+   margin-top: 28px;
+}
 
     .MostViewedCourses .courses .CourseUnicDestaque .info {
         display: flex;
