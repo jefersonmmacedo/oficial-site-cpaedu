@@ -36,6 +36,9 @@ function CourseUnic() {
     const [value, setValue] = useState("");
     const [valueCourse, setValueCourse] = useState("");
     const [valuePromotional, setValuePromotional] = useState("");
+    const [professional, setProfessional] = useState('');
+    const [occupationArea, setOccupationArea] = useState('');
+
 
 useEffect(() => {
     async function setDocCourse() {
@@ -65,6 +68,8 @@ useEffect(() => {
             setValue(doc.data().value); 
             setValueCourse(doc.data().valueCourse); 
             setValuePromotional(doc.data().valuePromotional); 
+            setProfessional(doc.data().professional);
+            setOccupationArea(doc.data().occupationArea);
         });
     }
     setDocCourse()
@@ -176,7 +181,7 @@ Modal.setAppElement('#root');
                         <a href={`/prematricula/${title}`}>Inscreva-se agora!</a>
                     </div>
                 </div>
-                {/* {linkVideo === "" ? "": */}
+                {linkVideo === "" ? "":
                 <div className="media">
                 <video playsInline controls controlsList="nodownload">
                      <source playsInline src="https://www.youtube.com/watch?v=eZsavHeBHD4" type="video/mp4"/>
@@ -186,21 +191,25 @@ Modal.setAppElement('#root');
                      <source playsInline src="https://www.youtube.com/watch?v=eZsavHeBHD4"  type="video/webm"/>
                      <source playsInline src="https://www.youtube.com/watch?v=eZsavHeBHD4"  type="video/avi"/>
                      </video></div>
-                {/* } */}
+                }
 
 
-                <div className="professional">
+    { professional === "" || professional === undefined ? "" :
+     <div className="professional">
                     <h1>O profissional</h1>
                     <div className="block">
                         <div className="icon">
                         <IoGrid />
                         </div>
                         <div className="text">
-                            <p>Um profissional é quem exerce uma profissão (um emprego ou trabalho que requer conhecimentos formais e especializados). Para se tornar um profissional, a pessoa deve fazer estudos (em geral, profissionalizantes ou universitários) e ter um diploma ou título que ateste os conhecimentos adquiridos e a idoneidade para o exercício da profissão.</p>
+                            <p>{professional}</p>
                         </div>
                     </div>
-                </div>
+                </div>}
 
+                
+                
+{    occupationArea === "" || occupationArea === undefined ? "" :
                 <div className="occupationArea">
                     <h1>Área de atuação</h1>
                     <div className="block">
@@ -208,12 +217,10 @@ Modal.setAppElement('#root');
                             <IoGrid />
                         </div>
                         <div className="text2">
-                            <p>A área de atuação profissional é, basicamente, o segmento em que você deseja construir sua carreira, de forma mais afunilada e especializada.
-Vamos exemplificar pensando em um comércio. Você tem uma loja que vende acessórios para celular.
-A vida profissional funciona do mesmo jeito. Nesse caso, os acessórios vendidos são o segmento, ou seja, a área de atuação. </p>
+                        <p>{occupationArea}</p>
                         </div>
                     </div>
-                </div>
+                </div>}
 
                 <div className="grade">
                     <div className="text">
