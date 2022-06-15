@@ -265,7 +265,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -288,7 +291,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -310,7 +316,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                 <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -333,7 +342,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -356,7 +368,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -379,7 +394,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -402,7 +420,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -425,7 +446,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -448,7 +472,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -471,7 +498,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -494,7 +524,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -517,7 +550,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -540,7 +576,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -563,7 +602,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -586,7 +628,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -609,7 +654,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -632,7 +680,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -655,7 +706,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -678,7 +732,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -701,7 +758,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -724,7 +784,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -747,7 +810,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -770,7 +836,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -793,7 +862,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -816,7 +888,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>
@@ -839,7 +914,10 @@ const searchLower = search.toLowerCase()
                     <div className="bloc1">
                     <h6>Curso</h6>
                          <hr />
+                     {course.category === "Cursos Técnicos" ? 
+                         <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
+                            }
                     </div>
                     <div className="bloc2">
                     <h6>Formação</h6>

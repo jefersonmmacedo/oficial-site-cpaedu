@@ -35,6 +35,30 @@ function CoursesFormEdit({curso}) {
     const [occupationArea, setOccupationArea] = useState('');
     const [imageCourse, setImageCourse] = useState('');
     const [id, setId] = useState('');
+    const [categories, setCategories] = useState([]); 
+
+    useEffect(() => {
+        async function loadCondadatos() {
+            const querySnapshot = await getDocs(collection(db, "categories"));  
+            const list = []
+            querySnapshot.forEach((doc) => {
+               // console.log(`${doc.id} => ${doc.data()}`);
+              const data = {
+                id: doc.id,
+                title: doc.data().title,
+                image: doc.data().image,
+                description: doc.data().description,
+                }
+                
+              console.log(data)
+                list.push(data)
+              });
+              setCategories(list)
+        }
+    
+        loadCondadatos()
+    }, []);
+  
 
     async function handleFile(e) {
         console.log(e.target.files[0])
@@ -212,24 +236,26 @@ function CoursesFormEdit({curso}) {
                     <input type="text" placeholder="Cadastro no MEC" value={mec} onChange={(e) => setMec(e.target.value)}/>
                     <input type="text" placeholder="Link Vídeo" value={linkVideo} onChange={(e) => setLinkVideo(e.target.value)}/>
 
-                    {category !== "Segundo Curso Superior" ?                    
+                    {category !== "2º Curso Superior" ?                    
                     <select name="" id="" value={category} onChange={handleCategories} required>
                         <option value="">Categoria</option>
-                        <option value="Música">Música</option>
-                        <option value="Aperfeiçoamento profissional EAD">Aperfeiçoamento profissional EAD</option>
-                        <option value="Graduação EAD">Graduação EAD</option>
-                        <option value="Pós-graduação EAD">Pós-graduação EAD</option>
-                        <option value="Segundo Curso Superior">Segundo Curso Superior</option>
+                        {categories.map((category) => {
+                            return (
+                                category.title === "Cursos Técnicos" ? "" :
+                                <option value={category.title}>{category.title}</option>
+                            )
+                        })}
                     </select>
                     :
                     <div className="double">
                     <select name="" id="" value={category} onChange={handleCategories} >
-                         <option value="Segundo Curso Superior">Segundo Curso Superior</option>
-                         <option value="Música">Música</option>
-                        <option value="Aperfeiçoamento profissional EAD">Aperfeiçoamento profissional EAD</option>
-                        <option value="Graduação EAD">Graduação EAD</option>
-                        <option value="Pós-graduação EAD">Pós-graduação EAD</option>
-                        <option value="Segundo Curso Superior">Segundo Curso Superior</option>
+                         <option value="2º Curso Superior">2º Curso Superior</option>
+                         {categories.map((category) => {
+                            return (
+                                category.title === "Cursos Técnicos" ? "" :
+                                <option value={category.title}>{category.title}</option>
+                            )
+                        })}
                     </select>
                     <select name="" id="" value={subCategory} onChange={handleSub} >
                         <option value="">Sub-categoria</option>

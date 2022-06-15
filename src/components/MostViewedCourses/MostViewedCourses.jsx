@@ -53,7 +53,7 @@ console.log(limit)
                         </div>
                         </Link>
                         <div className="title">
-                            {course.category === "Cursos Técnicos EAD" ? 
+                            {course.category === "Cursos Técnicos" ? 
                             <a href={course.link} alt={course.title} target="_blank"><h5>{course.title} </h5></a> :
                             <h5><Link to={`/curso-individual/${course.title}`}>{course.title}</Link> - <Link to={`/curso-individual/${course.title}`}>{course.category}</Link></h5>
                             }
