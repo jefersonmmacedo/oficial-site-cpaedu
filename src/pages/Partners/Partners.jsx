@@ -16,22 +16,16 @@ function Partners() {
         <Navbar2 />
         <div className="Partners">
             <div className="image">
-                <img src={uniBF} alt="Logo parceiro" />
+                <img src={educaMais} alt="Logo parceiro" />
+            </div>
+            <div className="image">
+                <img src={CPET} alt="Logo parceiro" />
             </div>
             <div className="image">
                 <img src={prefeitura} alt="Logo parceiro" />
             </div>
             <div className="image">
-                <img src={educaMais} alt="Logo parceiro" />
-            </div>
-            <div className="image">
                 <img src={SaoLuiz} alt="Logo parceiro" />
-            </div>
-            <div className="image">
-                <img src={UniBTA} alt="Logo parceiro" />
-            </div>
-            <div className="image">
-                <img src={CPET} alt="Logo parceiro" />
             </div>
             <div className="image">
                 <img src={unifacvet} alt="Logo parceiro" />
@@ -39,6 +33,15 @@ function Partners() {
             <div className="image">
                 <img src={UniFVC} alt="Logo parceiro" />
             </div>
+            <div className="image">
+                <img src={uniBF} alt="Logo parceiro" />
+            </div>
+            <div className="image">
+                <img src={UniBTA} alt="Logo parceiro" />
+            </div>
+
+
+
         </div>
         <Footer />
         </>
