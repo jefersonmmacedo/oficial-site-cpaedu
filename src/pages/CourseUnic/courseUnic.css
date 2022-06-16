@@ -85,10 +85,13 @@
     flex-direction: column;
     width: 70%;
     padding: 20px;
-
+    white-space: pre-line;
 }
 .courseUnic .aboutCourse .text h1 {
     margin-bottom: 20px
+}
+.courseUnic .aboutCourse .text p {
+    white-space: pre-line;
 }
 
 .courseUnic .aboutCourse .itens {

@@ -118,7 +118,10 @@ Modal.setAppElement('#root');
         <div className="courseUnic">
                 <div className="title">
                     <div className="text">
-                    <h3>{category}</h3>
+                        {subCategory === "" ?
+                    <h3>{category} </h3> :
+                    <h3>{category} &rsaquo; {subCategory}</h3> 
+                        }
                     <h1>{title}</h1>
                     </div>
                  <div className="image">
