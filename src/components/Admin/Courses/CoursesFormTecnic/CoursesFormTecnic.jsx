@@ -66,7 +66,8 @@ function CoursesFormTecnic() {
                 image: photoUrlAvatar,
                 description: description,
                 link: link,
-                category: "Cursos Técnicos"
+                category: "Cursos Técnicos",
+                format: format
             })
             console.log("Document written with ID: ", docRef.id);
                 toast.info(`Cadastro realizado com sucesso!`);
