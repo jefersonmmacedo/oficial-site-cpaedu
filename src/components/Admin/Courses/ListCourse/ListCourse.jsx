@@ -89,18 +89,29 @@ function handleUpdateCourse(course, category) {
   return (
       <div className="CoursesUnic" key={course.id}>
           <div className="text">
-               <h5>{course.title}</h5>
-               <h5>{course.category}</h5>
-               <h5>{course.Availability}</h5>
+            <div className="textUnic">
+               <h5>Curso: {course.title}</h5>
+            </div>
+            <div className="textUnic">
+            <h5>Categoria: {course.category}</h5>
+            </div>
+            <div className="textUnic">
+            <h5>Formato: {course.format}</h5>
+            </div>
+            <div className="textUnic">
+            <h5>Disponibilidade: {course.Availability}</h5>
+            </div>
+  
+
+
                {/* <select>
                    <option value={course.Availability}>{course.Availability === "" || course.Availability === undefined || course.Availability === null ? "Selecione" : course.Availability}</option>
                    <option value={course.Availability === "Disponível"? "Aguardar": "Disponível"}>{course.Availability === "Disponível"? "Aguardar": "Disponível"}</option>
                </select> */}
-          </div>
           <div className="button">
-          
                <button onClick={() => {handleUpdateCourse(course.title, course.category )}}><IoCreateOutline/></button>
               <button onClick={() => {handleDeleteCurso(course.id)}}><IoTrashOutline/></button>
+          </div>
           </div>
       </div>
   )

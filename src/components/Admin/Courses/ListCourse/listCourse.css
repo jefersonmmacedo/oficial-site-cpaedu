@@ -29,10 +29,27 @@
     align-items: center;
     flex-direction: row;
     justify-content:space-between;
-    width: 80%;
+    width: 100%;
 
 }
-.ListCourses .CoursesUnic .text h5 {
+.ListCourses .CoursesUnic .text {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.ListCourses .CoursesUnic .text .textUnic {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 250px;
+
+}
+.ListCourses .CoursesUnic .text .textUnic h5 {
     margin:5px;
 }
 .ListCourses .CoursesUnic .text select{
@@ -46,13 +63,14 @@
     color: rgb(27, 0, 88);
     padding: 10px
 }
-.ListCourses .CoursesUnic .button {
+.ListCourses .CoursesUnic .text .button {
     display:flex;
     align-items: center;
     flex-direction: row;
     justify-content:flex-end;
+    width: 100px;
 }
-.ListCourses .CoursesUnic .button button {
+.ListCourses .CoursesUnic .text .button button {
     display:flex;
     align-items: center;
     flex-direction: row;
@@ -65,11 +83,11 @@
     border: none;
     font-size: 12px;
 }
-.ListCourses .CoursesUnic .button button:hover {
+.ListCourses .CoursesUnic .text .button button:hover {
     background-color: var(--Blue);
     color: var(--White);
 }
-.ListCourses .CoursesUnic .button button svg {
+.ListCourses .CoursesUnic .text .button button svg {
     font-size:16px;
 }
 .ListCourses .link a {
