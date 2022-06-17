@@ -17,6 +17,7 @@ function CoursesFormTecnicEdit({curso}) {
     const [description, setDescription] = useState('');
     const [link, setLink] = useState('');
     const [category, setCategory] = useState('');
+    const [format, setFormat] = useState('');
 
     async function handleFile(e) {
         console.log(e.target.files[0])
@@ -54,6 +55,7 @@ function CoursesFormTecnicEdit({curso}) {
               setDescription(doc.data().description);
               setLink(doc.data().link);
               setCategory(doc.data().category);
+              setFormat(doc.data().format);
             });
         }
         setDocCourse()
@@ -90,10 +92,15 @@ function CoursesFormTecnicEdit({curso}) {
             description: description,
             link: link,
             category: category,
+            format: format,
         });
 
         toast.info("Curso atualizado.");
         window.open("/adm/course", "_self")
+    }
+
+    function handleFormat(e) {
+        setFormat(e.target.value);
     }
 
 
@@ -110,6 +117,11 @@ function CoursesFormTecnicEdit({curso}) {
                 <textarea name="" id="" cols="30" rows="10" placeholder="Descrição" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
                 <input type="text" placeholder="link"  value={link} onChange={(e) => setLink(e.target.value)} required/>
                 <input type="text" placeholder="link"  value={category} disabled/>
+                <select name="" id="" value={format} onChange={handleFormat}>
+                        <option value="">Formato</option>
+                        <option value="Online">Online</option>
+                        <option value="Presencial">Presencial</option>
+                    </select>
                 <button type="submit">Atualizar</button>
             </form>
         </div>

@@ -70,7 +70,7 @@ function ListCourse() {
 
 
 function handleUpdateCourse(course, category) {
-  if(category === "Cursos Técnicos EAD") {
+  if(category === "Cursos Técnicos") {
     window.open(`/adm/coursetecnic/${course}`, "_self")
   } else {
     window.open(`/adm/course/${course}`, "_self")

@@ -47,11 +47,18 @@ console.log(limit)
                 {limit.map((course) => {
                     return (
                         <div className="CourseUnicDestaque" key={course.id}>
+                             {course.category === "Cursos Técnicos" ? 
+                            <a href={course.link} alt={course.title} target="_blank">
+                        <div className="image">
+                            <img src={course.image} alt={course.image} />
+                        </div>
+                        </a>:
                             <Link to={`/curso-individual/${course.title}`}>
                         <div className="image">
                             <img src={course.image} alt={course.image} />
                         </div>
-                        </Link>
+                        </Link>}
+
                         <div className="title">
                             {course.category === "Cursos Técnicos" ? 
                             <a href={course.link} alt={course.title} target="_blank"><h5>{course.title} </h5></a> :
