@@ -102,3 +102,47 @@
     margin: 10px 0;
     white-space: pre-line;
 }
+
+
+@media(max-width:650px) {
+    .about .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+        width: 100%;
+        background-image: url("../../assets/images/saquarema.jpg"); /* The image used */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        height: 400px;
+    }
+    
+    .about .top .block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction:column;
+        width: 90%;
+        background-color:var(--Primary);
+        filter: opacity(0.95);
+        padding: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 150px;
+        z-index: 50;
+    }
+    .about .top .block img {
+        width: 50px;
+    }
+    .about .top .block h1 {
+        color: var(--White);
+        font-size: 40px;
+        margin: 20px 0;
+    }
+    .about .top .block svg {
+        color: var(--White);
+        font-size: 30px;
+        filter: opacity(0.4)
+    }
+}
