@@ -93,6 +93,10 @@
 .courseUnic .aboutCourse .text p {
     white-space: pre-line;
 }
+.courseUnic .aboutCourse .text p a {
+    text-decoration: none;
+    color: var(--Blue);
+}
 
 .courseUnic .aboutCourse .itens {
     display: flex;
@@ -124,6 +128,9 @@
     color: var(--Blue);
 }
 
+
+
+
 .courseUnic .subscript {
     display: flex;
     align-items: flex-end;
@@ -151,29 +158,38 @@
     flex-direction: column;
     width: 50%;
     background-color:var(--Magenta);
-    padding: 60px;
+    padding: 100px;
+}
+
+.courseUnic .subscript .text .buttons {
+    margin-top: 40px;
 }
 .courseUnic .subscript .text h1 {
     font-weight: 400;
     color: var(--White);
 }
-.courseUnic .subscript .text a {
+.courseUnic .subscript .text .buttons a {
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    color: var(--Background2);
+    color: var(--Black);
     font-weight: 700;
-    margin-top: 100px;
     text-decoration: none;
-}   
+    background-color: var(--White);
+}  
+
 .courseUnic .media {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    padding: 100px 0;
+    padding: 80px 20px;
     background-color: rgb(7, 6, 38);
+}
+.courseUnic .media h1{
+    color: var(--Blue);
+    margin: 20px;
 }
 
 .courseUnic .media video {
@@ -415,9 +431,6 @@
     color: var(--Blue);
 }
 
-
-
-
 .courseUnic .subscript {
     display: flex;
     align-items: flex-end;
@@ -447,21 +460,32 @@
     background-color:var(--Magenta);
     padding: 40px 20px;
 }
+.courseUnic .subscript .text .buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color:var(--Blue);
+    padding: 40px 20px;
+}
 
 .courseUnic .subscript .text h1 {
     font-weight: 400;
     color: var(--White);
     font-size: 25px;
+    margin-bottom: 40px;
+    
 }
    
 
-.courseUnic .subscript .text a {
+.courseUnic .subscript .text .buttons button {
     background-color: var(--Magenta);
     padding: 20px 40px;
     border-radius: 6px;
     color: var(--White);
     border:none;
-    margin: 0 40px ;
+    margin:40px 0;
     text-decoration: none;
 }
 

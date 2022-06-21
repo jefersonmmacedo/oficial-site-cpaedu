@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 import student from '../../assets/images/student1.png';
 import student2 from '../../assets/images/students.jpg';
 import { IoAlarmOutline, IoSchoolOutline, IoLibraryOutline,IoEyeOutline, IoCloseOutline, IoGrid } from 'react-icons/io5';
+import { FiDollarSign } from 'react-icons/fi';
 import Modal from 'react-modal';
 
 
@@ -24,8 +25,8 @@ function CourseUnic() {
     const [date, setDate] = useState("");
     const [description, setDescription] = useState("");
     const [duration, setDuration] = useState("");
-    const [format, setHours] = useState("");
-    const [hours, setFormat] = useState("");
+    const [hours, setHours] = useState("");
+    const [format, setFormat] = useState("");
     const [image, setImage] = useState("");
     const [linkVideo, setLinkVideo] = useState("");
     const [mec, setMec] = useState("");
@@ -175,6 +176,15 @@ Modal.setAppElement('#root');
                                 <p><b>{format}</b> </p>
                             </div>
                         </div>
+                        <div className="item">
+                            <div className="icon">
+                            <FiDollarSign />
+                            </div>
+                            <div className="text">
+                                <p>Investimento</p>
+                                <p>De: <b>R${valueCourse}</b> / Por: <b>R${valuePromotional}</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="subscript">
@@ -184,20 +194,15 @@ Modal.setAppElement('#root');
                     <div className="text">
                         <h1>Seja um profissional em</h1>
                         <h1><b>{title}</b></h1>
-
-                        <a href={`/prematricula/${title}`}>Inscreva-se agora!</a>
+                        <div className="buttons">
+                        <a href={`/prematricula/${title}`}>Inscreva-se agora</a>
+                        </div>
                     </div>
                 </div>
                 {linkVideo === "" ? "":
                 <div className="media">
-                <video playsInline controls controlsList="nodownload">
-                     <source playsInline src="https://www.youtube.com/watch?v=eZsavHeBHD4" type="video/mp4"/>
-                     <source playsInline src="https://www.youtube.com/watch?v=eZsavHeBHD4" type="video/quicktime"/>
-                     <source playsInline src="https://www.youtube.com/watch?v=eZsavHeBHD4" type="video/mov"/>
-                     <source playsInline src="https://www.youtube.com/watch?v=eZsavHeBHD4"  type="video/ogg"/>
-                     <source playsInline src="https://www.youtube.com/watch?v=eZsavHeBHD4"  type="video/webm"/>
-                     <source playsInline src="https://www.youtube.com/watch?v=eZsavHeBHD4"  type="video/avi"/>
-                     </video></div>
+                    <h1>Fique por dentro</h1>
+               <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KA5OEAzblN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 }
 
 
