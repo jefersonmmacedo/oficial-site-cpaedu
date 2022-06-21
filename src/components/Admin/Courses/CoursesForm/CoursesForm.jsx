@@ -228,8 +228,8 @@ function CoursesForm() {
 
                     <select name="" id="" value={availability} onChange={handleAvailability} >
                         <option value="">Disponibilidade</option>
-                        <option value="Disponível">Disponível</option>
-                        <option value="Aguardar">Aguardar</option>
+                        <option value="Disponível">Ativo</option>
+                        <option value="Aguardar">Inativo</option>
                     </select>
 
                     <textarea name="" id="" cols="30" rows="5" placeholder="Matriz Curricular" value={curriculum} onChange={(e) => setCurriculum(e.target.value)}></textarea>

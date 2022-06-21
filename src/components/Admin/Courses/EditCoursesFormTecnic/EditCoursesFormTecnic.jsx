@@ -18,6 +18,7 @@ function CoursesFormTecnicEdit({curso}) {
     const [link, setLink] = useState('');
     const [category, setCategory] = useState('');
     const [format, setFormat] = useState('');
+    const [availability, setAvailability] = useState('');
 
     async function handleFile(e) {
         console.log(e.target.files[0])
@@ -56,6 +57,7 @@ function CoursesFormTecnicEdit({curso}) {
               setLink(doc.data().link);
               setCategory(doc.data().category);
               setFormat(doc.data().format);
+              setAvailability(doc.data().availability);
             });
         }
         setDocCourse()
@@ -93,6 +95,7 @@ function CoursesFormTecnicEdit({curso}) {
             link: link,
             category: category,
             format: format,
+            availability: availability,
         });
 
         toast.info("Curso atualizado.");
@@ -102,6 +105,11 @@ function CoursesFormTecnicEdit({curso}) {
     function handleFormat(e) {
         setFormat(e.target.value);
     }
+
+    function handleAvailability(e) {
+        setAvailability(e.target.value);
+    }
+
 
 
     return (
@@ -121,6 +129,10 @@ function CoursesFormTecnicEdit({curso}) {
                         <option value="">Formato</option>
                         <option value="Online">Online</option>
                         <option value="Presencial">Presencial</option>
+                    </select>  <select name="" id="" value={availability} onChange={handleAvailability}>
+                    <option value="">Disponibilidade</option>
+                    <option value="Disponível">Ativo</option>
+                        <option value="Aguardar">Inativo</option>
                     </select>
                 <button type="submit">Atualizar</button>
             </form>

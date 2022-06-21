@@ -18,6 +18,7 @@ function CoursesFormTecnic() {
     const [category, setCategory] = useState('');
     const [subCategory, setSubCategory] = useState('');
     const [format, setFormat] = useState('');
+    const [availability, setAvailability] = useState('');
 
 
 
@@ -67,7 +68,8 @@ function CoursesFormTecnic() {
                 description: description,
                 link: link,
                 category: "Cursos Técnicos",
-                format: format
+                format: format,
+                availability: availability,
             })
             console.log("Document written with ID: ", docRef.id);
                 toast.info(`Cadastro realizado com sucesso!`);
@@ -76,6 +78,7 @@ function CoursesFormTecnic() {
                 setTitle('')
                 setDescription('')
                 setLink('')
+                setAvailability('')
           } catch (e) {
             console.error("Error adding document: ", e);
           }
@@ -83,6 +86,9 @@ function CoursesFormTecnic() {
 
     function handleFormat(e) {
         setFormat(e.target.value);
+    }
+    function handleAvailability(e) {
+        setAvailability(e.target.value);
     }
 
     return (
@@ -101,6 +107,11 @@ function CoursesFormTecnic() {
                         <option value="">Formato</option>
                         <option value="Online">Online</option>
                         <option value="Presencial">Presencial</option>
+                    </select>
+                    <select name="" id="" value={availability} onChange={handleAvailability}>
+                    <option value="">Disponibilidade</option>
+                    <option value="Disponível">Ativo</option>
+                        <option value="Aguardar">Inativo</option>
                     </select>
                 <button type="submit">Cadastrar</button>
             </form>

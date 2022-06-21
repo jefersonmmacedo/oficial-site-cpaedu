@@ -135,9 +135,9 @@ function SliderForm() {
 
                 <div className="double">
                     <select name="" id="" value={availability} onChange={handleAvailability}>
-                    <option value="">Disponobilidade</option>
-                    <option value="Disponível">Disponível</option>
-                    <option value="Aguardar">Aguardar</option>
+                    <option value="">Disponibilidade</option>
+                    <option value="Disponível">Ativo</option>
+                        <option value="Aguardar">Inativo</option>
                     </select>
                     <select name="" id="" value={position} onChange={handlePosition}>
                     <option value="">Posição</option>

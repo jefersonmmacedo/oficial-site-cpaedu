@@ -6,7 +6,7 @@ function IconsFormContactEAD() {
         <div className="IconsFormContactEAD">
             <div className="follow">
                 <div className="title">
-                    <h1>Siga a CPA EDUCAÇÂO</h1>
+                    <h1>Siga o CPA EDUCAÇÂO</h1>
                 </div>
                 <div className="icons">
                 <a href="https://www.facebook.com/cpaeducacao" rel="noreferrer" target="_blank">
