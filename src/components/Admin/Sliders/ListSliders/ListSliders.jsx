@@ -50,6 +50,13 @@ function ListSliders() {
     window.open(`/adm/slider/${slider}`, "_self")
   }
 
+  carroussel.sort(function(a,b) {
+    if(a.position < b.position ) {
+        return -1
+    } else {
+        return true
+    }
+})
 
     return (
         <div className="ListSliders">

@@ -8,7 +8,49 @@
 }
 
 .ListCourses h1 {
-    margin: 40px;
+    margin-top:  20px ;
+}
+.ListCourses h4 {
+    margin-bottom:  20px ;
+}
+
+.ListCourses .selection {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
+.ListCourses .selection .coursesPageSelection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ListCourses .selection .coursesPageSelection select {
+    display: none;
+}
+.ListCourses .selection .coursesPageSelection button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--Blue);
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.ListCourses .selection .coursesPageSelection button:hover {
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.1);
+    background-color: rgb(31, 0, 62);
 }
 
 .ListCourses .CoursesUnic {
@@ -99,7 +141,7 @@
     background-color: var(--Primary);
     border-radius: 6px;
     padding: 10px;
-    margin: 5px;
+    margin: 5px 5px 20px 5px;
     border: none;
     text-decoration: none;
     font-weight: 700;

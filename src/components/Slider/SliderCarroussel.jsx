@@ -36,6 +36,17 @@ function SliderCarroussel() {
 
 console.log(carroussel)
 
+
+const NewCarroussel = carroussel.sort(function(a,b) {
+  if(a.position < b.position ) {
+      return -1
+  } else {
+      return true
+  }
+})
+
+console.log(NewCarroussel)
+
   var settings = {
     arrows: false,
     autoplay: true,
@@ -52,11 +63,11 @@ console.log(carroussel)
  
   return (
     <Slider {...settings}>
-      {carroussel.map((list) => {
+      {NewCarroussel.map((list) => {
         return (
       <div className="slider-carrousel">
       <a href={list.link}>
-        <img src={list.image} alt={list.title} />
+        <img src={list.image} alt={list.title + "" + list.position} />
       </a>
       </div>
         )

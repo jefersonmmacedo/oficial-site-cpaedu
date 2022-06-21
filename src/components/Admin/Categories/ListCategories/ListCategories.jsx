@@ -3,12 +3,13 @@ import { collection, getDocs, query, where, doc, deleteDoc } from "firebase/fire
 import { toast } from "react-toastify";
 import db from '../../../../services/firebaseConnection';
 import { useState, useEffect } from 'react';
-import {IoTrashOutline, IoRefreshOutline, IoCreateOutline} from 'react-icons/io5';
+import {IoTrashOutline, IoRefreshOutline, IoCreateOutline, IoSearchOutline} from 'react-icons/io5';
 import './listCategories.css';
 
 function ListCategories() {
 
-    const [categories, setCategories] = useState([]); 
+    const [categories, setCategories] = useState([]);
+    const [search, setSearch] = useState("")
 
     useEffect(() => {
       async function loadCondadatos() {
@@ -49,6 +50,18 @@ function ListCategories() {
       window.open(`/adm/category/${title}`, "_self")
 
   }
+
+  const searchLower = search.toLowerCase()
+  const FilterCategories = search !== "" ? categories?.filter((course) => (course.title.toLowerCase().includes(searchLower))) : categories
+  
+  FilterCategories.sort(function (categoriesA, categoriesB) {
+      if (categoriesA.name == categoriesB.name)
+        return 0;
+      if (categoriesA.name < categoriesB.name)
+        return -1
+      if (categoriesA.name > categoriesB.name)
+        return 1
+    });
     
     return (
         <div className="ListCategories">
@@ -58,7 +71,16 @@ function ListCategories() {
 <a href="/adm/categorynew">Nova categoria</a>
 </div>
 
-{categories.map((category) => {
+<div className="Search">
+        <form>
+            <button>
+                <IoSearchOutline />
+            </button>
+            <input type="text" placeholder="Digite o que deseja estudar" value={search.toLowerCase()} onChange={(e) => setSearch(e.target.value)}/>
+        </form>
+        </div>
+
+{FilterCategories.map((category) => {
   return (
       <div className="CategoriesUnic" key={category.id}>
           <div className="text">

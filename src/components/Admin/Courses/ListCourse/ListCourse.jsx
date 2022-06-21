@@ -1,9 +1,9 @@
 import Navbar2 from '../../Nav/Navbar';
-import { collection, getDocs, query, where, doc, deleteDoc } from "firebase/firestore";
+import { collection, getDocs, query, where, doc, deleteDoc, orderBy } from "firebase/firestore";
 import { toast } from "react-toastify";
 import db from '../../../../services/firebaseConnection';
 import { useState, useEffect } from 'react';
-import {IoTrashOutline, IoRefreshOutline, IoCreateOutline} from 'react-icons/io5';
+import {IoTrashOutline, IoRefreshOutline, IoCreateOutline, IoSearchOutline} from 'react-icons/io5';
 import './listCourse.css';
 
 
@@ -11,6 +11,9 @@ function ListCourse() {
 
 
     const [courses, setCourses] = useState([]); 
+    const [categories, setCategories] = useState([]);
+    const [search, setSearch] = useState("")
+    const [type, setType] = useState("")
 
     useEffect(() => {
       async function loadCondadatos() {
@@ -53,6 +56,26 @@ function ListCourse() {
       loadCondadatos()
   }, []);
 
+  useEffect(() => {
+    async function loadCondadatos() {
+        const querySnapshot = await getDocs(collection(db, "categories"));  
+        const list = []
+        querySnapshot.forEach((doc) => {
+           // console.log(`${doc.id} => ${doc.data()}`);
+          const data = {
+            id: doc.id,
+            title: doc.data().title,
+            }
+            
+           // console.log(data)
+            list.push(data)
+          });
+          setCategories(list)
+    }
+
+    loadCondadatos()
+}, [])
+
   async function handleDeleteCurso(id) {
 
     const deletar = window.confirm("Deseja deletar o curso?");
@@ -66,7 +89,14 @@ function ListCourse() {
 
   }
     
-  
+  function handleSetTypeCategory(category) {
+    setType(category);
+    setSearch("")
+}
+function handleSearchCourse(e) {
+    e.preventDefault();
+    setType("")
+}
 
 
 function handleUpdateCourse(course, category) {
@@ -76,16 +106,55 @@ function handleUpdateCourse(course, category) {
     window.open(`/adm/course/${course}`, "_self")
   }
 }
-    
+const searchLower = search.toLowerCase()
+const FilterCourses = type !== "" ? 
+courses?.filter((course) => (course.category === type)) :
+search !== "" ?
+courses?.filter((course) => (course.title.toLowerCase().includes(searchLower))) : courses
+
+FilterCourses.sort(function (coursesA, coursesB) {
+  if (coursesA.title == coursesB.title)
+    return 0;
+  if (coursesA.title < coursesB.title)
+    return -1
+  if (coursesA.title > coursesB.title)
+    return 1
+});
+// ordenada por ordem alfabetica.
+console.log(FilterCourses);
+
+
     return (
         <div className="ListCourses">
         <Navbar2 />
-<h1>Curso</h1>
+<h1>Cursos</h1>
+<h4>{courses.length} Cadastrados</h4>
+
+
 <div className="link">
 <a href="/adm/coursenew">Novo curso</a>
 </div>
+<div className="selection">
+                    <div className="coursesPageSelection">
+                        <button onClick={() => {handleSetTypeCategory("")}} >Todos</button>
+                        {categories.map((categorie) => {
+                            return (
+                                <button key={categorie.id} onClick={() => {handleSetTypeCategory(categorie.title)}}>{categorie.title}</button>
+                            )
+                        })
+                        }
+                    </div>
+                </div>
+<div className="Search">
+        <form>
+            <button>
+                <IoSearchOutline />
+            </button>
+            <input onClick={handleSearchCourse} type="text" placeholder="Digite o que deseja estudar" value={search.toLowerCase()} onChange={(e) => setSearch(e.target.value)}/>
+        </form>
+        </div>
 
-{courses.map((course) => {
+{FilterCourses.map((course) => {
   return (
       <div className="CoursesUnic" key={course.id}>
           <div className="text">

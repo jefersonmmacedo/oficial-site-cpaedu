@@ -92,6 +92,9 @@ const Ul = styled.ul`
       margin-left: 10px;
       margin-right: 10px;
     }
+    button svg {
+      margin-right: 10px;
+    }
 
     button:hover{
       background-color: var(--Yellow);
@@ -100,6 +103,9 @@ const Ul = styled.ul`
     .btn{
       background-color:  var(--Yellow);
       margin-left: 10px;
+      margin-right: 10px;
+    }
+    .btn svg {
       margin-right: 10px;
     }
 
@@ -160,13 +166,13 @@ const RightNav = ({ open }) => {
             </a>
           </li>
           <button onClick={HandleOpen}>
-            <IoLogoWhatsapp /> Atendimento
+            <IoLogoWhatsapp /> &nbsp; Atendimento
           </button>
           <button className="btn" onClick={HandleOpenStudent}>
             Àrea do aluno
           </button>
 
-         
+          
     </Ul>
   )
 }

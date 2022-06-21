@@ -8,8 +8,8 @@ function AboutPrev() {
             <div className="text">
                 <h3>O CPA Educação (Centro de Educação Profissional Amaivos)</h3>
                 <div className="line"></div>
-                <h2>Oferecemos cursos de formação musical prática e teórica e cursos qualificação profissional em diversas áreas de atuação</h2>
-                <button>CONHEÇA MAIS SOBRE A CPAEDU</button>
+                <h2>Organização privada, que desde 2012 oferece na cidade de Saquarema/RJ, serviços de educação profissional em diversas áreas de atuação.</h2>
+                <button>CONHEÇA MAIS SOBRE O CPA</button>
 
             </div>
             <div className="images">

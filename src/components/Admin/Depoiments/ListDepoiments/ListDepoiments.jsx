@@ -4,11 +4,12 @@ import { collection, getDocs, query, where, doc, deleteDoc } from "firebase/fire
 import { toast } from "react-toastify";
 import db from '../../../../services/firebaseConnection';
 import { useState, useEffect } from 'react';
-import {IoTrashOutline, IoRefreshOutline, IoCreateOutline} from 'react-icons/io5';
+import {IoTrashOutline, IoRefreshOutline, IoCreateOutline, IoSearchOutline} from 'react-icons/io5';
 
 function ListDepoiments() {
 
-    const [depoiments, setDepoiments] = useState([]); 
+    const [depoiments, setDepoiments] = useState([]);
+    const [search, setSearch] = useState("")
 
     useEffect(() => {
       async function loadCondadatos() {
@@ -47,11 +48,22 @@ function ListDepoiments() {
 
   }
 
+
   function handleUpdateDepoiment(name) {
     window.open(`/adm/depoiment/${name}`, "_self")
   }
 
+  const searchLower = search.toLowerCase()
+const FilterDepoiments = search !== "" ? depoiments?.filter((course) => (course.name.toLowerCase().includes(searchLower))) : depoiments
 
+FilterDepoiments.sort(function (depoimentsA, depoimentsB) {
+    if (depoimentsA.name == depoimentsB.name)
+      return 0;
+    if (depoimentsA.name < depoimentsB.name)
+      return -1
+    if (depoimentsA.name > depoimentsB.name)
+      return 1
+  });
 
 
     return (
@@ -62,7 +74,16 @@ function ListDepoiments() {
            <a href="/adm/depoimentnew">Novo depoimento</a>
            </div>
 
-           {depoiments.map((depoiment) => {
+           <div className="Search">
+        <form>
+            <button>
+                <IoSearchOutline />
+            </button>
+            <input type="text" placeholder="Digite o que deseja estudar" value={search.toLowerCase()} onChange={(e) => setSearch(e.target.value)}/>
+        </form>
+        </div>
+
+           {FilterDepoiments.map((depoiment) => {
                return (
                    <div className="DepoimentUnic" key={depoiment.id}>
                        <div className="text">

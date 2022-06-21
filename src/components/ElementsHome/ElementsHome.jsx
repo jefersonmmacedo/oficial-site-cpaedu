@@ -5,7 +5,7 @@ function ElementsHome() {
     return (
         <div className="ElementsHome">
             <div className="bar"></div>
-            <h1><b>MOTIVOS PARA ESCOLHER</b> A CPAEDU</h1>
+            <h1><b>MOTIVOS PARA ESCOLHER</b> O CPAEDU</h1>
             <div className="elements">
                 <div className="itensElements">
                     <IoMusicalNoteOutline />

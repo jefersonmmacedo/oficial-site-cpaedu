@@ -210,7 +210,6 @@ const searchLower = search.toLowerCase()
 
 
 
-
     return(
         <div className="coursesPage">
             <div className="titleBar">
