@@ -182,7 +182,11 @@ Modal.setAppElement('#root');
                             </div>
                             <div className="text">
                                 <p>Investimento</p>
+                                {valuePromotional === "" || valuePromotional === null || valuePromotional === undefined ?
+                                <p><b>R${valueCourse}</b></p>
+                                :
                                 <p>De: <b>R${valueCourse}</b> / Por: <b>R${valuePromotional}</b></p>
+                                }
                             </div>
                         </div>
                     </div>
