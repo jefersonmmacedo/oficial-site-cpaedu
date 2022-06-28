@@ -202,7 +202,7 @@ Modal.setAppElement('#root');
                 {linkVideo === "" ? "":
                 <div className="media">
                     <h1>Fique por dentro</h1>
-               <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KA5OEAzblN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+               <iframe width="560" height="315" src={linkVideo} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 }
 
 

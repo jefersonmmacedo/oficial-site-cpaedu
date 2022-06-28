@@ -1,0 +1,28 @@
+.newCourseEJA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    color: rgb(27, 0, 88);
+}
+.newCourseEJA .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.newCourseEJA .buttons button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: var(--Primary);
+    border: none;
+    margin: 40px 0 10px 0;
+}

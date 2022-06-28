@@ -132,6 +132,14 @@
 .ListCourses .CoursesUnic .text .button button svg {
     font-size:16px;
 }
+
+.ListCourses .link {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%
+}
 .ListCourses .link a {
     display:flex;
     align-items: center;

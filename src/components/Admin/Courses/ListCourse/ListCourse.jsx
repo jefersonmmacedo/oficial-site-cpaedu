@@ -133,6 +133,7 @@ console.log(FilterCourses);
 
 <div className="link">
 <a href="/adm/coursenew">Novo curso</a>
+<a href="/adm/courseeja">Novo Curso EJA</a>
 </div>
 <div className="selection">
                     <div className="coursesPageSelection">

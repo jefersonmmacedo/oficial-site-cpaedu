@@ -10,8 +10,10 @@ import { ListSliders } from '../components/Admin/Sliders/ListSliders/ListSliders
 import { About } from '../pages/About/About';
 import { NewCategories } from '../pages/Admin/Categories/NewCategories/NewCategories';
 import { EditCourse } from '../pages/Admin/Courses/EditCourse/EditCourse';
+import { EditCourseEJA } from '../pages/Admin/Courses/EditCourseEJA/EditCourseEJA';
 import { EditCourseTecnic } from '../pages/Admin/Courses/EditCourseTecnic/EditCourseTecnic';
 import { NewCourse } from '../pages/Admin/Courses/NewCourse/NewCourse';
+import { NewCourseEJA } from '../pages/Admin/Courses/NewCourseEJA/NewCourseEJA';
 import { NewCourseTecnic } from '../pages/Admin/Courses/NewCourseTecnic/NewCourseTecnic';
 import { NewDepoiments } from '../pages/Admin/Depoiments/NewDepoiments/NewDepoiments';
 import { Informations } from '../pages/Admin/Informations/Informations';
@@ -74,6 +76,10 @@ function PrivateRoute({children} ) {
                     element={ <PrivateRoute> <EditCourseTecnic /></PrivateRoute>} />
             <Route path="/adm/course/:curso"
                     element={ <PrivateRoute> <EditCourse /></PrivateRoute>} />
+            <Route path="/adm/courseeja"
+                    element={ <PrivateRoute> <NewCourseEJA /></PrivateRoute>} />
+            <Route path="/adm/courseejaedit/:curso"
+                    element={ <PrivateRoute> <EditCourseEJA /></PrivateRoute>} />
 
 
             <Route path="/adm/category"
