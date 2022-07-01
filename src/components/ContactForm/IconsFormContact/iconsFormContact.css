@@ -69,6 +69,7 @@
     background-color:var(--Blue);
     padding: 50px 0;
     color: var(--White);
+    text-align: center;
 }
 .IconsFormContact .map .map2{
     display: flex;

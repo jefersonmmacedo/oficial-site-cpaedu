@@ -49,7 +49,7 @@ console.log(informations[0]);
             <div className="top">
                 <div className="block">
                     <img src={logoSimbol} alt="" />
-                    <h1>12 Anos acreditando na Educação que transforma!</h1>
+                    <h1>Desde 2012 promovendo a educação que transforma!</h1>
                     <IoArrowDownCircleOutline />
                 </div>
             </div>
@@ -75,8 +75,25 @@ console.log(informations[0]);
                             <p><b>Valores</b></p>
                             <p>{informations.values}</p>
                             <br />
-                            <br />
-                            <br />
+                        </div>
+
+                        <div className="images">
+                            <div className="list">
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                            </div>
+                            <div className="list">
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                                <img src="" alt="" />
+                            </div>
                         </div>
 
                 </div>

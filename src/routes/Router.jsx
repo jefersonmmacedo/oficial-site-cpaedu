@@ -22,6 +22,7 @@ import { Contact } from '../pages/Contact/Contact';
 import { ContactEAD } from '../pages/ContactEAD/ContactEAD';
 import { Courses } from '../pages/Courses/Courses';
 import { CourseUnic } from '../pages/CourseUnic/CourseUnic';
+import { CourseUnicEJA } from '../pages/CourseUnicEJA/CourseUnicEJA';
 import { DepoimentsAll } from '../pages/DepoimentsAll/DepoimentsAll';
 import { EJA } from '../pages/EJA/EJA';
 import { Home } from '../pages/Home/Home';
@@ -46,6 +47,7 @@ function PrivateRoute({children} ) {
             <Route path="/prematricula/:curso" element={<ContactEAD />}/>      
             <Route path="/sobre" element={<About />}/>      
             <Route path="/curso-individual/:curso" element={<CourseUnic />}/>      
+            <Route path="/curso-individual-eja/:curso" element={<CourseUnicEJA />}/>      
             <Route path="/cursos/:curso" element={<Courses />}/>    
             <Route path="/depoimentos" element={<DepoimentsAll />}/>    
             <Route path="/eja" element={<EJA />}/>    

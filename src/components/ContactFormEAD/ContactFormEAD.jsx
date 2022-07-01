@@ -55,9 +55,9 @@ console.log(informations[0])
                 
             <div className="formulary">
             <div className="title">
-                <h1>Evolua Sempre!<br />Faça sua pré matrícula</h1>
+                <h1>A hora é agora!<br />Garanta o seu futuro.a</h1>
                 <br />
-                <p>Garanta o seu futuro, matricule-se!</p>
+                <p>Envie suas informações de cadastro, nossa equipe entrará em contato.</p>
             </div>
                 <form action="">
                     <div className="name">

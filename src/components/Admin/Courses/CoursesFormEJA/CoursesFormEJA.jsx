@@ -1,21 +1,22 @@
-import { collection, query, where, getDocs, updateDoc, doc  } from "firebase/firestore";
-import { ref, getDownloadURL, uploadBytes } from 'firebase/storage';
-import db from '../../../../services/firebaseConnection';
-import { storage } from "../../../../services/firebaseImageConnection";
-import { useState, useEffect } from "react";
-import { toast } from "react-toastify";
-import { v4 as uuidv4} from 'uuid';
+import './coursesFormEJA.css';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
 import {FiUpload} from 'react-icons/fi';
-import './editCoursesFormEJA.css';
+import profile from '../../../../assets/images/imagecurso.jpg';
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import db from '../../../../services/firebaseConnection';
+import { ref, getDownloadURL, uploadBytes } from 'firebase/storage';
+import { v4 as uuidv4} from 'uuid'
+import { storage } from "../../../../services/firebaseImageConnection";
+import { useEffect } from 'react'
 
-function CoursesFormEditEJA({curso}) {
-
+function CoursesFormEJA() {
     const [avatarUrl, setAvatarUrl] = useState(null);
     const [imageAvatar, setImageAvatar] = useState('');
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [link, setLink] = useState('');
-    const [category, setCategory] = useState('');
+    const [category, setCategory] = useState('Ensino Médio - EJA EAD');
     const [subCategory, setSubCategory] = useState('');
     const [valueCourse, setValueCourse] = useState('');
     const [valuePromotional, setValuepromotional] = useState('');
@@ -33,37 +34,38 @@ function CoursesFormEditEJA({curso}) {
     const [availability, setAvailability] = useState('');
     const [professional, setProfessional] = useState('');
     const [occupationArea, setOccupationArea] = useState('');
-    const [imageCourse, setImageCourse] = useState('');
-    const [id, setId] = useState('');
-    const [categories, setCategories] = useState([]); 
+    const [categories, setCategories] = useState([]);
     const [evaluation, setEvaluation] = useState('');
     const [methodStudy, setMethodStudy] = useState('');
     const [documentation, setDocumentation] = useState('');
     const [classification, setClassification] = useState('');
 
 
+
     useEffect(() => {
-        async function loadCondadatos() {
-            const querySnapshot = await getDocs(collection(db, "categories"));  
-            const list = []
-            querySnapshot.forEach((doc) => {
-               // console.log(`${doc.id} => ${doc.data()}`);
-              const data = {
-                id: doc.id,
-                title: doc.data().title,
-                image: doc.data().image,
-                description: doc.data().description,
-                }
-                
-              console.log(data)
-                list.push(data)
-              });
-              setCategories(list)
-        }
-    
-        loadCondadatos()
-    }, []);
+      async function loadCondadatos() {
+          const querySnapshot = await getDocs(collection(db, "categories"));  
+          const list = []
+          querySnapshot.forEach((doc) => {
+             // console.log(`${doc.id} => ${doc.data()}`);
+            const data = {
+              id: doc.id,
+              title: doc.data().title,
+              image: doc.data().image,
+              description: doc.data().description,
+              }
+              
+            console.log(data)
+              list.push(data)
+            });
+            setCategories(list)
+      }
   
+      loadCondadatos()
+  }, []);
+
+  
+
 
     async function handleFile(e) {
         console.log(e.target.files[0])
@@ -86,9 +88,13 @@ function CoursesFormEditEJA({curso}) {
             }
         }
     }
-
+    
+    
+    
+    
     function handleCategories(e) {
         setCategory(e.target.value);
+        toast.info(e.target.value)
     }
     function handleAvailability(e) {
         setAvailability(e.target.value);
@@ -106,103 +112,25 @@ function CoursesFormEditEJA({curso}) {
         setTypeDuratin(e.target.value);
     }
 
-
-
-    useEffect(() => {
-        async function setDocCourse() {
-            const q = query(collection(db, "courses"), where("title", "==", curso));
-            console.log("Olá, Mundo")
-            const querySnapshot = await getDocs(q);
-            querySnapshot.forEach((doc) => {
-              // doc.data() is never undefined for query doc snapshots
-              console.log(doc.id, " => ", doc.data());
-              setId(doc.id);
-              setImageCourse(doc.data().image);
-              setTitle(doc.data().title);
-              setDescription(doc.data().description);
-              setLink(doc.data().link);
-              setCategory(doc.data().category);
-              setSubCategory(doc.data().subCategory)
-              setDuration(doc.data().duration);
-              setTypeDuratin(doc.data().typeDuration)
-              setDate(doc.data().date);
-              setValue(doc.data().value)
-              setPortion(doc.data().portion);
-              setFormat(doc.data().format);
-              setHours(doc.data().hours);
-              setMec(doc.data().mec);
-              setLinkVideo(doc.data().linkVideo);
-              setAvailability(doc.data().availability);
-              setValueCourse(doc.data().valueCourse)
-              setValuepromotional(doc.data().valuePromotional);
-              setCurriculum(doc.data().curriculum);
-              setProfessional(doc.data().professional);
-              setOccupationArea(doc.data().occupationArea);
-              setClassification(doc.data().classification);
-              setDocumentation(doc.data().documentation)
-              setMethodStudy(doc.data().methodStudy)
-              setEvaluation(doc.data().evaluation)
-            });
-        }
-        setDocCourse()
-    }, [curso]);
-
-    async function handleCoursesForm(e) {
+    async function handleCoursesFormEJA(e) {
         e.preventDefault();
-        toast.info("Atualizando...");
-        if(avatarUrl == null && imageAvatar === "") {
-            const data = ""
-            handleUpdate(data)
-        } else {
-            const uuid = uuidv4();
-        let newAvatarUrlFirebase = ref(storage, `images/categories/${uuid}`);
+
+        const uuid = uuidv4();
+        let newAvatarUrlFirebase = ref(storage, `images/courses/${uuid}`);
         
         let uploadAvatar = await uploadBytes(newAvatarUrlFirebase, imageAvatar);
         let photoUrlAvatar = await getDownloadURL(uploadAvatar.ref);
         
         console.log(uploadAvatar.ref.name, photoUrlAvatar);
 
-        handleUpdate(photoUrlAvatar)
-        }
-
-        
+        newCategoryPost(photoUrlAvatar)
     }
 
-
-    async function handleUpdate(photoUrlAvatar) {
-        const updateslider = doc(db, "courses", id);
-            console.log({
-                id: id,
+    async function newCategoryPost (photoUrlAvatar) {
+        try {
+            const docRef = await addDoc(collection(db, "courses"), {
                 title: title,
-                image: photoUrlAvatar === "" ? imageCourse : photoUrlAvatar,
-                description: description,
-                category: category,
-                subCategory: subCategory,
-                valueCourse: valueCourse,
-                valuePromotional: valuePromotional,
-                link: link === undefined ? "" : link,
-                linkVideo: linkVideo,
-                curriculum: curriculum,
-                mec: mec,
-                hours: hours,
-                format: format,
-                portion: portion,
-                value: value,
-                qtdDate: qtdDate,
-                date: date,
-                duration: duration,
-                typeDuration: typeDuration,
-                availability: availability,
-                professional: professional === undefined ? "" : professional,
-                occupationArea: occupationArea === undefined ? "" : occupationArea,
-                evaluation: evaluation,
-                methodStudy: methodStudy,
-                documentation: documentation,
-                classification: classification,
-            })
-            await updateDoc(updateslider, {
-                title: title,
-                image: photoUrlAvatar === "" ? imageCourse : photoUrlAvatar,
+                image: photoUrlAvatar,
                 description: description,
                 category: category,
                 subCategory: subCategory,
@@ -227,20 +155,52 @@ function CoursesFormEditEJA({curso}) {
                 methodStudy: methodStudy,
                 documentation: documentation,
                 classification: classification,
-            });
+            })
+            console.log("Document written with ID: ", docRef.id);
+                toast.info(`Cadastro realizado com sucesso!`);
+                setAvatarUrl(null)
+                setImageAvatar('')
+                setTitle('')
+                setDescription('')
+                setLink('')
+                setCategory('')
+                setSubCategory('')
+                setDuration('')
+                setTypeDuratin('')
+                setDate('');
+                setValue('')
+                setPortion('');
+                setFormat('');
+                setHours('');
+                setMec('');
+                setLinkVideo('');
+                setAvailability('');
+                setValueCourse('')
+                setValuepromotional('');
+                setCurriculum('');
+                setProfessional('');
+                setOccupationArea('');
+                setClassification("");
+                setDocumentation("")
+                setMethodStudy("")
+                setEvaluation("")
 
-        toast.info("Curso atualizado.");
-        window.open("/adm/course", "_self")
+                window.open("/adm/course", "_self")
+                
+          } catch (e) {
+            console.error("Error adding document: ", e);
+          }
     }
+
     
     return (
-        <div className="coursesFormEditEJA">
-           <h3>Editar Cursos</h3>
-           <form action="" onSubmit={handleCoursesForm}>
+        <div className="CoursesFormEJA">
+           <h3>Cadastrar Cursos</h3>
+                <form action="" onSubmit={handleCoursesFormEJA}>
                 <label className="label-avatar">
                     <span><FiUpload color="#f65" size={25} /></span>
                     <input type="file" accept="image/*" onChange={handleFile}/><br />
-                    <img src={avatarUrl === null ? imageCourse : avatarUrl} alt="Avatar" height={160} width={400}/>
+                    <img src={avatarUrl === null ? profile : avatarUrl} alt="Avatar" height={160} width={400}/>
                 </label>
 
 
@@ -258,7 +218,6 @@ function CoursesFormEditEJA({curso}) {
                         <option value="">Categoria</option>
                         {categories.map((category) => {
                             return (
-                                category.title === "Cursos Técnicos" ? "" :
                                 <option value={category.title}>{category.title}</option>
                             )
                         })}
@@ -266,10 +225,8 @@ function CoursesFormEditEJA({curso}) {
                     :
                     <div className="double">
                     <select name="" id="" value={category} onChange={handleCategories} >
-                         <option value="2º Curso Superior">2º Curso Superior</option>
-                         {categories.map((category) => {
+                    {categories.map((category) => {
                             return (
-                                category.title === "Cursos Técnicos" ? "" :
                                 <option value={category.title}>{category.title}</option>
                             )
                         })}
@@ -330,10 +287,10 @@ function CoursesFormEditEJA({curso}) {
                     </div>
                  
                   
-                    <button type="submit">Atualizar</button>
+                    <button type="submit">Cadastrar curso</button>
                 </form>
         </div>
     )
 }
 
-export {CoursesFormEditEJA}
+export {CoursesFormEJA}

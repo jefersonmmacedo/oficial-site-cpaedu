@@ -46,12 +46,15 @@ function DepoimentsAll() {
                 <img src={depoiment.image} alt={depoiment.name} />
             </div>
             <div className="text">
-            <h4>{depoiment.depoiment}</h4>                </div>
+            <div className="depoiment">
+            <h4>{depoiment.depoiment}</h4>
+            </div>
             <div className="name">
                 <h5>{depoiment.name}</h5>
             </div>
             <div className="course">
             <p>{depoiment.course}</p>
+            </div>
             </div>
             </div>
            )

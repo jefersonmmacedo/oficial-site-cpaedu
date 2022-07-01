@@ -9,11 +9,10 @@ function FooterFormCompany() {
             <img src={logoImg} alt="" />
             </div>
             <div className="infos">
-                   <p>O CPA Educação (Centro de Educação Profissional Amaivos).</p>
-                   <p>Avenida Saquarema, Nº 5070
-Bacaxá - Saquarema - RJ.</p>
-<p>CEP: 28994-597</p>
-<p>(Em frente ao Banco do Brasil).</p>
+                   <p>O CPA Educação (Centro de Educação Profissional Amaivos)</p>
+                   <p>Avenida Saquarema, nº 5070 Bacaxá - Saquarema - RJ</p>
+                   <p>(Em frente ao Banco do Brasil)</p>
+                   <p>CEP: 28994-597</p>
             </div>
         </div>
     )

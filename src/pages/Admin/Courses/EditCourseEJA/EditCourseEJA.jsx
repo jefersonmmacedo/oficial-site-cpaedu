@@ -8,7 +8,7 @@ function EditCourseEJA() {
     function handleSelectTecnic(e) {
         e.preventDefault();
 
-        window.open("/adm/coursetecnicnew", "_self")
+        window.open("/adm/course", "_self")
     }
 
     return (

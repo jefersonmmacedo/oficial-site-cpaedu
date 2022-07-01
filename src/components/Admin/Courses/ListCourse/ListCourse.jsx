@@ -102,7 +102,9 @@ function handleSearchCourse(e) {
 function handleUpdateCourse(course, category) {
   if(category === "Cursos Técnicos") {
     window.open(`/adm/coursetecnic/${course}`, "_self")
-  } else {
+  } else if (category === "Ensino Médio - EJA EAD") {
+    window.open(`/adm/courseejaedit/${course}`, "_self")
+  } else{
     window.open(`/adm/course/${course}`, "_self")
   }
 }
@@ -133,7 +135,7 @@ console.log(FilterCourses);
 
 <div className="link">
 <a href="/adm/coursenew">Novo curso</a>
-<a href="/adm/courseeja">Novo Curso EJA</a>
+{/* <a href="/adm/courseeja">Novo Curso EJA</a> */}
 </div>
 <div className="selection">
                     <div className="coursesPageSelection">

@@ -54,9 +54,9 @@ console.log(informations[0])
                 
             <div className="formulary">
             <div className="title">
-                <h1>Evolua Sempre!<br />Invista na sua Vida Pessoal e Profissional</h1>
+                <h1>Evolua Sempre!<br />Invista em sua carreira profissional</h1>
                 <br />
-                <p>A CPAEDU mudou o ensino profissionalizante do Brasil.<br /> E vai fazer o mesmo com a sua vida</p>
+                <p>O CPA está transformando a história dos seus alunos através da educaçãoa</p>
             </div>
                 <form action="">
                         <input type="text" name="" id="" placeholder="Nome"/>

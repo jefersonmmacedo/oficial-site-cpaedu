@@ -1,0 +1,148 @@
+.CoursesFormEJA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    color: #fff;
+    margin: 10px 0;
+}
+.CoursesFormEJA h3{
+    text-align:center;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.CoursesFormEJA form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding:20px;
+}
+
+
+.CoursesFormEJA form .label-avatar{
+    width: 400px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.CoursesFormEJA form .label-avatar input {
+    display: none;
+}
+
+.CoursesFormEJA form .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.CoursesFormEJA form .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.CoursesFormEJA form .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.CoursesFormEJA form input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+.CoursesFormEJA form select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+
+.CoursesFormEJA form textarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px;
+    resize: none;
+}
+
+.CoursesFormEJA form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    background-color: rgb(27, 0, 88);
+    color: #fff;
+    padding: 10px
+}
+
+.CoursesFormEJA form .double {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+}
+
+.CoursesFormEJA form .double input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 47%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+.CoursesFormEJA form .double select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 47%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+
+
+
