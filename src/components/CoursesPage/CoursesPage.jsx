@@ -266,7 +266,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                      {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -294,7 +294,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -321,7 +321,7 @@ const searchLower = search.toLowerCase()
                 <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -349,7 +349,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -377,7 +377,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -405,7 +405,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -433,7 +433,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -461,7 +461,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -489,7 +489,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -517,7 +517,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -545,7 +545,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -573,7 +573,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -601,7 +601,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -629,7 +629,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -657,7 +657,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -685,7 +685,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -713,7 +713,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -741,7 +741,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -769,7 +769,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -797,7 +797,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -825,7 +825,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -853,7 +853,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -881,7 +881,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -909,7 +909,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -937,7 +937,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
@@ -965,7 +965,7 @@ const searchLower = search.toLowerCase()
                          <hr />
                                          {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }

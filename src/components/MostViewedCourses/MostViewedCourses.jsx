@@ -53,7 +53,7 @@ console.log(limit)
                             <img src={course.image} alt={course.image} />
                         </div>
                         </a>:
-                        course.category === "Ensino Médio - EJA EAD" ? 
+                        course.category === "Ensino Médio - EJA" ? 
                         <Link to={`/curso-individual-eja/${course.title}`}>
                         <div className="image">
                             <img src={course.image} alt={course.image} />
@@ -68,7 +68,7 @@ console.log(limit)
                         <div className="title">
                         {course.category === "Cursos Técnicos" ? 
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
-                         course.category === "Ensino Médio - EJA EAD" ?
+                         course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
