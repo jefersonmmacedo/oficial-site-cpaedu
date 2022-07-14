@@ -71,7 +71,7 @@ var settings = {
 
     return (
         <Slider {...settings}>
-        {newDepoiments.map((depoiment) => {
+        {depoiments.map((depoiment) => {
            return (
             <div className="depoimentUnic" key={depoiment.id}>
             {/* <div className="image">
