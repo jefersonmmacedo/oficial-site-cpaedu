@@ -169,7 +169,7 @@ const RightNav = ({ open }) => {
             <IoLogoWhatsapp /> &nbsp; Atendimento
           </button>
           <button className="btn" onClick={HandleOpenStudent}>
-            Àrea do aluno
+          Área do aluno
           </button>
 
           

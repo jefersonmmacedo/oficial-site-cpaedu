@@ -111,7 +111,7 @@
     background-color: var(--Background);
     color: va(--Background2);
 }
-.contactFormEAD .contactBlock .formulary form a{
+.contactFormEAD .contactBlock .formulary form button{
     display: flex;
     align-items: center;
     justify-content: center;

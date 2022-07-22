@@ -53,7 +53,7 @@ console.log(NewCarroussel)
     vertical: true,
     rtl: true,
     slickPrev: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     dots: false,
     infinite: true,
     speed: 500,

@@ -226,12 +226,13 @@
    flex-direction:row;
    align-items: flex-start;
    justify-content: center;
-   width: 5%;
+   width: 50px;
    padding: 20px 0;
 }
 .courseUnicEJA .professional .block .icon svg{
    color: var(--Blue);
    font-size: 25px;
+   margin: 0px 10px;
 }
 .courseUnicEJA .professional .block .text{
     display: flex;
@@ -240,6 +241,7 @@
    justify-content: center;
    width: 95%;
    padding: 20px 0;
+   white-space: pre-line;
 }
 .courseUnicEJA .occupationArea {
     display: flex;
@@ -266,12 +268,13 @@
    flex-direction:row;
    align-items: flex-start;
    justify-content: center;
-   width: 5%;
+   width: 50px;
    padding: 20px 0;
 }
 .courseUnicEJA .occupationArea .block .icon svg{
     color: var(--Blue);
     font-size: 25px;
+    margin: 0px 10px;
  }
 .courseUnicEJA .occupationArea .block .text2{
     display: flex;
@@ -280,6 +283,7 @@
    justify-content: center;
    width: 95%;
    padding: 20px 0;
+   white-space: pre-line;
 }
 
 
@@ -466,7 +470,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color:var(--Blue);
     padding: 40px 20px;
 }
 

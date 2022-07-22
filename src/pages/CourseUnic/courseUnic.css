@@ -226,12 +226,13 @@
    flex-direction:row;
    align-items: flex-start;
    justify-content: center;
-   width: 5%;
+   width: 50px;
    padding: 20px 0;
 }
 .courseUnic .professional .block .icon svg{
    color: var(--Blue);
    font-size: 25px;
+   margin: 0px 10px;
 }
 .courseUnic .professional .block .text{
     display: flex;
@@ -466,7 +467,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color:var(--Blue);
     padding: 40px 20px;
 }
 
