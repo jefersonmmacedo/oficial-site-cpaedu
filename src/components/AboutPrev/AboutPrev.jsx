@@ -9,7 +9,7 @@ function AboutPrev() {
                 <h3>Centro de Educação Profissional Amaivos</h3>
                 <div className="line"></div>
                 <h2>Organização privada que desde 2012 oferece serviços de educação profissional em diversas áreas de atuação.</h2>
-                <button>CONHEÇA MAIS SOBRE O CPA</button>
+                <a href="/sobre">CONHEÇA MAIS SOBRE O CPA</a>
 
             </div>
             <div className="images">

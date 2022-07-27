@@ -28,7 +28,7 @@
     color: var(--Background);
     margin: 10px 0;
 }
-.AboutPrev .text button {
+.AboutPrev .text a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,6 +41,7 @@
     border: none;
     margin: 10px 0;
     font-size: 12px;
+    text-decoration: none;
 }
 .AboutPrev .text .line {
     width: 10%;
