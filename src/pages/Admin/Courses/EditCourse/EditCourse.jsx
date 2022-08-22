@@ -7,7 +7,7 @@ import Navbar2 from "../../../../components/Admin/Nav/Navbar";
 import "./editCourse.css"
 
 function EditCourse() {
-    const {curso} = useParams() 
+    const {curso, categoria} = useParams() 
     function handleSelectTecnic(e) {
         e.preventDefault();
 
@@ -19,7 +19,7 @@ function EditCourse() {
                                  <Navbar2 />
 
 
-            <CoursesFormEdit curso={curso} />
+            <CoursesFormEdit curso={curso} categoria={categoria}/>
 
         </div>
     )

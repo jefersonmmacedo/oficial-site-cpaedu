@@ -1,4 +1,6 @@
 import {Route, Routes, Navigate} from 'react-router-dom';
+import { ListPost } from '../components/Admin/Blog/ListPosts/ListPost';
+import { NewPost } from '../components/Admin/Blog/NewPost/NewPosts';
 import { CategoriesForm } from '../components/Admin/Categories/EditCategoriesForm/EditCategoriesForm';
 import { ListCategories } from '../components/Admin/Categories/ListCategories/ListCategories';
 import { ListCourse } from '../components/Admin/Courses/ListCourse/ListCourse';
@@ -27,6 +29,7 @@ import { DepoimentsAll } from '../pages/DepoimentsAll/DepoimentsAll';
 import { EJA } from '../pages/EJA/EJA';
 import { Home } from '../pages/Home/Home';
 import { Partners } from '../pages/Partners/Partners';
+import { PostUnic } from '../pages/PostUnic/PostUnic';
 import { SignIn } from '../pages/SignIn/SignIn';
 import { StudentArea } from '../pages/StudentArea/StudentArea';
 
@@ -49,6 +52,7 @@ function PrivateRoute({children} ) {
             <Route path="/curso-individual/:curso" element={<CourseUnic />}/>      
             <Route path="/curso-individual-eja/:curso" element={<CourseUnicEJA />}/>      
             <Route path="/cursos/:curso" element={<Courses />}/>    
+            <Route path="/post/:namepost" element={<PostUnic />}/>    
             <Route path="/depoimentos" element={<DepoimentsAll />}/>    
             <Route path="/eja" element={<EJA />}/>    
             <Route path="/parceiros" element={<Partners />}/>    
@@ -76,7 +80,7 @@ function PrivateRoute({children} ) {
                     element={ <PrivateRoute> <NewCourse /></PrivateRoute>} />
             <Route path="/adm/coursetecnic/:curso"
                     element={ <PrivateRoute> <EditCourseTecnic /></PrivateRoute>} />
-            <Route path="/adm/course/:curso"
+            <Route path="/adm/course/:curso/:categoria"
                     element={ <PrivateRoute> <EditCourse /></PrivateRoute>} />
             <Route path="/adm/courseeja"
                     element={ <PrivateRoute> <NewCourseEJA /></PrivateRoute>} />
@@ -97,6 +101,13 @@ function PrivateRoute({children} ) {
             <Route path="/adm/depoimentnew"
                     element={ <PrivateRoute> <NewDepoiments /></PrivateRoute>} />
             <Route path="/adm/depoiment/:names"
+                    element={ <PrivateRoute> <DepoimentsForm /></PrivateRoute>} />
+
+            <Route path="/adm/blog"
+                    element={ <PrivateRoute> <ListPost /></PrivateRoute>} />
+            <Route path="/adm/post"
+                    element={ <PrivateRoute> <NewPost /></PrivateRoute>} />
+            <Route path="/adm/listpostsedit/:names"
                     element={ <PrivateRoute> <DepoimentsForm /></PrivateRoute>} />
  
 

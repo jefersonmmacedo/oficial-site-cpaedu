@@ -1,0 +1,98 @@
+.NewPost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    color: #fff;
+    margin: 40px 0;
+}
+.NewPost h3{
+    text-align:center;
+    color: #000;
+    margin: 10px 0;
+}
+
+.NewPost form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding:20px;
+}
+
+
+.NewPost form .label-avatar{
+    width: 400px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.NewPost form .label-avatar input {
+    display: none;
+}
+
+.NewPost form .label-avatar span {
+    z-index: 99;
+    position: absolute;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.NewPost form .label-avatar span:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+.NewPost form .label-avatar img{
+    margin-bottom: 1em;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.NewPost form input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+.NewPost form select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+
+.NewPost form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    background-color: rgb(27, 0, 88);
+    color: #fff;
+    padding: 10px
+}

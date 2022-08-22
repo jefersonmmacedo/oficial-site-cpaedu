@@ -8,8 +8,8 @@ import { v4 as uuidv4} from 'uuid';
 import {FiUpload} from 'react-icons/fi';
 import './editCoursesForm.css';
 
-function CoursesFormEdit({curso}) {
-
+function CoursesFormEdit({curso, categoria}) {
+    console.log(curso, categoria);
     const [avatarUrl, setAvatarUrl] = useState(null);
     const [imageAvatar, setImageAvatar] = useState('');
     const [title, setTitle] = useState('');
@@ -102,14 +102,15 @@ function CoursesFormEdit({curso}) {
     }
 
 
-
     useEffect(() => {
         async function setDocCourse() {
-            const q = query(collection(db, "courses"), where("title", "==", curso));
+            const q = query(collection(db, "courses"), where("category", "==", categoria));
+            const couseQuery = query(q, where("title", "==", curso));
             console.log("Olá, Mundo")
-            const querySnapshot = await getDocs(q);
+            const querySnapshot = await getDocs(couseQuery);
             querySnapshot.forEach((doc) => {
               // doc.data() is never undefined for query doc snapshots
+              console.log(doc.data())
               console.log(doc.id, " => ", doc.data());
               setId(doc.id);
               setImageCourse(doc.data().image);
@@ -136,7 +137,7 @@ function CoursesFormEdit({curso}) {
             });
         }
         setDocCourse()
-    }, [curso]);
+    }, [curso, categoria]);
 
     async function handleCoursesForm(e) {
         e.preventDefault();

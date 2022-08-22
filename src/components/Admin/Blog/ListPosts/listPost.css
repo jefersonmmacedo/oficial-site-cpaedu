@@ -1,0 +1,105 @@
+.ListPost {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--Primary);
+    width: 100%;
+}
+
+.ListPost h1 {
+    margin: 40px;
+}
+
+.ListPost .PostUnic {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--White);
+    background-color: var(--Primary);
+    width: 80%;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+}
+.ListPost .PostUnic .image {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+.ListPost .PostUnic .image img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.ListPost .PostUnic .text {
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 50%;
+}
+.ListPost .PostUnic .text h5 {
+    margin:5px 0;
+}
+.ListPost .PostUnic .button {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.ListPost .PostUnic .button button {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    color: var(--Primary);
+    background-color: var(--White);
+    border-radius: 6px;
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    font-size: 12px;
+}
+
+.ListPost .PostUnic .button button:hover {
+    background-color: var(--Blue);
+    color: var(--White);
+}
+.ListPost .PostUnic .button button svg {
+    font-size:16px;
+}
+
+
+.ListPost .link a {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    color: var(--White);
+    background-color: var(--Primary);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media(max-width: 650px) {
+    .ListPost .PostUnic {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ListPost .PostUnic .text {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:center;
+        width: 100%;
+    }
+}

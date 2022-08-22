@@ -105,8 +105,9 @@ function handleUpdateCourse(course, category) {
   } else if (category === "Ensino Médio - EJA") {
     window.open(`/adm/courseejaedit/${course}`, "_self")
   } else{
-    window.open(`/adm/course/${course}`, "_self")
+    window.open(`/adm/course/${course}/${category}`, "_self")
   }
+
 }
 const searchLower = search.toLowerCase()
 const FilterCourses = type !== "" ? 
