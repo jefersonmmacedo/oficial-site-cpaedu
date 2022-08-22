@@ -32,7 +32,17 @@ function BlogPage() {
         loadCondadatos()
     }, [])
 
+    if(posts) {
+        posts.sort(function(a,b) {
+            if(a.date > b.date ) {
+                return -1
+            } else {
+                return true
+            }
+        })
+    }
 
+    
     return(
         <div className="BlogPage">
                         <Navbar2 />
