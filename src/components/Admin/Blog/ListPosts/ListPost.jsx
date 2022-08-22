@@ -15,7 +15,7 @@ function ListPost() {
   const [image, setImage] = useState("");
   const [text, setText] = useState("");
 
-    const [categories, setCategories] = useState([]);
+    const [posts, sePosts] = useState([]);
     const [search, setSearch] = useState("")
 
     useEffect(() => {
@@ -30,13 +30,14 @@ function ListPost() {
               image: doc.data().image,
               manchete: doc.data().manchete,
               category: doc.data().category,
-              text: doc.data().text
+              text: doc.data().text,
+              date: doc.data().date
               }
               
             console.log(data)
               list.push(data)
             });
-            setCategories(list)
+            sePosts(list)
       }
   
       loadCondadatos()
@@ -56,21 +57,32 @@ function ListPost() {
   }
   async function handleEditCategory(title) {
      
-      window.open(`/adm/listpostsedit/${title}`, "_self")
+      window.open(`/adm/postedit/${title}`, "_self")
 
   }
 
-  const searchLower = search.toLowerCase()
-  const FilterCategories = search !== "" ? categories?.filter((course) => (course.title.toLowerCase().includes(searchLower))) : categories
+  // const searchLower = search.toLowerCase()
+  // const Filterposts = search !== "" ? posts?.filter((course) => (course.title.toLowerCase().includes(searchLower))) : posts
   
-  FilterCategories.sort(function (categoriesA, categoriesB) {
-      if (categoriesA.name == categoriesB.name)
-        return 0;
-      if (categoriesA.name < categoriesB.name)
-        return -1
-      if (categoriesA.name > categoriesB.name)
-        return 1
-    });
+  // Filterposts.sort(function (postsA, postsB) {
+  //     if (postsA.name == postsB.name)
+  //       return 0;
+  //     if (postsA.name < postsB.name)
+  //       return -1
+  //     if (postsA.name > postsB.name)
+  //       return 1
+  //   });
+
+  if(posts) {
+    posts.sort(function(a,b) {
+        if(a.date > b.date ) {
+            return -1
+        } else {
+            return true
+        }
+    })
+}
+
     
     return (
         <div className="ListPost">
@@ -89,7 +101,7 @@ function ListPost() {
         </form>
         </div>
 
-{FilterCategories.map((category) => {
+{posts.map((category) => {
   return (
       <div className="PostUnic" key={category.id}>
         <div className="image">

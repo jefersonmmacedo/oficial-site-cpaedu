@@ -1,4 +1,4 @@
-.CategoriesForm {
+.EditPost {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,13 +7,13 @@
     color: #fff;
     margin: 40px 0;
 }
-.CategoriesForm h3{
+.EditPost h3{
     text-align:center;
     color: #fff;
     margin: 10px 0;
 }
 
-.CategoriesForm form {
+.EditPost form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
 }
 
 
-.CategoriesForm form .label-avatar{
+.EditPost form .label-avatar{
     width: 400px;
     height: 160px;
     display: flex;
@@ -36,29 +36,29 @@
     margin: 5px 0;
 }
 
-.CategoriesForm form .label-avatar input {
+.EditPost form .label-avatar input {
     display: none;
 }
 
-.CategoriesForm form .label-avatar span {
+.EditPost form .label-avatar span {
     z-index: 99;
     position: absolute;
     opacity: 0.7;
     transition: all .5s;
 }
 
-.CategoriesForm form .label-avatar span:hover{
+.EditPost form .label-avatar span:hover{
     opacity: 1;
     transform: scale(1.4);
 }
 
-.CategoriesForm form .label-avatar img{
+.EditPost form .label-avatar img{
     margin-bottom: 1em;
     border-radius: 6px;
     object-fit: cover;
 }
 
-.CategoriesForm form input{
+.EditPost form input{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +70,19 @@
     color: rgb(27, 0, 88);
     padding: 10px
 }
-.CategoriesForm form textarea{
+.EditPost form select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px
+}
+.EditPost form textarea{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +96,7 @@
     resize: none;
 }
 
-.CategoriesForm form button{
+.EditPost form button{
     display: flex;
     align-items: center;
     justify-content: center;

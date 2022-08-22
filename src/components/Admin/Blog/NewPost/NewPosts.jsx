@@ -61,6 +61,7 @@ function NewPost() {
                 manchete: manchete,
                 text: editorRef.current.getContent(),
                 category: category,
+                date: new Date(),
             })
             console.log("Document written with ID: ", docRef.id);
                 toast.info(`Cadastro realizado com sucesso!`);
@@ -88,9 +89,6 @@ function NewPost() {
 
     function handleEditor(e) {
         e.preventDefault();
-        // console.log(editorRef.current.getContent());
-        // console.log(title);
-        // console.log(manchete);
     }
 
     function handleCategory(e) {
@@ -99,7 +97,7 @@ function NewPost() {
 
     return (
         <div className="NewPost">
-            <h3>Nova Categoria</h3>
+            <h3>Nova postagem</h3>
             <form onSubmit={handleEditor}>
                 <label className="label-avatar">
                     <span><FiUpload color="#f65" size={25} /></span>

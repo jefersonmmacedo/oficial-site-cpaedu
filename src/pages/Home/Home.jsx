@@ -7,6 +7,7 @@ import { Search } from "../../components/Search/Search";
 import { MostViewedCourses } from "../../components/MostViewedCourses/MostViewedCourses";
 import { AboutPrev } from "../../components/AboutPrev/AboutPrev";
 import { ElementsHome } from "../../components/ElementsHome/ElementsHome";
+import { BlogHome } from "../../components/BlogHome/BlogHome";
 
 function Home() {
     return (
@@ -28,6 +29,7 @@ function Home() {
             <Depoiments />
             </div>
             <ElementsHome />
+            <BlogHome />
             <Footer />
         </div>
     )

@@ -1,0 +1,84 @@
+.BlogHome  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--Primary);
+    margin: 40px 0;
+}
+.BlogHome h1  {
+    text-align: center;
+    margin: 20px 0;
+}
+.BlogHome .notices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--Primary);
+    flex-wrap: wrap;
+}
+
+.BlogHome .notices .noticesAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    height: 230px;
+    padding: 10px;
+    color: #512A79;
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.BlogHome .notices .noticesAll .image {
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0px auto;
+}
+
+.BlogHome .notices .noticesAll .image img {
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.BlogHome .notices .noticesAll .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+ }
+.BlogHome .notices .noticesAll .text h4 {
+    text-align: center;
+    margin: 10px 10px 15px 10px;
+    text-decoration: none;
+    color: var(--Primary);
+}
+
+.BlogHome .notices .noticesAll .text h4 a{
+    text-decoration: none;
+    color: var(--Primary);
+}
+
+
+.BlogHome .notices .noticesAll .text h5 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.BlogHome .notices .noticesAll .text p {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 600;
+}

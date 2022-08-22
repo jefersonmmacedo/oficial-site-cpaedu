@@ -19,7 +19,10 @@ import { NewCourseEJA } from '../pages/Admin/Courses/NewCourseEJA/NewCourseEJA';
 import { NewCourseTecnic } from '../pages/Admin/Courses/NewCourseTecnic/NewCourseTecnic';
 import { NewDepoiments } from '../pages/Admin/Depoiments/NewDepoiments/NewDepoiments';
 import { Informations } from '../pages/Admin/Informations/Informations';
+import { EditPost2 } from '../pages/Admin/Posts/EditPost2/EditPost2';
+import { NewPost2 } from '../pages/Admin/Posts/NewPost/NewPost2';
 import { NewSliders } from '../pages/Admin/Sliders/NewSliders/NewSliders';
+import { BlogPage } from '../pages/BlogPage/BlogPage';
 import { Contact } from '../pages/Contact/Contact';
 import { ContactEAD } from '../pages/ContactEAD/ContactEAD';
 import { Courses } from '../pages/Courses/Courses';
@@ -52,7 +55,8 @@ function PrivateRoute({children} ) {
             <Route path="/curso-individual/:curso" element={<CourseUnic />}/>      
             <Route path="/curso-individual-eja/:curso" element={<CourseUnicEJA />}/>      
             <Route path="/cursos/:curso" element={<Courses />}/>    
-            <Route path="/post/:namepost" element={<PostUnic />}/>    
+            <Route path="/blog" element={<BlogPage />}/>    
+            <Route path="/blog/post/:namepost" element={<PostUnic />}/>    
             <Route path="/depoimentos" element={<DepoimentsAll />}/>    
             <Route path="/eja" element={<EJA />}/>    
             <Route path="/parceiros" element={<Partners />}/>    
@@ -106,9 +110,9 @@ function PrivateRoute({children} ) {
             <Route path="/adm/blog"
                     element={ <PrivateRoute> <ListPost /></PrivateRoute>} />
             <Route path="/adm/post"
-                    element={ <PrivateRoute> <NewPost /></PrivateRoute>} />
-            <Route path="/adm/listpostsedit/:names"
-                    element={ <PrivateRoute> <DepoimentsForm /></PrivateRoute>} />
+                    element={ <PrivateRoute> <NewPost2 /></PrivateRoute>} />
+            <Route path="/adm/postedit/:namepost"
+                    element={ <PrivateRoute> <EditPost2 /></PrivateRoute>} />
  
 
             <Route path="/adm/informations"

@@ -99,15 +99,15 @@ const RightNav = ({ open }) => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/adm/dashboard' >
-              LandingPage
+            <Link to='/adm/blog' >
+              Blog
             </Link>
           </li>
           <button onClick={handleOficialSite}>
             Site Oficial
           </button>
 
-         
+
     </Ul>
   )
 }

@@ -5,10 +5,6 @@ import db from '../../services/firebaseConnection';
 import "./postUnic.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import student from '../../assets/images/student1.png';
-import student2 from '../../assets/images/students.jpg';
-import { IoAlarmOutline, IoSchoolOutline, IoLibraryOutline,IoEyeOutline, IoCloseOutline, IoGrid } from 'react-icons/io5';
-import { FiDollarSign } from 'react-icons/fi';
 import Modal from 'react-modal';
 import ReactHtmlParser from "react-html-parser";
 
@@ -45,17 +41,6 @@ useEffect(() => {
     }
     setDocCourse()
 }, [namepost])
-
-function openModal() {
-    setIsOpen(true);
-  }
-
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  
 
 
 
