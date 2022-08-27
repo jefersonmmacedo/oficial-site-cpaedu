@@ -24,7 +24,7 @@ function StudentArea() {
             <div className="image">
                 <img src={CPET} alt="Logo parceiro" />
             </div>
-            <a href="https://www.certificacaotecnica.com.br/login/index.php"  rel="noreferrer" target="_blank">Acessar</a>
+            <a href="https://cpetead.com.br/"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
             <div className="item">
             <div className="image">
@@ -48,13 +48,13 @@ function StudentArea() {
             <div className="image">
                 <img src={uniBF} alt="Logo parceiro" />
             </div>
-            <a href="https://ava.unibf.com.br/projetos/nucleo/uteis/login.php?&tid=0&lid=0&pid=24&arq_ret=R5QT1WSRQBMCVQVPFFQSF99MCT5RT44Q9WRW0RBM0FMM5QQ4"  rel="noreferrer" target="_blank">Acessar</a>
+            <a href="ava.unibf.com.br"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
             <div className="item">
             <div className="image">
                 <img src={UniBTA} alt="Logo parceiro" />
             </div>
-            <a href="https://ava.webacademico.com.br/login/index.php"  rel="noreferrer" target="_blank">Acessar</a>
+            <a href="https://portal.webacademico.com.br/academico/aluno-v2/login"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
           
         </div>
