@@ -78,30 +78,51 @@ console.log(courses);
 const searchLower = search.toLowerCase()
 
     const a = type !== "" ? 
-                courses?.filter((course) => (course.title.substring(0,1) === "A" && course.category === type)) :
+                courses?.filter((course) => ((course.title.substring(0,1) === "A" ||
+                                              course.title.substring(0,1) === "Á" ||
+                                              course.title.substring(0,1) === "À" ||
+                                              course.title.substring(0,1) === "Â" ||
+                                              course.title.substring(0,1) === "Ã" )   && course.category === type)) :
                 search !== "" ?
-                courses?.filter((course) => (course.title.substring(0,1) === "A" && course.title.toLowerCase().includes(searchLower))) :
-                courses?.filter((course) => (course.title.substring(0,1) === "A" ))
+                courses?.filter((course) => ((course.title.substring(0,1) === "A" ||
+                                              course.title.substring(0,1) === "Á" ||
+                                              course.title.substring(0,1) === "À" ||
+                                              course.title.substring(0,1) === "Â" ||
+                                              course.title.substring(0,1) === "Ã" ) && course.title.toLowerCase().includes(searchLower))) :
+                courses?.filter((course) => (course.title.substring(0,1) === "A" ||
+                                              course.title.substring(0,1) === "Á" ||
+                                              course.title.substring(0,1) === "À" ||
+                                              course.title.substring(0,1) === "Â" ||
+                                              course.title.substring(0,1) === "Ã" ))
     const b = type !== "" ? 
                 courses?.filter((course) => (course.title.substring(0,1) === "B" && course.category === type)) :
                 search !== "" ?
                 courses?.filter((course) => (course.title.substring(0,1) === "B" && course.title.toLowerCase().includes(searchLower))) :
                 courses?.filter((course) => (course.title.substring(0,1) === "B" ))
     const c = type !== "" ? 
-                courses?.filter((course) => (course.title.substring(0,1) === "C" && course.category === type)) :
+                courses?.filter((course) => ((course.title.substring(0,1) === "C" || course.title.substring(0,1) === "Ç") && course.category === type)) :
                 search !== "" ?
-                courses?.filter((course) => (course.title.substring(0,1) === "C" && course.title.toLowerCase().includes(searchLower))) :
-                courses?.filter((course) => (course.title.substring(0,1) === "C" ))
+                courses?.filter((course) => ((course.title.substring(0,1) === "C" || course.title.substring(0,1) === "Ç") && course.title.toLowerCase().includes(searchLower))) :
+                courses?.filter((course) => (course.title.substring(0,1) === "C" || course.title.substring(0,1) === "Ç"))
     const d = type !== "" ? 
                 courses?.filter((course) => (course.title.substring(0,1) === "D" && course.category === type)) :
                 search !== "" ?
                 courses?.filter((course) => (course.title.substring(0,1) === "D" && course.title.toLowerCase().includes(searchLower))) :
                 courses?.filter((course) => (course.title.substring(0,1) === "D" ))
     const e = type !== "" ? 
-                courses?.filter((course) => (course.title.substring(0,1) === "E" && course.category === type)) :
+                courses?.filter((course) => ((course.title.substring(0,1) === "E" ||
+                                              course.title.substring(0,1) === "É" ||
+                                              course.title.substring(0,1) === "È" ||
+                                              course.title.substring(0,1) === "Ê") && course.category === type)) :
                 search !== "" ?
-                courses?.filter((course) => (course.title.substring(0,1) === "E" && course.title.toLowerCase().includes(searchLower))) :
-                courses?.filter((course) => (course.title.substring(0,1) === "E" ))
+                courses?.filter((course) => ((course.title.substring(0,1) === "E" ||
+                                             course.title.substring(0,1) === "É" ||
+                                             course.title.substring(0,1) === "È" ||
+                                             course.title.substring(0,1) === "Ê") && course.title.toLowerCase().includes(searchLower))) :
+                courses?.filter((course) => ((course.title.substring(0,1) === "E" ||
+                                             course.title.substring(0,1) === "É" ||
+                                             course.title.substring(0,1) === "È" ||
+                                             course.title.substring(0,1) === "Ê" ) ))
     const f = type !== "" ? 
                 courses?.filter((course) => (course.title.substring(0,1) === "F" && course.category === type)) :
                 search !== "" ?
@@ -118,10 +139,19 @@ const searchLower = search.toLowerCase()
                 courses?.filter((course) => (course.title.substring(0,1) === "H" && course.title.toLowerCase().includes(searchLower))) :
                 courses?.filter((course) => (course.title.substring(0,1) === "H" ))
     const i = type !== "" ? 
-                courses?.filter((course) => (course.title.substring(0,1) === "I" && course.category === type)) :
+                courses?.filter((course) => ((course.title.substring(0,1) === "I" ||
+                                              course.title.substring(0,1) === "Í" ||
+                                              course.title.substring(0,1) === "Ì" ||
+                                              course.title.substring(0,1) === "Î" ) && course.category === type)) :
                 search !== "" ?
-                courses?.filter((course) => (course.title.substring(0,1) === "I" && course.title.toLowerCase().includes(searchLower))) :
-                courses?.filter((course) => (course.title.substring(0,1) === "I" ))
+                courses?.filter((course) => ((course.title.substring(0,1) === "I" ||
+                                             course.title.substring(0,1) === "Í" ||
+                                             course.title.substring(0,1) === "Ì" ||
+                                             course.title.substring(0,1) === "Î" ) && course.title.toLowerCase().includes(searchLower))) :
+                                             courses?.filter((course) => (course.title.substring(0,1) === "I" ||
+                                             course.title.substring(0,1) === "Í" ||
+                                             course.title.substring(0,1) === "Ì" ||
+                                             course.title.substring(0,1) === "Î" ))
     const j = type !== "" ? 
                 courses?.filter((course) => (course.title.substring(0,1) === "J" && course.category === type)) :
                 search !== "" ?
@@ -148,10 +178,22 @@ const searchLower = search.toLowerCase()
                 courses?.filter((course) => (course.title.substring(0,1) === "N" && course.title.toLowerCase().includes(searchLower))) :
                 courses?.filter((course) => (course.title.substring(0,1) === "N" ))
     const o = type !== "" ? 
-                courses?.filter((course) => (course.title.substring(0,1) === "O" && course.category === type)) :
+                courses?.filter((course) => ((course.title.substring(0,1) === "O" ||
+                                              course.title.substring(0,1) === "Ò" ||
+                                              course.title.substring(0,1) === "Ó" ||
+                                              course.title.substring(0,1) === "Ô" ||
+                                              course.title.substring(0,1) === "Õ" ) && course.category === type)) :
                 search !== "" ?
-                courses?.filter((course) => (course.title.substring(0,1) === "O" && course.title.toLowerCase().includes(searchLower))) :
-                courses?.filter((course) => (course.title.substring(0,1) === "O" ))
+                courses?.filter((course) => ((course.title.substring(0,1) === "O" ||
+                                             course.title.substring(0,1) === "Ò" ||
+                                             course.title.substring(0,1) === "Ó" ||
+                                             course.title.substring(0,1) === "Ô" ||
+                                             course.title.substring(0,1) === "Õ" ) && course.title.toLowerCase().includes(searchLower))) :
+                courses?.filter((course) => (course.title.substring(0,1) === "O" ||
+                                             course.title.substring(0,1) === "Ò" ||
+                                             course.title.substring(0,1) === "Ó" ||
+                                             course.title.substring(0,1) === "Ô" ||
+                                             course.title.substring(0,1) === "Õ" ))
     const p = type !== "" ? 
                 courses?.filter((course) => (course.title.substring(0,1) === "P" && course.category === type)) :
                 search !== "" ?
@@ -178,10 +220,19 @@ const searchLower = search.toLowerCase()
                 courses?.filter((course) => (course.title.substring(0,1) === "T" && course.title.toLowerCase().includes(searchLower))) :
                 courses?.filter((course) => (course.title.substring(0,1) === "T" ))
     const u = type !== "" ? 
-                courses?.filter((course) => (course.title.substring(0,1) === "U" && course.category === type)) :
+                courses?.filter((course) => ((course.title.substring(0,1) === "U" ||
+                                              course.title.substring(0,1) === "Ú" ||
+                                              course.title.substring(0,1) === "Ù" ||
+                                              course.title.substring(0,1) === "Û") && course.category === type)) :
                 search !== "" ?
-                courses?.filter((course) => (course.title.substring(0,1) === "U" && course.title.toLowerCase().includes(searchLower))) :
-                courses?.filter((course) => (course.title.substring(0,1) === "U" ))
+                courses?.filter((course) => ((course.title.substring(0,1) === "U" ||
+                                             course.title.substring(0,1) === "Ú" ||
+                                             course.title.substring(0,1) === "Ù" ||
+                                             course.title.substring(0,1) === "Û" ) && course.title.toLowerCase().includes(searchLower))) :
+                courses?.filter((course) => ((course.title.substring(0,1) === "U" ||
+                                             course.title.substring(0,1) === "Ú" ||
+                                             course.title.substring(0,1) === "Ù" ||
+                                             course.title.substring(0,1) === "Û") ))
     const v = type !== "" ? 
                 courses?.filter((course) => (course.title.substring(0,1) === "V" && course.category === type)) :
                 search !== "" ?
@@ -207,7 +258,6 @@ const searchLower = search.toLowerCase()
                 search !== "" ?
                 courses?.filter((course) => (course.title.substring(0,1) === "Z" && course.title.toLowerCase().includes(searchLower))) :
                 courses?.filter((course) => (course.title.substring(0,1) === "Z" ))
-
 
 
     return(
