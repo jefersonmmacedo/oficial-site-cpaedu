@@ -68,6 +68,11 @@ function handleSetTypeCategory(category) {
     setType(category);
     setSearch("")
 }
+function handleSelectTypeCategory(e) {
+    setType(e.target.value);
+    console.log(e.target.value);
+    setSearch("")
+}
 function handleSearchCourse(e) {
     e.preventDefault();
     setType("")
@@ -276,7 +281,7 @@ const searchLower = search.toLowerCase()
                         })
                         }
 
-                        <select>
+                        <select value={type} onChange={handleSelectTypeCategory}>
                             <option value="">Todos</option>
                             {categories.map((categorie) => {
                             return (
