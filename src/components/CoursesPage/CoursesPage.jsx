@@ -78,7 +78,6 @@ function handleSearchCourse(e) {
     setType("")
 }
 
-console.log(courses);
 
 const searchLower = search.toLowerCase()
 
