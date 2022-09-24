@@ -62,5 +62,5 @@
     text-decoration: none;
 }
 .footer .copy .devs a:hover {
-    color: #5700ae;
+    color: var(--Blue);
 }
