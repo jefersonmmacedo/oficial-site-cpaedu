@@ -1,5 +1,5 @@
 import "./studentArea.css";
-import UniBTA from "../../assets/images/Icons/55.png"
+import UniBTA from "../../assets/images/Icons/9999.jpg"
 import unifacvet from "../../assets/images/Icons/77.png"
 import UniFVC from "../../assets/images/Icons/88.png"
 import saoLuiz from "../../assets/images/Icons/44.png"
