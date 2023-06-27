@@ -54,7 +54,7 @@ function StudentArea() {
             <div className="image">
                 <img src={UniBTA} alt="Logo parceiro" />
             </div>
-            <a href="https://portal.webacademico.com.br/academico/aluno-v2/login"  rel="noreferrer" target="_blank">Acessar</a>
+            <a href="https://sistema.unicv.edu.br/academico/aluno-v2/login"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
           
         </div>
