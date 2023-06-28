@@ -14,6 +14,10 @@ function StudentArea() {
         <>
         <Navbar2 />
         <div className="StudentArea">
+
+            <div className="StudentArea">
+            <h2>Acesse a sua área de estudos</h2>
+            </div>
         <div className="item">
             <div className="image">
                 <img src={educanexus} alt="Logo parceiro" />
