@@ -15,7 +15,7 @@ function StudentArea() {
         <Navbar2 />
         <div className="StudentArea">
 
-            <div className="StudentArea">
+            <div className="textStudent">
             <h2>Acesse a sua área de estudos</h2>
             </div>
         <div className="item">
