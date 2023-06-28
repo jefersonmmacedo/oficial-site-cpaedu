@@ -32,18 +32,20 @@ function StudentArea() {
             </div>
             <a href="https://ava.saoluisead.com.br/login"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
-            <div className="item">
+              <div className="item">
             <div className="image">
                 <img src={unifacvet} alt="Logo parceiro" />
             </div>
             <a href="https://unifacvestead.portalava.com.br/login"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
+            {/*  
             <div className="item">
             <div className="image">
                 <img src={UniFVC} alt="Logo parceiro" />
             </div>
             <a href="https://sistema.unifcv.edu.br/academico/aluno-v2/login"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
+            */}
             <div className="item">
             <div className="image">
                 <img src={uniBF} alt="Logo parceiro" />
