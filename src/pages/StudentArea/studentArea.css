@@ -4,6 +4,7 @@
     justify-content:center;
     flex-direction: row;
     width: 100%;
+    heigth: 100vh;
     padding: 100px 20px;
     background-color:var(--Background);
     flex-wrap: wrap;
