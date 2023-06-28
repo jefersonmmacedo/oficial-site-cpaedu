@@ -4,7 +4,7 @@
     justify-content:center;
     flex-direction: row;
     width: 100%;
-    padding: 100px 50px;
+    padding: 100px 20px;
     background-color:var(--Background);
     flex-wrap: wrap;
 }
@@ -14,7 +14,7 @@
     justify-content:center;
     flex-direction: column;
     width: 150px;
-    margin: 25px;
+    margin: 10px;
 
 }
 .StudentArea .item a{
