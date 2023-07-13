@@ -9,8 +9,8 @@
     flex-wrap: wrap;
 }
 .Partners .image{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     -webkit-box-shadow: 0px 0px 15px -1px #000000; 
     box-shadow: 0px 0px 5px -1px #000000;
@@ -19,8 +19,8 @@
 
 }
 .Partners .image img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 6px;
 
