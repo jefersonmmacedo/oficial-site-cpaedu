@@ -54,7 +54,7 @@ function StudentArea() {
             <div className="image">
                 <img src={uniBF} alt="Logo parceiro" />
             </div>
-            <a href="ava.unibf.com.br"  rel="noreferrer" target="_blank">Acessar</a>
+            <a href="https://www.ec2galileu.com.br/aluno/unibf"  rel="noreferrer" target="_blank">Acessar</a>
             </div>
             <div className="item">
             <div className="image">
