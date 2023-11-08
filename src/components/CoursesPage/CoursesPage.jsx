@@ -322,6 +322,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -350,6 +352,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -377,6 +381,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -405,6 +411,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -433,6 +441,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -461,6 +471,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -489,6 +501,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -517,6 +531,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -545,6 +561,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -573,6 +591,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -601,6 +621,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -629,6 +651,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -657,6 +681,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -685,6 +711,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -713,6 +741,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -741,6 +771,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -769,6 +801,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -797,6 +831,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -825,6 +861,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -853,6 +891,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -881,6 +921,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -909,6 +951,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -937,6 +981,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -965,6 +1011,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -993,6 +1041,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
@@ -1021,6 +1071,8 @@ const searchLower = search.toLowerCase()
                          <a href={course.link} alt={course.title} target="_blank"><p>{course.title} </p></a>:
                          course.category === "Ensino Médio - EJA" ?
                     <a href={`/curso-individual-eja/${course.title}`}><p>{course.title}</p></a> :
+                     course.category === "Pós-graduação" ?
+                    <a href={`/curso-pos-graduacao`}><p>{course.title}</p></a> :
                     <a href={`/curso-individual/${course.title}`}><p>{course.title}</p></a>
                             }
                     </div>
