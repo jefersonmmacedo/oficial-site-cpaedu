@@ -1,3 +1,5 @@
+
+
 import {Route, Routes, Navigate} from 'react-router-dom';
 import { ListPost } from '../components/Admin/Blog/ListPosts/ListPost';
 import { NewPost } from '../components/Admin/Blog/NewPost/NewPosts';
@@ -35,6 +37,7 @@ import { Partners } from '../pages/Partners/Partners';
 import { PostUnic } from '../pages/PostUnic/PostUnic';
 import { SignIn } from '../pages/SignIn/SignIn';
 import { StudentArea } from '../pages/StudentArea/StudentArea';
+import { CoursePos } from '../pages/CoursePos/CoursePos';
 
 
 
@@ -52,6 +55,7 @@ function PrivateRoute({children} ) {
             <Route path="/contato" element={<Contact />}/>      
             <Route path="/prematricula/:curso" element={<ContactEAD />}/>      
             <Route path="/sobre" element={<About />}/>      
+            <Route path="/curso-pos-graduacao" element={<CoursePos />}/>      
             <Route path="/curso-individual/:curso" element={<CourseUnic />}/>      
             <Route path="/curso-individual-eja/:curso" element={<CourseUnicEJA />}/>      
             <Route path="/cursos/:curso" element={<Courses />}/>    
