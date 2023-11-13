@@ -102,10 +102,7 @@ function openModal() {
 function scrollPage(data) {
     window.location.href=`${data}`;
 }
-// window.scrollTo({
-//     top: 0,
-//     behavior: "smooth"
-// })
+
 
 Modal.setAppElement('#root');
     return (
