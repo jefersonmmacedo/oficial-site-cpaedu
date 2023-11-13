@@ -9,7 +9,10 @@ import student from '../../assets/images/student1.png';
 import student2 from '../../assets/images/students.jpg';
 import { IoAlarmOutline, IoSchoolOutline, IoLibraryOutline,IoEyeOutline, IoCloseOutline, IoGrid } from 'react-icons/io5';
 import { FiDollarSign } from 'react-icons/fi';
-import { FaComputer, FaScaleBalanced } from 'react-icons/fa6';
+import { FaComputer, FaMicroscope, FaScaleBalanced, FaUserGraduate, FaBuildingColumns, FaChalkboardUser } from 'react-icons/fa6';
+import { MdEngineering } from 'react-icons/md';
+import { LuBrainCircuit } from 'react-icons/lu';
+import { BsBuildingFillCheck } from 'react-icons/bs';
 
 import Modal from 'react-modal';
 
@@ -216,17 +219,19 @@ Modal.setAppElement('#root');
                 <div className="buttonsCourses">
                     <button onClick={() => handleCourses("Tecnologia")}>  <FaComputer /> Tecnologia</button>
                     <button onClick={() => handleCourses("Direito")}>  <FaScaleBalanced /> Direito</button>
-                    <button onClick={() => handleCourses("Educação")}> <FaComputer />Educação</button>
-                    <button onClick={() => handleCourses("Empresarial")}> <FaScaleBalanced />Empresarial</button>
-                    <button onClick={() => handleCourses("Engenharias")}> <FaComputer />Engenharias</button>
-                    <button onClick={() => handleCourses("Gestão Pública")}> <FaScaleBalanced />Gestão Pública</button>
-                    <button onClick={() => handleCourses("MBA Executivo")}> <FaComputer />MBA Executivo</button>
-                    <button onClick={() => handleCourses("Saúde")}> <FaScaleBalanced />Saúde</button>
-                    <button onClick={() => handleCourses("Psicologia e Serviço Social")}> <FaComputer />Psicologia e Serviço Social</button>
+                    <button onClick={() => handleCourses("Educação")}> <FaChalkboardUser />Educação</button>
+                    <button onClick={() => handleCourses("Empresarial")}> <BsBuildingFillCheck />Empresarial</button>
+                    <button onClick={() => handleCourses("Engenharias")}> <MdEngineering />Engenharias</button>
+                    <button onClick={() => handleCourses("Gestão Pública")}> <FaBuildingColumns />Gestão Pública</button>
+                    <button onClick={() => handleCourses("MBA Executivo")}> <FaUserGraduate />MBA Executivo</button>
+                    <button onClick={() => handleCourses("Saúde")}> <FaMicroscope />Saúde</button>
+                    <button onClick={() => handleCourses("Psicologia e Serviço Social")}> <LuBrainCircuit />Psicologia e Serviço Social</button>
                 </div>
 
                 <div className="listCourses">
                     {courses === "Tecnologia" ?
+                    <>
+                    <h4>55 OPÇÕES ENCONTRADAS</h4>
                     <div className="listSelected">
                         <p value="Administração e Marketing Desportivo">Administração e Marketing Desportivo</p>
                         <p value="Análise de Sistemas">Análise de Sistemas</p>
@@ -284,7 +289,10 @@ Modal.setAppElement('#root');
                         <p value="Segurança de Redes de Computadores">Segurança de Redes de Computadores</p>
                         <p value="Sistemas de Informação">Sistemas de Informação</p>
                     </div>
+                    </>
                     : courses === "Direito" ?
+                    <>
+                      <h4>90 OPÇÕES ENCONTRADAS</h4>
                     <div className="listSelected">
 
 <p value="Análise Criminal">Análise Criminal</p>
@@ -379,7 +387,10 @@ Modal.setAppElement('#root');
 <p value="Segurança Pública e Inteligência">Segurança Pública e Inteligência</p>
 
                     </div>
+                      </>
                     : courses === "Educação" ?
+                    <>
+                      <h4>287 OPÇÕES ENCONTRADAS</h4>
                     <div className="listSelected">
 
 
@@ -672,7 +683,10 @@ Modal.setAppElement('#root');
 <p value="Voleibol">Voleibol</p>
 
                     </div>
+                    </>
                     : courses === "Empresarial" ?
+                    <>
+                     <h4>67 OPÇÕES ENCONTRADAS</h4>
                     <div className="listSelected">
 
 <p value="Administração de Casas Legislativas">Administração de Casas Legislativas</p>
@@ -744,7 +758,10 @@ Modal.setAppElement('#root');
 <p value="Secretariado Executivo Bilíngue">Secretariado Executivo Bilíngue</p>
 
                     </div>
+                    </>
                     : courses === "Engenharias" ?
+                    <>
+                     <h4>30 OPÇÕES ENCONTRADAS</h4>
                     <div className="listSelected">
 
 <p value="Agricultura e Agronegócio">Agricultura e Agronegócio</p>
@@ -809,7 +826,10 @@ Modal.setAppElement('#root');
 <p value="Vigilância em Saúde Ambiental e Sanitária">Vigilância em Saúde Ambiental e Sanitária</p>
 
                     </div>
+                    </>
                     : courses === "Gestão Pública" ?
+                    <>
+                     <h4>137 OPÇÕES ENCONTRADAS</h4>
                     <div className="listSelected">
 
 <p value="Administração Patrimonial em Organizações Públicas">Administração Patrimonial em Organizações Públicas</p>
@@ -952,7 +972,10 @@ Modal.setAppElement('#root');
 
 
                     </div>
+                    </>
                     : courses === "MBA Executivo" ?
+                    <>
+                     <h4>101 OPÇÕES ENCONTRADAS</h4>
                     <div className="listSelected">
 
 <p value="Coaching">Coaching</p>
@@ -1058,7 +1081,10 @@ Modal.setAppElement('#root');
 <p value="Modernização, Infraestrutura e Gestão Portuária">Modernização, Infraestrutura e Gestão Portuária</p>
 
                     </div>
+                    </>
                     : courses === "Saúde" ?
+                    <>
+                     <h4>312 OPÇÕES ENCONTRADAS</h4>
                     <div className="listSelected">
 
 
@@ -1376,7 +1402,10 @@ Modal.setAppElement('#root');
 <p value="Zoologia e Saúde Pública">Zoologia e Saúde Pública</p>
 
                     </div>
+                    </>
                     : courses === "Psicologia e Serviço Social" ?
+                    <>
+                     <h4>113 OPÇÕES ENCONTRADAS</h4>
                     <div className="listSelected">
 
 
@@ -1494,6 +1523,7 @@ Modal.setAppElement('#root');
 <p value="Tratamento dos Transtornos de Ansiedade e Síndrome do Pânico">Tratamento dos Transtornos de Ansiedade e Síndrome do Pânico</p>
 
                     </div>
+                    </>
                     :
                     <h4>Selecione a área de interesse</h4>
                     }
