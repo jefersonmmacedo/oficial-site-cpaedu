@@ -120,10 +120,9 @@ Modal.setAppElement('#root');
                 <div className="menu">
                     <div className="text">
                     <p>Sobre o curso</p>
-                    <p>Entenda o curso</p>
-                    <p>O profissional</p>
+                    <p>Inscreva-se</p>
+                    <p>Opções de cursos</p>
                     <p>Áreas de atuação</p>
-                    <p>Grade Curricular</p>
                     </div>
                     <a href={`/prematricula/${title}`}>Quero me inscrever</a>
                 </div>
@@ -152,7 +151,7 @@ Modal.setAppElement('#root');
                             </div>
                             <div className="text">
                                 <p>Certificação Conferida</p>
-                                <p><b>{category}</b> </p>
+                                <p><b>{category} Lato Sensu</b> </p>
                             </div>
                         </div>
                         <div className="item">
