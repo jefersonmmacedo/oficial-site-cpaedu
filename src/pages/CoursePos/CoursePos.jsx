@@ -97,8 +97,15 @@ function openModal() {
   }
 
   
+{/* <button className="topScroll" onClick={handleTop}><FiArrowUpCircle /></button> */}
 
-
+function scrollPage(data) {
+    window.location.href=`${data}`;
+}
+// window.scrollTo({
+//     top: 0,
+//     behavior: "smooth"
+// })
 
 Modal.setAppElement('#root');
     return (
@@ -119,14 +126,14 @@ Modal.setAppElement('#root');
                 </div>
                 <div className="menu">
                     <div className="text">
-                    <p>Sobre o curso</p>
-                    <p>Inscreva-se</p>
-                    <p>Opções de cursos</p>
+                    <p onClick={() => scrollPage("#sobre")}>Sobre o curso</p>
+                    <p onClick={() => scrollPage("#courses")}>Inscreva-se</p>
+                    <p onClick={() => scrollPage("#courses")}>Opções de cursos</p>
                     <p>Áreas de atuação</p>
                     </div>
                     <a href={`/prematricula/${title}`}>Quero me inscrever</a>
                 </div>
-                <div className="aboutCourse">
+                <div className="aboutCourse" id="sobre">
                     <div className="text">
                         <h1>Sobre o Curso</h1>
                         <p>{description}</p>
@@ -213,7 +220,7 @@ Modal.setAppElement('#root');
                 </div>} */}
 
 
-                <div className="courses">
+                <div className="courses" id="courses">
                 <h1>Opções de Cursos</h1>
                 <div className="buttonsCourses">
                     <button onClick={() => handleCourses("Tecnologia")}>  <FaComputer /> Tecnologia</button>

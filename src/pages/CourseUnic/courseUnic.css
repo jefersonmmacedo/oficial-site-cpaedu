@@ -59,6 +59,7 @@
 .courseUnic .menu .text p {
     color: var(--Background2);
     margin-right: 30px;
+    cursor: pointer;
 }
 .courseUnic .menu a {
     background-color: var(--Magenta);

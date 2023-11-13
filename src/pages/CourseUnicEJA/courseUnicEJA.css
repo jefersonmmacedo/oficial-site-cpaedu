@@ -59,6 +59,7 @@
 .courseUnicEJA .menu .text p {
     color: var(--Background2);
     margin-right: 30px;
+    cursor: pointer;
 }
 .courseUnicEJA .menu a {
     background-color: var(--Magenta);
