@@ -9,8 +9,8 @@ function ElementsHome() {
             <div className="elements">
                 <div className="itensElements">
                     <IoMusicalNoteOutline />
-                    <h4><b>MUSICA E REALIZAÇÃO PESSOAL</b></h4>
-                    <h4>Realize seu sonho de aprender a tocar um instrumento musical, cantar com técnica vocal e até mesmo reger um coro.</h4>
+                    <h4><b>MÚSICA</b></h4>
+                    <h4>Aulas Individuais e Personalizadas.</h4>
                 </div>
                 <div className="itensElements">
                 <IoSchoolOutline />
