@@ -11,6 +11,7 @@ import { IoAlarmOutline, IoSchoolOutline, IoLibraryOutline,IoEyeOutline, IoClose
 import { FiDollarSign } from 'react-icons/fi';
 import Modal from 'react-modal';
 
+const imageCategory = "https://firebasestorage.googleapis.com/v0/b/cpaeducacao-saquarema.appspot.com/o/images%2Fcategories%2F4f71ee16-2e82-4f01-81d9-3f8442f036fc?alt=media&token=63a87022-78d5-472d-8384-85df7d90b965"
 
 function CourseUnic() {
     const {curso} = useParams();
@@ -195,7 +196,7 @@ Modal.setAppElement('#root');
                 </div>
                 <div className="subscript">
                     <div className="image">
-                        <img src={image} alt={title} />
+                        <img src={category === "Graduação" ? imageCategory : image} alt={title} />
                     </div>
                     <div className="text">
                         <h1>Seja um profissional em</h1>
