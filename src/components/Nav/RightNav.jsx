@@ -165,11 +165,11 @@ const RightNav = ({ open }) => {
               Contato
             </Link>
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <a href="https://ead.cpaedu.com.br/loja_virtual/index.php" target="_blank"  rel="noreferrer">
               Loja Virtual
             </a>
-          </li>
+          </li> */}
           <button onClick={HandleOpen}>
             <IoLogoWhatsapp /> &nbsp; Atendimento
           </button>
