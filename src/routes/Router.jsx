@@ -38,6 +38,7 @@ import { PostUnic } from '../pages/PostUnic/PostUnic';
 import { SignIn } from '../pages/SignIn/SignIn';
 import { StudentArea } from '../pages/StudentArea/StudentArea';
 import { CoursePos } from '../pages/CoursePos/CoursePos';
+import { CourseTecnic } from '../pages/CourseTecnic/CourseTecnic';
 
 
 
@@ -56,7 +57,8 @@ function PrivateRoute({children} ) {
             <Route path="/prematricula/:curso" element={<ContactEAD />}/>      
             <Route path="/sobre" element={<About />}/>      
             <Route path="/curso-pos-graduacao" element={<CoursePos />}/>      
-            <Route path="/curso-individual/:curso" element={<CourseUnic />}/>      
+            <Route path="/curso-individual/:curso" element={<CourseUnic />}/>
+            <Route path="/curso-tecnico/:curso" element={<CourseTecnic />}/>       
             <Route path="/curso-individual-eja/:curso" element={<CourseUnicEJA />}/>      
             <Route path="/cursos/:curso" element={<Courses />}/>    
             <Route path="/blog" element={<BlogPage />}/>    
