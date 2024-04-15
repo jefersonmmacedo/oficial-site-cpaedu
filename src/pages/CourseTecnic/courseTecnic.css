@@ -1,0 +1,585 @@
+.CourseTecnic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.CourseTecnic .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 50px 50px 0 50px;
+    background-color:var(--Blue)
+    
+}
+.CourseTecnic .title .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    color: var(--Primary);
+}
+.CourseTecnic .title .text h1 {
+    font-size:60px;
+}
+
+.CourseTecnic .title .image {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 20px;
+}
+.CourseTecnic .title .image img {
+    margin-top: 20px;
+}
+.CourseTecnic .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color:#ccc
+}
+.CourseTecnic .menu .text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 70%;
+}
+.CourseTecnic .menu .text p {
+    color: var(--Background2);
+    margin-right: 30px;
+    cursor: pointer;
+}
+.CourseTecnic .menu a {
+    background-color: var(--Magenta);
+    padding: 20px 40px;
+    border-radius: 6px;
+    color: var(--White);
+    border:none;
+    margin: 0 40px ;
+    text-decoration: none;
+}
+.CourseTecnic .aboutCourse {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color:var(--Background)
+}
+.CourseTecnic .aboutCourse .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    white-space: pre-line;
+}
+.CourseTecnic .aboutCourse .text h1 {
+    margin-bottom: 20px
+}
+.CourseTecnic .aboutCourse .text p {
+    white-space: pre-line;
+}
+.CourseTecnic .aboutCourse .text p a {
+    text-decoration: none;
+    color: var(--Blue);
+}
+
+.CourseTecnic .aboutCourse .itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+}
+.CourseTecnic .aboutCourse .itens .item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom:5px
+}
+.CourseTecnic .aboutCourse .itens .icon {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    margin: 0 20px;
+
+}
+.CourseTecnic .aboutCourse .itens .icon {
+    font-size: 40px;
+    color: var(--Blue);
+}
+
+
+
+
+.CourseTecnic .subscript {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color:var(--Background)
+}
+.CourseTecnic .subscript .image {
+    width: 50%;
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 0 30px 0 0;
+}
+.CourseTecnic .subscript .image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0 30px 0 0;
+}
+.CourseTecnic .subscript .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    background-color:var(--Magenta);
+    padding: 100px;
+}
+
+.CourseTecnic .subscript .text .buttons {
+    margin-top: 40px;
+}
+.CourseTecnic .subscript .text h1 {
+    font-weight: 400;
+    color: var(--White);
+}
+.CourseTecnic .subscript .text .buttons a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: var(--Black);
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--White);
+}  
+
+.CourseTecnic .media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 20px;
+    background-color: rgb(7, 6, 38);
+}
+.CourseTecnic .media h1{
+    color: var(--Blue);
+    margin: 20px;
+}
+
+.CourseTecnic .media video {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+
+
+.CourseTecnic .professional {
+   display: flex;
+   flex-direction:column;
+   align-items: flex-start;
+   justify-content: center;
+   width: 100%;
+   padding: 40px;                 
+}
+.CourseTecnic .professional h1 {
+    font-size: 40px;
+}
+.CourseTecnic .professional .block {
+    display: flex;
+   flex-direction:row;
+   align-items: flex-start;
+   justify-content: center;
+   width: 100%;
+   padding: 20px 0;
+}
+.CourseTecnic .professional .block .icon{
+    display: flex;
+   flex-direction:row;
+   align-items: flex-start;
+   justify-content: center;
+   width: 50px;
+   padding: 20px 0;
+}
+.CourseTecnic .professional .block .icon svg{
+   color: var(--Blue);
+   font-size: 25px;
+   margin: 0px 10px;
+}
+.CourseTecnic .professional .block .text{
+    display: flex;
+   flex-direction:row;
+   align-items: flex-start;
+   justify-content: center;
+   width: 95%;
+   padding: 20px 0;
+   white-space: pre-line;
+}
+.CourseTecnic .occupationArea {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+    background-color:rgb(232, 232, 232);
+}
+.CourseTecnic .occupationArea h1 {
+    font-size: 40px;
+}
+.CourseTecnic .occupationArea .block {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.CourseTecnic .occupationArea .block .icon{
+    display: flex;
+   flex-direction:row;
+   align-items: flex-start;
+   justify-content: center;
+   width: 5%;
+   padding: 20px 0;
+}
+.CourseTecnic .occupationArea .block .icon svg{
+    color: var(--Blue);
+    font-size: 25px;
+ }
+.CourseTecnic .occupationArea .block .text2{
+    display: flex;
+   flex-direction:row;
+   align-items: center;
+   justify-content: center;
+   width: 95%;
+   padding: 20px 0;
+   white-space: pre-line;
+}
+
+
+
+
+
+.CourseTecnic .grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(7, 6, 38);
+    height: 300px;
+}   
+.CourseTecnic .grade .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+}   
+.CourseTecnic .grade .text h1 {
+    color: var(--Blue);
+    font-size: 40px;
+}   
+.CourseTecnic .grade .text p{
+    color: var(--White);
+}   
+.CourseTecnic .grade .text button {
+    color: var(--White);
+    background-color: var(--Blue);
+    padding: 10px 20px;
+    border-radius:20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 40px;
+}  
+
+
+.CourseTecnic .grade .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
+    height: 300px;
+}
+.CourseTecnic .grade .list .image {
+    width: 100% ;
+    height: 300px; 
+    object-fit: cover;          
+}
+.CourseTecnic .grade .list .image img {
+    width: 100% ;
+    height: 300px; 
+    object-fit: cover;
+}
+
+
+
+
+
+@media(max-width:850px) {
+    .CourseTecnic .title .text {
+        margin: 30px 0;
+        width: 100%;
+    }
+    .CourseTecnic .title .text h1 {
+        font-size:30px;
+    }
+    
+    .CourseTecnic .title .image {
+        display: none;
+    }
+
+
+    .CourseTecnic .menu  {
+        display: none;
+    }
+
+    .CourseTecnic .menu button {
+        background-color: var(--Magenta);
+        padding: 20px 40px;
+        border-radius: 6px;
+        color: var(--White);
+        border:none;
+        margin: 0 40px ;
+    }
+
+
+    .CourseTecnic .aboutCourse {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background-color:var(--Background)
+}
+.CourseTecnic .aboutCourse .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    white-space: pre-line;
+
+}
+.CourseTecnic .aboutCourse .text h1 {
+    margin-bottom: 20px
+}
+.CourseTecnic .aboutCourse .text p {
+    white-space: pre-line;
+}
+
+.CourseTecnic .aboutCourse .itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.CourseTecnic .aboutCourse .itens .item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom:5px
+}
+.CourseTecnic .aboutCourse .itens .icon {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    margin: 0 20px;
+
+}
+.CourseTecnic .aboutCourse .itens .icon {
+    font-size: 40px;
+    color: var(--Blue);
+}
+
+.CourseTecnic .subscript {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color:var(--Background)
+}
+.CourseTecnic .subscript .image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 0 30px 0 0;
+}
+.CourseTecnic .subscript .image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0 30px 0 0;
+}
+.CourseTecnic .subscript .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color:var(--Magenta);
+    padding: 40px 20px;
+}
+.CourseTecnic .subscript .text .buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.CourseTecnic .subscript .text h1 {
+    font-weight: 400;
+    color: var(--White);
+    font-size: 25px;
+    margin-bottom: 40px;
+    
+}
+   
+
+.CourseTecnic .subscript .text .buttons button {
+    background-color: var(--Magenta);
+    padding: 20px 40px;
+    border-radius: 6px;
+    color: var(--White);
+    border:none;
+    margin:40px 0;
+    text-decoration: none;
+}
+
+
+
+
+ 
+.CourseTecnic .grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(7, 6, 38);
+    height: 300px;
+}   
+.CourseTecnic .grade .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}   
+.CourseTecnic .grade .text h1 {
+    color: var(--Blue);
+    font-size: 40px;
+}   
+.CourseTecnic .grade .text p{
+    color: var(--White);
+}   
+.CourseTecnic .grade .text button {
+    color: var(--White);
+    background-color: var(--Blue);
+    padding: 10px 20px;
+    border-radius:20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 40px;
+}  
+
+
+.CourseTecnic .grade .list {
+    display: none;
+}
+
+
+}
+
+
+
+
+
+
+
+.content-modal .itensModal {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 300px;
+    border: none;
+    overflow-y: scroll;
+    text-decoration: none;
+    margin:10px 0;
+    padding: 10px 0;
+    color: var(--White);
+}
+.content-modal .itensModal p{
+    white-space: pre-line;
+    line-height: 25px;
+}
+
+
+
+.content-modal .itensModal::-webkit-scrollbar {
+    width: 12px;  
+    border-radius: 20px;            
+  }
+  
+ .content-modal .itensModal::-webkit-scrollbar-track {
+    background: var(--Background); 
+    border-radius: 20px;       
+  }
+  
+ .content-modal .itensModal::-webkit-scrollbar-thumb {
+    background-color: var(--Primary);   
+    border-radius: 20px;      
+    border: 3px solid var(--Background); 
+  }
