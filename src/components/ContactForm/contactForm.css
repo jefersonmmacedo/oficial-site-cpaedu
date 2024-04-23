@@ -98,6 +98,16 @@
     background-color: var(--Background);
     color: va(--Background2);
 }
+.contactForm .contactBlock .formulary form select{
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    background-color: var(--Background);
+    color: va(--Background2);
+}
 .contactForm .contactBlock .formulary form input::placeholder {
     color: va(--Background2);
 }
