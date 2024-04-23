@@ -1,4 +1,4 @@
-import "./newPost.css"
+import "./newPost.css";
 import profile from '../../../../assets/images/imagecurso.jpg'
 import {FiUpload} from 'react-icons/fi'
 import { useRef, useState } from "react";
@@ -8,12 +8,13 @@ import db from '../../../../services/firebaseConnection';
 import { ref, getDownloadURL, uploadBytes } from 'firebase/storage';
 import { v4 as uuidv4} from 'uuid'
 import { storage } from "../../../../services/firebaseImageConnection";
-import { Editor } from '@tinymce/tinymce-react';
 
 function NewPost() {
+
     const [avatarUrl, setAvatarUrl] = useState(null);
     const [imageAvatar, setImageAvatar] = useState('');
     const [title, setTitle] = useState('');
+    const [text, setText] = useState('');
     const [manchete, setManchete] = useState('');
     const [category, setCategory] = useState('');
 
@@ -59,7 +60,8 @@ function NewPost() {
                 title: title,
                 image: photoUrlAvatar,
                 manchete: manchete,
-                text: editorRef.current.getContent(),
+               // text: editorRef.current.getContent(),
+               text: text,
                 category: category,
                 date: new Date(),
             })
@@ -95,7 +97,9 @@ function NewPost() {
         setCategory(e.target.value);
     }
 
+
     return (
+
         <div className="NewPost">
             <h3>Nova postagem</h3>
             <form onSubmit={handleEditor}>
@@ -116,27 +120,11 @@ function NewPost() {
                     <option value="Eventos">Eventos</option>
                 </select>
 
-                <Editor
-                apiKey="i5roon6zk0tfnjuqdxque3lyxrhj9wznjbzefx0kugus5r02"
-         onInit={(evt, editor) => editorRef.current = editor}
-         initialValue=""
-         init={{
-            width: '90%',
-           height: 600,
-           menubar: false,
-           plugins: [
-             'advlist autolink lists link image charmap print preview anchor',
-             'searchreplace visualblocks code fullscreen',
-             'insertdatetime media table paste code help wordcount'
-           ],
-           toolbar: 'undo redo | formatselect | ' +
-           'bold italic backcolor | alignleft aligncenter ' +
-           'alignright alignjustify | bullist numlist outdent indent | ' +
-           'removeformat | help',
-           content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
-         }}
-       />
-       <button onClick={log}>Salvar postagem</button>
+                <textarea  value={text} onChange={(e) => setText(e.target.value)}></textarea>
+
+
+
+       <button onClick={handleNewCategory}>Salvar postagem</button>
             </form>        
             
         </div>
