@@ -55,7 +55,7 @@ console.log(informations[0])
 
 
 const phone = "22999942800"
-const text = `Pré-Matrícula ${new Date().getFullYear()}. %0A%0ANome: ${nome}. %0AIdade: ${idade}. %0AWhatsapp: ${telefone}. %0AE-mail: ${email}. %0ABairro: ${bairro}. %0ACidade: ${cidade}.`
+const text = `Pré-Matrícula ${new Date().getFullYear()}. %0A%0ANome: ${nome}. %0A%0ACurso de interesse: ${curso}. %0AIdade: ${idade}. %0AWhatsapp: ${telefone}. %0AE-mail: ${email}. %0ABairro: ${bairro}. %0ACidade: ${cidade}.`
 function handleNewMessage(e) {
     e.preventDefault();
     window.open("https://wa.me/55"+ phone + "?text=" + text,
@@ -91,7 +91,7 @@ function handleNewMessage(e) {
                     <input type="text" name="" id="" placeholder="Bairro"  value={bairro} onChange={(e) => setBairro(e.target.value)} />
                         <input type="text" name="" id="" placeholder="Cidade"  value={cidade} onChange={(e) => setCidade(e.target.value)} />
                     </div>
-                    <input type="text" name="" id="" placeholder={curso}/>
+                    <input disabled placeholder={curso}/>
                         <button onClick={handleNewMessage}>Enviar</button>
                 </form>
             </div>
