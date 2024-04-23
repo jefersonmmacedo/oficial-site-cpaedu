@@ -58,6 +58,27 @@
     object-fit: cover;
 }
 
+.NewPost form .editorClasscText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+}
+.NewPost form textarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    height: 400px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid rgb(27, 0, 88);
+    color: rgb(27, 0, 88);
+    padding: 10px;
+    resize: none;
+}
 .NewPost form input{
     display: flex;
     align-items: center;
