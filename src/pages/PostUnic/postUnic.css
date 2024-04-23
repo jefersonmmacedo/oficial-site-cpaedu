@@ -104,6 +104,7 @@
 .PostUnic .aboutCourse .text {
     width: 70%;
     padding: 20px;
+    white-space: pre-line;
 }
 .PostUnic .aboutCourse .text h1 {
     margin-bottom: 20px
