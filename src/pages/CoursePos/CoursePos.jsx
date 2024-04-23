@@ -167,7 +167,7 @@ Modal.setAppElement('#root');
                                 <p><b>{format}</b> </p>
                             </div>
                         </div>
-                        {valueCourse === "" ? "" :  
+                        {/* {valueCourse === "" ? "" :  
                         <div className="item">
                             <div className="icon">
                             <FiDollarSign />
@@ -181,7 +181,7 @@ Modal.setAppElement('#root');
                                 }
                             </div>
                         </div>
-                        }
+                        } */}
                     </div>
                 </div>
                 <div className="subscript">
