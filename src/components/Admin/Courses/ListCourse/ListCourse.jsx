@@ -101,7 +101,8 @@ function handleSearchCourse(e) {
 
 function handleUpdateCourse(course, category) {
   if(category === "Cursos Técnicos") {
-    window.open(`/adm/coursetecnic/${course}`, "_self")
+    window.open(`/adm/course/${course}/${category}`, "_self")
+    // window.open(`/adm/coursetecnic/${course}`, "_self")
   } else if (category === "Ensino Médio - EJA") {
     window.open(`/adm/courseejaedit/${course}`, "_self")
   } else{
