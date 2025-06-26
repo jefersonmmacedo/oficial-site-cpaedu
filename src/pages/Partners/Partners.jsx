@@ -1,6 +1,7 @@
 import "./partners.css";
-import UniBTA from "../../assets/images/Icons/9999.jpg"
-import unifacvet from "../../assets/images/Icons/77.png"
+import Ivy from "../../assets/images/Icons/99.png"
+import Unicorp from "../../assets/images/Icons/98.png"
+import ceviw from "../../assets/images/Icons/97.jpg"
 import UniFVC from "../../assets/images/Icons/88.png"
 import saoLuiz from "../../assets/images/Icons/44.png"
 import CPET from "../../assets/images/Icons/66.png"
@@ -20,25 +21,20 @@ function Partners() {
                 <img src={educanexus} alt="Logo parceiro" />
             </div>
             <div className="image">
-                <img src={CPET} alt="Logo parceiro" />
-            </div>
-            <div className="image">
                 <img src={prefeitura} alt="Logo parceiro" />
-            </div>
-            <div className="image">
-                <img src={SaoLuiz} alt="Logo parceiro" />
-            </div>
-            <div className="image">
-                <img src={unifacvet} alt="Logo parceiro" />
             </div>
             <div className="image">
                 <img src={uniBF} alt="Logo parceiro" />
             </div>
-            <div className="image">
-                <img src={UniBTA} alt="Logo parceiro" />
+            <div className="image2">
+                <img src={Ivy} alt="Logo parceiro" width="90"/>
             </div>
-
-
+            <div className="image">
+                <img src={Unicorp} alt="Logo parceiro" width="90"/>
+            </div>
+            <div className="image">
+                <img src={ceviw} alt="Logo parceiro" width="90"/>
+            </div>
 
         </div>
         <Footer />
